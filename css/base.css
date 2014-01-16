@@ -1,4 +1,31 @@
 body {
 	background-color:#CCFFCC;
 	font:15px arial,sans-serif;
+	position: relative;
+}
+
+#main-table {
+	border: 2px solid;
+	width: 1000px;
+
+}
+
+#left-tab {
+	width: 100px;
+	height: 50px;
+	background: white;
+	-moz-border-radius: 0 50px 50px 0;
+	-webkit-border-radius: 0 50px 50px 0;
+	border-radius: 0 50px 50px 0;
+	margin: 10px 100px;
+	-webkit-box-shadow: 1px 1px 2px 1px #048F12;
+	box-shadow: 1px 1px 2px 1px #048F12;
+}
+
+#left-tab-text {
+	font: 12px "Arial Black", Gadget, sans-serif;
+	text-align: center;
+	position: relative;
+	top: 50%;
+	vertical-align: middle;
 }
