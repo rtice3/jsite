@@ -14,97 +14,69 @@
 	    <link href="css/base.css" rel="stylesheet">
 	    <!-- Bootstrap core CSS -->
 	    <link href="bootstrap/css/bootstrap.css" rel="stylesheet">
-	    <link href="bootstrap/css/bootstrap-theme.min.css" rel="stylesheet">
+	    <link href="bootstrap/css/bootstrap-theme.css" rel="stylesheet">
 
 	    <!-- Custom styles for this template -->
 	    <link href="css/carousel.css" rel="stylesheet">
+
+	    <script src="js/jquery-1.10.2.min.js"></script>
+	    <script src="js/logic.js"></script>
+	    <script src="bootstrap/js/bootstrap.min.js"></script>
+	    <script src="js/holder.js"></script>
+
 	</head>
 
 	<body>
-	  	<div id="wrap">
-	    	<div class="navbar-wrapper">
-	      		<div class="container">
-	        		<div class="navbar navbar-inverse navbar-static-top" role="navigation">
-	          			<div class="container">
-	            			<div class="navbar-header">
-	              				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-	               					<span class="sr-only">Toggle navigation</span>
-	               					<span class="icon-bar"></span>
-	                				<span class="icon-bar"></span>
-	                				<span class="icon-bar"></span>
-	              				</button>
-	              				<a class="navbar-brand" href="#">Jones Contracting Inc.</a>
-	            			</div>
-	            			<div class="navbar-collapse collapse">
-	              				<ul class="nav navbar-nav">
-	                				<li><a href="#excavation">Excavation & Sitework</a></li>
-	                				<li><a href="#utilities">Utilities</a></li>
-	                				<li><a href="#septic">Septic Systems</a></li>
-	                				<li><a href="#paving">Paving</a></li>
-	                				<li><a href="#landscape">Landscape Construction</a></li>
-	                				<li><a href="#snow">Snow Services</a></li>
-	                				<li><a href="#contact">Contact</a></li>
-	              				</ul>
-	            			</div>
-	         			</div>
-	        		</div>
-	      		</div>
-	    	</div>
-	    	<!-- Carousel
-	    	================================================== -->
-	    	<div id="myCarousel" class="carousel slide" data-ride="carousel">
-	      	<!-- Indicators -->
-	      		<ol class="carousel-indicators">
-	        		<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-	        		<li data-target="#myCarousel" data-slide-to="1"></li>
-	        		<li data-target="#myCarousel" data-slide-to="2"></li>
-	      		</ol>
-	      		<div class="carousel-inner">
-	        		<div class="item active">
-	          			<img data-src="js/holder.js/900x500/auto/#777:#7a7a7a/text:First slide" alt="First slide">
-	          			<div class="container">
-	          				<img src="img/excavating/excavating_10.gif">
-	            			<div class="carousel-caption">
-	              				<h1>Welcome to the Jones Family</h1>
-	              				<p>Jones Contracting Incorporated is a family owned and operated excavation contracting company based in Walpole, MA.</p>
-	            			</div>
-	          			</div>
-	        		</div>
-	        		<div class="item">
-	          			<img data-src="js/holder.js/900x500/auto/#666:#6a6a6a/text:Second slide" alt="Second slide">
-	          			<div class="container">
-	            			<div class="carousel-caption">
-	              				<p>We specialize in excavation site-work, utilities, spectic systems, drainage, asphalt paving, landscape construction, and snow removal services in Eastern Massachusetts.</p>
-	            			</div>
-	          			</div>
-	        		</div>
-	        		<div class="item">
-	          			<img data-src="js/holder.js/900x500/auto/#555:#5a5a5a/text:Third slide" alt="Third slide">
-	          			<div class="container">
-	            			<div class="carousel-caption">
-	              				<p>Whether your project is a small residential septic systems or commercial land development our experience and skills lead to solid results. Jones Contracting has taken a variety of different projects with varying scopes of work in both the public and private sectors.</p>
-	            			</div>
-	          			</div>
-	        		</div>
-	      		</div>
-	      		<a class="left carousel-control" href="#myCarousel" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a>
-	      		<a class="right carousel-control" href="#myCarousel" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>
-	    	</div><!-- /.carousel -->
-	  	</div><!-- /.wrap -->
+	  	<div id="wrap" class="container tabbable tabs-left">
+	  		<ul class="nav nav-tabs" data-tabs="tabs">
+	  			<li class="active"><a href="#about_tab" data-toggle="tab">The Company</a></li>
+	  			<li><a href="#excavation_tab" data-toggle="tab">Excavation & Sitework</a></li>
+	         	<li><a href="#utilities_tab" data-toggle="tab">Utilities</a></li>
+	          	<li><a href="#septic_tab" data-toggle="tab">Septic Systems</a></li>
+	          	<li><a href="#paving_tab" data-toggle="tab">Paving</a></li>
+	         	<li><a href="#landscape_tab" data-toggle="tab">Landscape Construction</a></li>
+	           	<li><a href="#snow_tab" data-toggle="tab">Snow Services</a></li>
+	          	<li><a href="#contact_tab" data-toggle="tab">Contact</a></li>
+	  		</ul>
+	  		<div class="tab-content">
+	  			<div class="tab-pane fade in active" id="about_tab">
+	  				<!-- Carousel ================================================== -->
+	    			<div id="aboutCarousel" class="carousel slide" data-ride="carousel">
+	      			
+	    			</div><!-- /.carousel -->
+	  			</div>
+	  			<div class="tab-pane fade in" id="excavation_tab">
+	  			<!-- Carousel ================================================== -->
+	    			<div id="myCarousel" class="carousel slide" data-ride="carousel">
+	      			
+	    			</div><!-- /.carousel -->
+	  			</div>
+	  			<div class="tab-pane fade in" id="utilities_tab">
 
-	 	<div id="footer">
+	  			</div>
+	  			<div class="tab-pane fade in" id="septic_tab">
+
+	  			</div>
+	  			<div class="tab-pane fade in" id="paving_tab">
+
+	  			</div>
+	  			<div class="tab-pane fade in" id="landscape_tab">
+
+	  			</div>
+	  			<div class="tab-pane fade in" id="snow_tab">
+
+	  			</div>
+	  			<div class="tab-pane fade in" id="contact_tab">
+
+	  			</div>
+	  		</div>
+		</div><!-- /.wrap -->
+
+		<div id="footer">
 	  		<div class="container">
 	  			<p class="text-muted">&copy; 2014 Jones Contracting, Inc. 735 Washington St. Walpole, MA 02081</p>
 	  		</div>
-	  	</div>
+		</div>
 
-
-
-	    <!-- Bootstrap core JavaScript
-	    ================================================== -->
-	    <!-- Placed at the end of the document so the pages load faster -->
-	    <script src="js/jquery-1.10.2.min.js"></script>
-	    <script src="bootstrap/js/bootstrap.min.js"></script>
-	    <script src="js/holder.js"></script>
 	</body>
 </html>
