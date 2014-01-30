@@ -6,3 +6,66 @@ body {
   padding-bottom: 40px;
   color: #66FF99;
 }
+
+table tr td{
+	border: 0px solid white;
+}
+
+#tabs {
+	padding-bottom: 40px;
+}
+
+
+.nav-pane button {
+	width: 200px;
+	margin: 5px;
+}
+
+.nav-pane li {
+	list-style: none;
+}
+
+.comment {
+	display: none;
+}
+
+
+.text-muted {
+	color: #A9A9A9;
+}
+
+.center {
+	margin-left:auto;
+	margin-right:auto;
+	width:80%;
+	background-color:#2b2922;
+}
+
+.container {
+	position:relative;
+	width:100%;
+}
+
+.footer-0 {
+	text-align:left;
+}
+
+.footer-1 {
+	text-align:center;
+}
+
+.footer-2 {
+	text-align:right;
+
+}
+.slider_container {
+	width: 800px;
+}
+
+.ui-tabs .ui-tabs-nav li a {
+	font-size: .7em !important;
+}
+
+.ui-menu {
+	width: 150px;
+}

@@ -12,71 +12,116 @@
 	    <title>Jones Contracting Inc.</title>
 
 	    <link href="css/base.css" rel="stylesheet">
+	    <link href="jsImgSlider/themes/1/js-image-slider.css" rel="stylesheet">
+	    
 	    <!-- Bootstrap core CSS -->
-	    <link href="bootstrap/css/bootstrap.css" rel="stylesheet">
-	    <link href="bootstrap/css/bootstrap-theme.css" rel="stylesheet">
-
+	    
 	    <!-- Custom styles for this template -->
-	    <link href="css/carousel.css" rel="stylesheet">
 
 	    <script src="js/jquery-1.10.2.min.js"></script>
 	    <script src="js/logic.js"></script>
-	    <script src="bootstrap/js/bootstrap.min.js"></script>
-	    <script src="js/holder.js"></script>
+	    <script src="jquery-ui-1.10.4.custom/js/jquery-ui-1.10.4.custom.min.js"></script>
+	    <script src="jsImgSlider/themes/1/js-image-slider.js"></script>
+	  
 
 	</head>
 
-	<body>
-	  	<div id="wrap" class="container tabbable tabs-left">
-	  		<ul class="nav nav-tabs" data-tabs="tabs">
-	  			<li class="active"><a href="#about_tab" data-toggle="tab">The Company</a></li>
-	  			<li><a href="#excavation_tab" data-toggle="tab">Excavation & Sitework</a></li>
-	         	<li><a href="#utilities_tab" data-toggle="tab">Utilities</a></li>
-	          	<li><a href="#septic_tab" data-toggle="tab">Septic Systems</a></li>
-	          	<li><a href="#paving_tab" data-toggle="tab">Paving</a></li>
-	         	<li><a href="#landscape_tab" data-toggle="tab">Landscape Construction</a></li>
-	           	<li><a href="#snow_tab" data-toggle="tab">Snow Services</a></li>
-	          	<li><a href="#contact_tab" data-toggle="tab">Contact</a></li>
-	  		</ul>
-	  		<div class="tab-content">
-	  			<div class="tab-pane fade in active" id="about_tab">
-	  				<!-- Carousel ================================================== -->
-	    			<div id="aboutCarousel" class="carousel slide" data-ride="carousel">
-	      			
-	    			</div><!-- /.carousel -->
+	<body class="center">
+	  	<div id="wrap">
+	  		<div id="radiod">
+				  	<input type="radio" name="radio1" value="0" checked="checked">
+				  	<input type="radio" name="radio1" value="1">
+				  	<input type="radio" name="radio1" value="2">
+				  	<input type="radio" name="radio1" value="3">
+				  	<input type="radio" name="radio1" value="4">
+				  	<input type="radio" name="radio1" value="5">
+				  	<input type="radio" name="radio1" value="6">
+				  	<input type="radio" name="radio1" value="7">
+				  	<input type="radio" name="radio1" value="8">
+				  	<input type="radio" name="radio1" value="9">
+				  	<input type="radio" name="radio1" value="10">
+				  	<input type="radio" name="radio1" value="11">
+				  	<input type="radio" name="radio1" value="12">
+				  	<input type="radio" name="radio1" value="13">
+				  	<input type="radio" name="radio1" value="14">
+				  	<input type="radio" name="radio1" value="15">
+				  	<input type="radio" name="radio1" value="16">
+				  	<input type="radio" name="radio1" value="17">
+				  	<input type="radio" name="radio1" value="18">
+				  	<input type="radio" name="radio1" value="19">
+				  	<input type="radio" name="radio1" value="20">
+				  	<input type="radio" name="radio1" value="21">
+				  	<input type="radio" name="radio1" value="22">
+				  	<input type="radio" name="radio1" value="23">
+			</div>
+	  		<div id="tabs">
+	  			<a href=""><img src="img/joneslogoclean.png" /></a>
+	  			<ul>
+	  				<li class="active"><a href="#about">The Company</a></li>
+	  				<li><a href="#excavation">Excavation & Sitework</a></li>
+	  				<li><a href="#utilities">Utilities</a></li>
+	  				<li><a href="#septic">Septic Systems</a></li>
+	  				<li><a href="#asphalt">Asphalt Paving</a></li>
+	  				<li><a href="#landscape">Landscape Construction</a></li>
+	  				<li><a href="#snow">Snow Services</a></li>
+	  				<li><a href="#contact">Contact</a></li>
+	  			</ul>
+	  			<div id="about">  				
+	  				<div id="sliderFrame">
+	  					<div id="slider">
+  							<img src="img/index/index_14.gif" alt="#about0" />
+  							<img src="img/index/index_20.gif" alt="#about1" />
+  						</div>
+  						<div id="about0" class="comment"></div>	
+  						<div id="about1" class="comment"></div>
+    				</div>	
 	  			</div>
-	  			<div class="tab-pane fade in" id="excavation_tab">
-	  			<!-- Carousel ================================================== -->
-	    			<div id="myCarousel" class="carousel slide" data-ride="carousel">
-	      			
-	    			</div><!-- /.carousel -->
-	  			</div>
-	  			<div class="tab-pane fade in" id="utilities_tab">
-
-	  			</div>
-	  			<div class="tab-pane fade in" id="septic_tab">
-
-	  			</div>
-	  			<div class="tab-pane fade in" id="paving_tab">
-
-	  			</div>
-	  			<div class="tab-pane fade in" id="landscape_tab">
-
-	  			</div>
-	  			<div class="tab-pane fade in" id="snow_tab">
-
-	  			</div>
-	  			<div class="tab-pane fade in" id="contact_tab">
-
-	  			</div>
+				<div id="excavation">
+	  				<div id="sliderFrame">
+	  					<div id="slider">
+  							<img src="img/excavating/excavating_10.gif" alt="#excavating0" />
+  							<img src="img/excavating/excavating_20.gif" alt="#excavating1" />
+  							<img src="img/excavating/excavating_22.gif" alt="#excavating2" />
+  							<img src="img/excavating/excavating_24.gif" alt="#excavating3" />
+  						</div>
+  						<div id="excavating0" class="comment"></div>	
+  						<div id="excavating1" class="comment"></div>	
+  						<div id="excavating2" class="comment"></div>
+  						<div id="excavating3" class="comment"></div>	
+    				</div>	
+				</div>
+				<div id="utilities">
+				</div>
+				<div id="septic">
+				</div>
+				<div id="asphalt">
+				</div>
+				<div id="landscape">
+				</div>
+				<div id="snow">
+				</div>
+				<div id="contact">
+				</div>
+				  		
 	  		</div>
 		</div><!-- /.wrap -->
 
 		<div id="footer">
 	  		<div class="container">
-	  			<p class="text-muted">&copy; 2014 Jones Contracting, Inc. 735 Washington St. Walpole, MA 02081</p>
+	  			<table class="text-muted container">
+	  				<tr>
+	  					<td class="footer-0">
+	  						&copy; 2014 Jones Contracting, Inc.
+	  					</td>
+	  					<td class="footer-1">
+	  						735 Washington St. Walpole, MA 02081
+	  					</td>
+	  					<td class="footer-2">
+	  						508.668.7888
+	  					</td>
+	  				</tr>
+	  			</table>
 	  		</div>
 		</div>
-
 	</body>
 </html>
