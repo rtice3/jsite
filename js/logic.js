@@ -1,3 +1,5 @@
+Alpaca.defaultUI = "jquery-ui";
+
 function home() {
 	$( "#aboutslider" ).empty().append("\
 		<img src='img/index/index_14.gif' alt='#about0' /> \
@@ -135,14 +137,85 @@ $( document ).ready(function($) {
             var about_slider = new $JssorSlider$("about_container", options);
       //      var gallery_slider = new $JssorSlider$("gallery_container", options);
             var excavating_slider = new $JssorSlider$("excavating_container", options);
-       //     var utilities_slider = new $JssorSlider$("utilities_container", options);
-       //     var septic_slider = new $JssorSlider$("septic_container", options);
+            var utilities_slider = new $JssorSlider$("utilities_container", options);
+            var septic_slider = new $JssorSlider$("septic_container", options);
        //     var asphalt_slider = new $JssorSlider$("asphalt_container", options);
-       //     var landscape_slider = new $JssorSlider$("landscape_container", options);
+            var landscape_slider = new $JssorSlider$("landscape_container", options);
        //     var snow_slider = new $JssorSlider$("snow_container", options);
 //            var technical_slider = new $JssorSlider$("technical_container", options);
 
+});
 
-	
+$(function() {
+	$("#contact_form").alpaca({
+		"data": {},
+		"schema": {
+      		"title" : "Request Information",
+      		"description" : "Fill out this form.",
+      		"type" : "object",
+      		"properties": {
+        		"name": {
+         	 		"type": "string",
+          			"title": "Name",
+          			"required": true
+        		},
+        		"email": {
+        			"type": "string",
+        			"title": "Email",
+        			"required": true
+        		},
+        		"phone": {
+        			"type": "string",
+        			"title": "Phone",
+        			"required": true
+        		},
+        		"subject": {
+        			"type": "string",
+        			"title": "Subject"
+        		},
+        		"message": {
+        			"type": "string",
+        			"title": "Message"
+        		}
+      		}
+    	},
+    	"options": {
+    		"renderForm": true,
+    		"form": {
+    			"attributes": {
+
+    			},
+    			"buttons": {
+    				"submit": {}
+    			}
+    		},
+    		"fields": {
+    			"name": {
+    				"type": "personalname",
+    				"size": 20,
+    				"hideInitValidationError" : true
+    			},
+    			"email": {
+    				"type": "email",
+    				"size": 20,
+    				"hideInitValidationError" : true
+    			},
+    			"phone": {
+    				"type": "phone",
+    				"size": 20,
+    				"hideInitValidationError" : true
+    			},
+    			"subject": {
+    				"type": "text",
+    				"size": 20
+    			},
+    			"message": {
+    				"type": "textarea",
+    				"rows": 5,
+    				"cols": 30
+    			}
+    		}
+    	}
+	});	
 });
 

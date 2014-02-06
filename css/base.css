@@ -8,12 +8,24 @@ body {
 }
 
 table tr td{
-	border: 0px solid white;
+	border: 2px solid black;
 }
-
 
 #tabs {
 	padding-bottom: 40px;
+
+}
+
+#contact_table {
+	width: 600px;
+	height: 300px;
+}
+
+#contact_form {
+	font-size: .7em !important;
+	width: 300px;
+	height: 300px;
+	overflow:scroll;
 }
 
 
@@ -42,7 +54,7 @@ table tr td{
 	background-color:#2b2922;
 }
 
-.container {
+.footer-inner {
 	position:relative;
 	width:100%;
 }
@@ -119,23 +131,9 @@ table tr td{
 
 .slide_container {
 	position: relative; 
+	margin: 0 auto;
 	width: 600px; 
 	height: 300px;
-}
-#about_caption_one {
-	position: absolute;
-	top: 90px; 
-	left: 0px;
-	width: 600px; 
-	height: 100%;
-}
-
-#about_caption_two {
-	position: absolute; 
-	top: 50px; 
-	left: 0px;
-	width: 600px; 
-	height: 100%;
 }
 
 .one {
@@ -165,7 +163,7 @@ table tr td{
 .slides {
 	cursor: move;
 	position: absolute; 
-	left: 0px; 
+	left: 100px; 
 	top: 0px; 
 	width:600px; 
 	height:300px; 
