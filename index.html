@@ -12,16 +12,17 @@
 	    <title>Jones Contracting Inc.</title>
 
 	    <link href="css/base.css" rel="stylesheet">
-	    <link href="jsImgSlider/themes/1/js-image-slider.css" rel="stylesheet">
+
 	    
 	    <!-- Bootstrap core CSS -->
 	    
 	    <!-- Custom styles for this template -->
 
 	    <script src="js/jquery-1.10.2.min.js"></script>
-	    <script src="js/logic.js"></script>
 	    <script src="jquery-ui-1.10.4.custom/js/jquery-ui-1.10.4.custom.min.js"></script>
-	    <script src="jsImgSlider/themes/1/js-image-slider.js"></script>
+	    <script src="jssor.Slider.FullPack/js/jssor.slider.mini.js"></script>
+	   
+	    <script src="js/logic.js"></script>
 	  
 
 	</head>
@@ -29,7 +30,7 @@
 	<body class="center">
 	  	<div id="wrap">
 	  		<div id="radiod">
-				  	<input type="radio" name="radio1" value="0" checked="checked">
+				  	<input type="radio" name="radio1" value="0">
 				  	<input type="radio" name="radio1" value="1">
 				  	<input type="radio" name="radio1" value="2">
 				  	<input type="radio" name="radio1" value="3">
@@ -45,7 +46,7 @@
 				  	<input type="radio" name="radio1" value="13">
 				  	<input type="radio" name="radio1" value="14">
 				  	<input type="radio" name="radio1" value="15">
-				  	<input type="radio" name="radio1" value="16">
+				  	<input type="radio" name="radio1" value="16" checked="checked">
 				  	<input type="radio" name="radio1" value="17">
 				  	<input type="radio" name="radio1" value="18">
 				  	<input type="radio" name="radio1" value="19">
@@ -56,52 +57,138 @@
 			</div>
 	  		<div id="tabs">
 	  			<a href=""><img src="img/joneslogoclean.png" /></a>
-	  			<ul>
-	  				<li class="active"><a href="#about">The Company</a></li>
-	  				<li><a href="#excavation">Excavation & Sitework</a></li>
-	  				<li><a href="#utilities">Utilities</a></li>
-	  				<li><a href="#septic">Septic Systems</a></li>
-	  				<li><a href="#asphalt">Asphalt Paving</a></li>
-	  				<li><a href="#landscape">Landscape Construction</a></li>
-	  				<li><a href="#snow">Snow Services</a></li>
-	  				<li><a href="#contact">Contact</a></li>
-	  			</ul>
-	  			<div id="about">  				
-	  				<div id="sliderFrame">
-	  					<div id="slider">
-  							<img src="img/index/index_14.gif" alt="#about0" />
-  							<img src="img/index/index_20.gif" alt="#about1" />
-  						</div>
-  						<div id="about0" class="comment"></div>	
-  						<div id="about1" class="comment"></div>
-    				</div>	
-	  			</div>
-				<div id="excavation">
-	  				<div id="sliderFrame">
-	  					<div id="slider">
-  							<img src="img/excavating/excavating_10.gif" alt="#excavating0" />
-  							<img src="img/excavating/excavating_20.gif" alt="#excavating1" />
-  							<img src="img/excavating/excavating_22.gif" alt="#excavating2" />
-  							<img src="img/excavating/excavating_24.gif" alt="#excavating3" />
-  						</div>
-  						<div id="excavating0" class="comment"></div>	
-  						<div id="excavating1" class="comment"></div>	
-  						<div id="excavating2" class="comment"></div>
-  						<div id="excavating3" class="comment"></div>	
-    				</div>	
-				</div>
-				<div id="utilities">
-				</div>
-				<div id="septic">
-				</div>
-				<div id="asphalt">
-				</div>
-				<div id="landscape">
-				</div>
-				<div id="snow">
-				</div>
-				<div id="contact">
-				</div>
+	  			<table><tr>
+	  				<td>
+			  			<ul>
+			  				<li class="active"><a href="#about">The Company</a></li>
+			  				<li><a href="#gallery">Gallery</a></li>
+			  				<li><a href="#excavation">Excavation & Sitework</a></li>
+			  				<li><a href="#utilities">Utilities</a></li>
+			  				<li><a href="#septic">Septic Systems</a></li>
+			  				<li><a href="#asphalt">Asphalt Paving</a></li>
+			  				<li><a href="#landscape">Landscape Construction</a></li>
+			  				<li><a href="#snow">Snow Services</a></li>
+			  				<li><a href="#technical">Technical Services</a></li>
+			  				<li><a href="#contact">Contact</a></li>
+			  			</ul>
+			  		</td>
+			  		<td>
+			  			<div id="about"> 
+			  				<div id="about_container" class="slide_container">
+						        <!-- Slides Container -->
+						        <div u="slides" style="cursor: move; position: absolute; left: 0px; top: 0px; width:600px; height:300px; overflow: hidden;">
+						            <!-- Slide -->
+						            <div>
+						                <img u="image" src="img/index/index_14.gif" />
+						                <div u="caption" t="B|IE" style="position: absolute; top: 90px; left: 0px; width: 600px; height: 100%;">
+						                    <div class="one"></div>
+						                    <div class="two"> 
+						                    	<h1>Welcome to Jones Contracting</h1>
+												<p>Jones Contracting Incorporated is a family owned and operated excavation contracting company based in Walpole, MA.</p>
+												<p>We specialize in excavation site-work, utilities, spectic systems, drainage, asphalt paving, landscape construction, and snow removal services in Eastern Massachusetts.</p>
+						                    </div>
+						                </div>
+						            </div>
+						            <!-- Slide -->
+						            <div>
+						                <img u="image" src="img/index/index_20.gif" />
+						                <div u="caption" t="B|IE" style="position: absolute; top: 180px; left: 0px; width: 600px; height: 100%;">
+						                    <div class="one"></div>
+						                    <div class="two">
+						                        <p>Whether your project is a small residential septic systems or commercial land development our experience and skills lead to solid results. Jones Contracting has taken a variety of different projects with varying scopes of work in both the public and private sectors.</p> 
+						                    </div>
+						                </div>
+						            </div>
+						        </div>
+ 							</div>
+			  			</div>
+			  			<div id="gallery">
+			  			</div>
+						<div id="excavation">
+			  				<div id="excavating_container" class="slide_container">
+						        <!-- Slides Container -->
+						        <div u="slides" style="cursor: move; position: absolute; left: 0px; top: 0px; width:600px; height:300px; overflow: hidden;">
+						            <!-- Slide -->
+						            <div>
+						                <img u="image" src="img/excavating/excavating_10.gif" />
+						                <div u="caption" t="B|IE" style="position: absolute; top: 150px; left: 0px; width: 600px; height: 100%;">
+						                    <div class="one"></div>
+						                    <div class="two"> 
+						                    	<h1>Excavation and Sitework</h1> 
+												<p><ul>
+													<li>Earth Moving</li>
+													<li>Site Utilities</li>
+													<li>Site Drainage</li>
+													<li>Retension and Detention Ponds</li>
+												</ul></p>
+						                    </div>
+						                </div>
+						            </div>
+						            <!-- Slide -->
+						            <div>
+						                <img u="image" src="img/excavating/excavating_20.gif" />
+						                <div u="caption" t="B|IE" style="position: absolute; top: 170px; left: 0px; width: 600px; height: 100%;">
+						                    <div class="one"></div>
+						                    <div class="two">
+						                        <p><ul> 
+												    <li>Bioswales</li> 
+												    <li>Rain Gardens</li> 
+												    <li>Road Construction</li> 
+												    <li>Subgrade Preparation</li> 
+												</ul></p> 
+						                    </div>
+						                </div>
+						            </div>
+						            <div>
+						                <img u="image" src="img/excavating/excavating_22.gif" />
+						                <div u="caption" t="B|IE" style="position: absolute; top: 170px; left: 0px; width: 600px; height: 100%;">
+						                    <div class="one"></div>
+						                    <div class="two">
+						                      	<p><ul> 
+												    <li>Road Base Construction</li> 
+												    <li>Asphalt, Concrete, Granite Curb</li> 
+												    <li>Asphalt Paving</li> 
+												    <li>Concrete and Asphalt Sidewalks</li> 
+												</ul></p> 
+						                    </div>
+						                </div>
+						            </div>
+						            <div>
+						                <img u="image" src="img/excavating/excavating_24.gif" />
+						                <div u="caption" t="B" style="position: absolute; top: 300px; left: 0px; width: 600px; height: 100%;">
+						                    <div class="one"></div>
+						                    <div class="two">
+						                        
+						                    </div>
+						                </div>
+						            </div>
+						        </div>
+ 							</div>
+						</div>
+						<div id="utilities">
+						</div>
+						<div id="septic">
+						</div>
+						<div id="asphalt">
+						</div>
+						<div id="landscape">
+						</div>
+						<div id="snow">
+						</div>
+						<div id="contact">
+							<table><tr>
+								<td>
+									<form>
+
+									</form>
+								</td>
+								<td>
+									<div id="map-canvas"></div>
+								</td>
+							</tr></table>
+						</div>
+					</td>
+				</tr></table>
 				  		
 	  		</div>
 		</div><!-- /.wrap -->
