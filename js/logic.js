@@ -60,62 +60,18 @@ function excavating() {
 	");
 }
 
-var theme_list = [
-	"black-tie",
-	"blitzer",
-	"cupertino",
-	"dark-hive",
-	"dot-luv",
-	"eggplant",
-	"excite-bike",
-	"flick",
-	"hot-sneaks",
-	"humanity",
-	"le-frog",
-	"mint-choc",
-	"overcast",
-	"pepper-grinder",
-	"redmond",
-	"smoothness",
-	"south-street",
-	"start",
-	"sunny",
-	"swanky-purse",
-	"trontastic",
-	"ui-darkness",
-	"ui-lightness",
-	"vader"
-];
-
 
 $( document ).ready(function($) {
-	$( "<link>" )
-			.appendTo($("head"))
-			.attr({type : "text/css", rel : "stylesheet"})
-			.attr("href" , "jquery-ui-1.10.4.custom/css/themes/south-street/jquery-ui.css");	
-			
+	
 	$( "#tabs" ).tabs().addClass( "ui-tabs-vertical ui-helper-clearfix" );
     $( "#tabs li" ).removeClass( "ui-corner-top" ).addClass( "ui-corner-left" );
-    $( "#radiod" ).buttonset();
-
-
-	$("input:radio[name=radio1]").click(function() {
-   	 	var path = "jquery-ui-1.10.4.custom/css/themes/".concat(theme_list[$("input[name='radio1']:checked").val()],  "/jquery-ui.css");
-   	 	console.log("Path: ");
-   	 	console.log(path);
-			$( "<link>" )
-				.appendTo($("head"))
-				.attr({type : "text/css", rel : "stylesheet"})
-				.attr("href" , path);	
-		
-	});
-
+  
 	var _CaptionTransitions = [];
             _CaptionTransitions["L"] = { $Duration: 800, $FlyDirection: 1, $Easing: $JssorEasing$.$EaseInCubic };
             _CaptionTransitions["R"] = { $Duration: 800, $FlyDirection: 2, $Easing: $JssorEasing$.$EaseInCubic };
             _CaptionTransitions["T"] = { $Duration: 800, $FlyDirection: 4, $Easing: $JssorEasing$.$EaseInCubic };
             _CaptionTransitions["B"] = { $Duration: 800, $FlyDirection: 8, $Easing: $JssorEasing$.$EaseInCubic };
-            _CaptionTransitions["B|IE"] = {$Duration:800,$FlyDirection:8,$Easing:{$Top:$JssorEasing$.$EaseInOutElastic},$ScaleVertical:0.6,$Opacity:2};
+            _CaptionTransitions["B|IE"] = {$Duration:1500,$FlyDirection:8,$Easing:{$Top:$JssorEasing$.$EaseInOutElastic},$ScaleVertical:0.6,$Opacity:2};
             _CaptionTransitions["TL"] = { $Duration: 800, $FlyDirection: 5, $Easing: $JssorEasing$.$EaseInCubic };
             _CaptionTransitions["TR"] = { $Duration: 800, $FlyDirection: 6, $Easing: $JssorEasing$.$EaseInCubic };
             _CaptionTransitions["BL"] = { $Duration: 800, $FlyDirection: 9, $Easing: $JssorEasing$.$EaseInCubic };
@@ -125,13 +81,16 @@ $( document ).ready(function($) {
 
             var options = {
                 $AutoPlay: true,                                    //[Optional] Whether to auto play, to enable slideshow, this option must be set to true, default value is false
+                $AutoPlayInterval: 7000,
                 $DragOrientation: 3,                                //[Optional] Orientation to drag slide, 0 no drag, 1 horizental, 2 vertical, 3 either, default value is 1 (Note that the $DragOrientation should be the same as $PlayOrientation when $DisplayPieces is greater than 1, or parking position is not 0)
                 $CaptionSliderOptions: {                            //[Optional] Options which specifies how to animate caption
                     $Class: $JssorCaptionSlider$,                   //[Required] Class to create instance to animate caption
                     $CaptionTransitions: _CaptionTransitions,       //[Required] An array of caption transitions to play caption, see caption transition section at jssor slideshow transition builder
                     $PlayInMode: 1,                                 //[Optional] 0 None (no play), 1 Chain (goes after main slide), 3 Chain Flatten (goes after main slide and flatten all caption animations), default value is 1
                     $PlayOutMode: 3                                 //[Optional] 0 None (no play), 1 Chain (goes before main slide), 3 Chain Flatten (goes before main slide and flatten all caption animations), default value is 1
-                }
+                },
+                $FillMode: 0,
+                $SlideDuration: 500
             };
 
             var about_slider = new $JssorSlider$("about_container", options);
@@ -151,7 +110,7 @@ $(function() {
 		"data": {},
 		"schema": {
       		"title" : "Request Information",
-      		"description" : "Fill out this form.",
+      		"description" : "After filling out the below information please press Submit. A Jones Contracting associate will be in contact with you as soon as possible.",
       		"type" : "object",
       		"properties": {
         		"name": {
@@ -213,6 +172,19 @@ $(function() {
     				"type": "textarea",
     				"rows": 5,
     				"cols": 30
+    			}
+    		}
+    	},
+    	"view": {
+    		"parent": "VIEW_WEB_EDIT_LIST_LAYOUT_TWO_COLUMN",
+    		"layout": {
+    			
+    			"bindings": {
+    				"name": "leftcolumn",
+    				"email": "leftcolumn",
+    				"phone": "leftcolumn",
+    				"subject": "rightcolumn",
+    				"message": "rightcolumn"
     			}
     		}
     	}

@@ -1,0 +1,29 @@
+
+"title" : "Request Information",
+"description" : "Fill out this form.",
+"type" : "object",
+"properties": {
+  "name": {
+    "type": "string",
+      "title": "Name",
+      "required": true
+  },
+  "email": {
+    "type": "string",
+    "title": "Email",
+    "required": true
+  },
+  "phone": {
+    "type": "string",
+    "title": "Phone",
+    "required": true
+  },
+  "subject": {
+    "type": "string",
+    "title": "Subject"
+  },
+  "message": {
+    "type": "string",
+    "title": "Message"
+  }
+}
