@@ -1,69 +1,21 @@
 Alpaca.defaultUI = "jquery-ui";
 
-function home() {
-	$( "#aboutslider" ).empty().append("\
-		<img src='img/index/index_14.gif' alt='#about0' /> \
-		<img src='img/index/index_20.gif' alt='#about1' /> \
-	");
-	$( "#about_captions" ).empty().append("\
-		<div id='about0' class='comment'></div>	\
-		<div id='about1' class='comment'></div> \
-	");
-	$( "#about0" ).empty().append("\
-		<h1>Welcome to Jones Contracting</h1> \
-		<p>Jones Contracting Incorporated is a family owned and operated excavation contracting company based in Walpole, MA.</p> \
-		<p>We specialize in excavation site-work, utilities, spectic systems, drainage, asphalt paving, landscape construction, and snow removal services in Eastern Massachusetts.</p> \
-	");
-	$( "#about1" ).empty().append("\
-		<p>Whether your project is a small residential septic systems or commercial land development our experience and skills lead to solid results. Jones Contracting has taken a variety of different projects with varying scopes of work in both the public and private sectors.</p> \
-	");	
-}
-
-function excavating() {
-	$( "#excavating_slider" ).empty().append("\
-		<img src='img/excavating/excavating_10.gif' alt='#excavating0' /> \
-		<img src='img/excavating/excavating_20.gif' alt='#excavating1' /> \
-		<img src='img/excavating/excavating_22.gif' alt='#excavating2' /> \
-		<img src='img/excavating/excavating_24.gif' alt='#excavating3' /> \
-	");
-
-	$( "#excavating_captions" ).empty().append("\
-		<div id='excavating0' class='comment'></div>	\
-		<div id='excavating1' class='comment'></div> \
-		<div id='excavating2' class='comment'></div> \
-		<div id='excavating3' class='comment'></div> \
-	");
-	$( "#excavating0" ).empty().append("\
-		<h1>Excavation and Sitework</h1> \
-		<p><ul> \
-		    <li>Earth Moving</li> \
-		    <li>Site Utilities</li> \
-		    <li>Site Drainage</li> \
-		    <li>Retension and Detention Ponds</li> \
-		</ul></p> \
-	");
-	$( "#excavating1" ).empty().append("\
-		<p><ul> \
-		    <li>Bioswales</li> \
-		    <li>Rain Gardens</li> \
-		    <li>Road Construction</li> \
-		    <li>Subgrade Preparation</li> \
-		</ul></p> \
-	");
-	$( "#excating2" ).empty().append("\
-		<p><ul> \
-		    <li>Road Base Construction</li> \
-		    <li>Asphalt, Concrete, Granite Curb</li> \
-		    <li>Asphalt Paving</li> \
-		    <li>Concrete and Asphalt Sidewalks</li> \
-		</ul></p> \
-	");
-}
-
+var oldTab;
+var newTab;
 
 $( document ).ready(function($) {
-	
-	$( "#tabs" ).tabs().addClass( "ui-tabs-vertical ui-helper-clearfix" );
+	console.log("READY!!!!");
+	$(".ui-widget-overlay").width($(document).width());
+	$(".ui-widget-overlay").height($(document).height());
+	$( "#tabs" ).tabs({
+		activate:function(event, ui) {
+			oldTab = ui.oldTab.index();
+			newTab = ui.newTab.index();
+			console.log("Old Tab: " + oldTab);
+			console.log("New Tab: " + newTab);
+		}
+	}).addClass( "ui-tabs-vertical ui-helper-clearfix" );
+
     $( "#tabs li" ).removeClass( "ui-corner-top" ).addClass( "ui-corner-left" );
 
     $( "#excavation_accordion" ).accordion({
@@ -92,6 +44,11 @@ $( document ).ready(function($) {
     	heightStyle: "content"
     });
     $( "#snow_accordion" ).accordion({
+    	collapsible: true,
+    	active: false,
+    	heightStyle: "content"
+    });
+    $( "#technical_accordion" ).accordion({
     	collapsible: true,
     	active: false,
     	heightStyle: "content"
@@ -126,16 +83,17 @@ $( document ).ready(function($) {
             };
 
             var about_slider = new $JssorSlider$("about_container", options);
-      //      var gallery_slider = new $JssorSlider$("gallery_container", options);
+ //           var gallery_slider = new $JssorSlider$("gallery_container", options);
             var excavating_slider = new $JssorSlider$("excavating_container", options);
             var utilities_slider = new $JssorSlider$("utilities_container", options);
             var septic_slider = new $JssorSlider$("septic_container", options);
-       //     var asphalt_slider = new $JssorSlider$("asphalt_container", options);
+ //           var asphalt_slider = new $JssorSlider$("asphalt_container", options);
             var landscape_slider = new $JssorSlider$("landscape_container", options);
-       //     var snow_slider = new $JssorSlider$("snow_container", options);
-//            var technical_slider = new $JssorSlider$("technical_container", options);
+ //           var snow_slider = new $JssorSlider$("snow_container", options);
+ //           var technical_slider = new $JssorSlider$("technical_container", options);
 
 });
+
 
 $(function() {
 	$("#contact_form").alpaca({

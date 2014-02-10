@@ -12,15 +12,28 @@ body {
 	background-color:#2b2922;
 }
 
+#logo img {
+	border:0px solid black;
+	margin:2px auto;
+}
+
+#logo {
+	padding:2px;
+	border:0px solid black;
+	height:160px;
+	width:980px;
+}
+
 #contact_form {
 	font-size: .7em !important;
-	overflow:scoll;
+	overflow:scroll;
 }
 
 .learn_accordian {
 	width: 640px;
 	margin: auto;
 	padding-top:30px;
+	padding-bottom:5px;
 	font-size: .7em !important;
 }
 
@@ -29,6 +42,7 @@ body {
 }
 
 #tabs {
+	padding-top:2px;
 	padding-bottom: 40px;
 	margin: auto;
 }
@@ -44,10 +58,11 @@ body {
 	width: 55em; 
 }
 .ui-tabs-vertical .ui-tabs-nav { 
-  	padding: .2em .1em .2em .2em; 
+  	padding: .8em .1em .8em .5em; 
   	float: left; 
   	width: 12em; 
-  }
+  	margin-left:5px;
+}
 .ui-tabs-vertical .ui-tabs-nav li { 
   	clear: left; 
   	width: 100%; 
@@ -70,53 +85,52 @@ body {
 	width: 40em;
 }
 
-
-
-  .captionOrange, .captionBlack
-        {
-            color: #fff;
-            font-size: 20px;
-            line-height: 30px;
-            text-align: center;
-            border-radius: 4px;
-        }
-        .captionOrange
-        {
-            background: #EB5100;
-            background-color: rgba(235, 81, 0, 0.6);
-        }
-        .captionBlack
-        {
-        	font-size:16px;
-            background: #000;
-            background-color: rgba(0, 0, 0, 0.4);
-        }
-        a.captionOrange, A.captionOrange:active, A.captionOrange:visited
-        {
-        	color: #ffffff;
-        	text-decoration: none;
-        }
-        a.captionOrange:hover
-        {
-            color: #eb5100;
-            text-decoration: underline;
-            background-color: #eeeeee;
-            background-color: rgba(238, 238, 238, 0.7);
-        }
-        .bricon
-        {
-            background: url(../img/browser-icons.png);
-        }
+.captionOrange, .captionBlack {
+	color: #fff;
+	font-size: 20px;
+	line-height: 30px;
+	text-align: center;
+	border-radius: 4px;
+}
+.captionOrange {
+	background: #EB5100;
+	background-color: rgba(235, 81, 0, 0.6);
+}
+.captionBlack {
+	font-size:16px;
+	background: #000;
+	background-color: rgba(0, 0, 0, 0.4);
+}
+a.captionOrange, A.captionOrange:active, A.captionOrange:visited {
+	color: #ffffff;
+	text-decoration: none;
+}
+a.captionOrange:hover {
+	color: #eb5100;
+	text-decoration: underline;
+	background-color: #eeeeee;
+	background-color: rgba(238, 238, 238, 0.7);
+}
+.bricon {
+	background: url(../img/browser-icons.png);
+}
 
 .slide_container {
 	position: relative; 
 	margin: 0 auto;
-	width: 600px; 
+	width: 580px; 
 	height: 300px;
+	border:0px solid black;
+}
+
+#left-bar {
+	float:left;
 }
 
 .slide_outer {
 	overflow:scroll;
+	border:0px solid black;
+	float:left;
 }
 
 .one {
