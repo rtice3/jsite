@@ -17,6 +17,13 @@ body {
 	overflow:scoll;
 }
 
+.learn_accordian {
+	width: 640px;
+	margin: auto;
+	padding-top:30px;
+	font-size: .7em !important;
+}
+
 .text-muted {
 	color: #A9A9A9;
 }
@@ -106,6 +113,10 @@ body {
 	margin: 0 auto;
 	width: 600px; 
 	height: 300px;
+}
+
+.slide_outer {
+	overflow:scroll;
 }
 
 .one {

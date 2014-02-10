@@ -65,15 +65,47 @@ $( document ).ready(function($) {
 	
 	$( "#tabs" ).tabs().addClass( "ui-tabs-vertical ui-helper-clearfix" );
     $( "#tabs li" ).removeClass( "ui-corner-top" ).addClass( "ui-corner-left" );
+
+    $( "#excavation_accordion" ).accordion({
+    	collapsible: true,
+    	active: false,
+    	heightStyle: "content"
+    });
+    $( "#utilities_accordion" ).accordion({
+    	collapsible: true,
+    	active: false,
+    	heightStyle: "content"
+    });
+    $( "#septic_accordion" ).accordion({
+    	collapsible: true,
+    	active: false,
+    	heightStyle: "content"
+    });
+    $( "#asphalt_accordion" ).accordion({
+    	collapsible: true,
+    	active: false,
+    	heightStyle: "content"
+    });
+    $( "#landscape_accordion" ).accordion({
+    	collapsible: true,
+    	active: false,
+    	heightStyle: "content"
+    });
+    $( "#snow_accordion" ).accordion({
+    	collapsible: true,
+    	active: false,
+    	heightStyle: "content"
+    });
+
   
 	var _CaptionTransitions = [];
             _CaptionTransitions["L"] = { $Duration: 800, $FlyDirection: 1, $Easing: $JssorEasing$.$EaseInCubic };
             _CaptionTransitions["R"] = { $Duration: 800, $FlyDirection: 2, $Easing: $JssorEasing$.$EaseInCubic };
             _CaptionTransitions["T"] = { $Duration: 800, $FlyDirection: 4, $Easing: $JssorEasing$.$EaseInCubic };
             _CaptionTransitions["B"] = { $Duration: 800, $FlyDirection: 8, $Easing: $JssorEasing$.$EaseInCubic };
-            _CaptionTransitions["B|IE"] = {$Duration:1500,$FlyDirection:8,$Easing:{$Top:$JssorEasing$.$EaseInOutElastic},$ScaleVertical:0.6,$Opacity:2};
+            _CaptionTransitions["B|IE"] = { $Duration:1500,$FlyDirection:8,$Easing:{$Top:$JssorEasing$.$EaseInOutElastic},$ScaleVertical:0.6,$Opacity:2};
             _CaptionTransitions["TL"] = { $Duration: 800, $FlyDirection: 5, $Easing: $JssorEasing$.$EaseInCubic };
-            _CaptionTransitions["TR"] = { $Duration: 800, $FlyDirection: 6, $Easing: $JssorEasing$.$EaseInCubic };
+            _CaptionTransitions["TR"] = { $Duration: 1500, $FlyDirection: 6, $Easing: $JssorEasing$.$EaseInCubic };
             _CaptionTransitions["BL"] = { $Duration: 800, $FlyDirection: 9, $Easing: $JssorEasing$.$EaseInCubic };
             _CaptionTransitions["BR"] = { $Duration: 800, $FlyDirection: 10, $Easing: $JssorEasing$.$EaseInCubic };
             _CaptionTransitions["WAVE|L"] = { $Duration: 1500, $FlyDirection: 5, $Easing: { $Left: $JssorEasing$.$EaseLinear, $Top: $JssorEasing$.$EaseOutWave }, $ScaleVertical: 0.4, $Round: { $Top: 2.5} };
