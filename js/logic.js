@@ -4,7 +4,6 @@ var oldTab;
 var newTab;
 
 $( document ).ready(function($) {
-	console.log("READY!!!!");
 	$(".ui-widget-overlay").width($(document).width());
 	$(".ui-widget-overlay").height($(document).height());
 	$( "#tabs" ).tabs({
@@ -15,7 +14,7 @@ $( document ).ready(function($) {
 			console.log("New Tab: " + newTab);
 		},
 		hide: 500,
-		show: 750
+		show: 600
 	}).addClass( "ui-tabs-vertical ui-helper-clearfix" );
 
     $( "#tabs li" ).removeClass( "ui-corner-top" ).addClass( "ui-corner-left" );
