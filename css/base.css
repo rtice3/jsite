@@ -12,16 +12,23 @@ body {
 	background-color:#2b2922;
 }
 
+#wrap {
+	border:0px solid black;
+	padding:2px;
+}
+
 #logo img {
 	border:0px solid black;
-	margin:2px auto;
+	position:relative;
+	top: -10px;
+	right: 2px;
 }
 
 #logo {
-	padding:2px;
 	border:0px solid black;
-	height:160px;
+	height:130px;
 	width:980px;
+
 }
 
 #contact_form {
@@ -45,6 +52,7 @@ body {
 	padding-top:2px;
 	padding-bottom: 40px;
 	margin: auto;
+	border:0px solid white;
 }
 .ui-tabs .ui-tabs-nav li a {
 	font-size: .7em !important;

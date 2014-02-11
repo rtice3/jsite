@@ -13,7 +13,9 @@ $( document ).ready(function($) {
 			newTab = ui.newTab.index();
 			console.log("Old Tab: " + oldTab);
 			console.log("New Tab: " + newTab);
-		}
+		},
+		hide: 500,
+		show: 750
 	}).addClass( "ui-tabs-vertical ui-helper-clearfix" );
 
     $( "#tabs li" ).removeClass( "ui-corner-top" ).addClass( "ui-corner-left" );
