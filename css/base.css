@@ -33,7 +33,6 @@ body {
 
 #contact_form {
 	font-size: .7em !important;
-	overflow:scroll;
 }
 
 .learn_accordian {
@@ -136,7 +135,6 @@ a.captionOrange:hover {
 }
 
 .slide_outer {
-	overflow:scroll;
 	border:0px solid black;
 	float:left;
 }

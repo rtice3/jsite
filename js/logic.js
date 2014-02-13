@@ -2,6 +2,13 @@ Alpaca.defaultUI = "jquery-ui";
 
 var oldTab;
 var newTab;
+var excavation_accordion_state = false;
+var utilities_accordion_state = false;
+var septic_accordion_state = false;
+var asphalt_accordion_state = false;
+var landscape_accordion_state = false;
+var snow_accordion_state = false;
+var technical_accordion_state = false;
 
 $( document ).ready(function($) {
 	$(".ui-widget-overlay").width($(document).width());
@@ -10,8 +17,6 @@ $( document ).ready(function($) {
 		activate:function(event, ui) {
 			oldTab = ui.oldTab.index();
 			newTab = ui.newTab.index();
-			console.log("Old Tab: " + oldTab);
-			console.log("New Tab: " + newTab);
 		},
 		hide: 500,
 		show: 600
@@ -22,37 +27,100 @@ $( document ).ready(function($) {
     $( "#excavation_accordion" ).accordion({
     	collapsible: true,
     	active: false,
-    	heightStyle: "content"
+    	heightStyle: "content",
+    }).click(function() {
+    	if(excavation_accordion_state == false) {
+    		excavation_accordion_state = true;
+    		$( "html, body" ).animate({ scrollTop: $(document).height() }, "slow" );
+    	}
+    	else {
+    		excavation_accordion_state = false;
+    		$( "html, body" ).animate({ scrollTop: 0 }, "slow" );
+    	}
     });
     $( "#utilities_accordion" ).accordion({
     	collapsible: true,
     	active: false,
     	heightStyle: "content"
+    }).click(function() {
+    	if(utilities_accordion_state == false) {
+    		utilities_accordion_state = true;
+    		$( "html, body" ).animate({ scrollTop: $(document).height() }, "slow" );
+    	}
+    	else {
+    		utilities_accordion_state = false;
+    		$( "html, body" ).animate({ scrollTop: 0 }, "slow" );
+    	}
     });
     $( "#septic_accordion" ).accordion({
     	collapsible: true,
     	active: false,
     	heightStyle: "content"
+    }).click(function() {
+    	if(septic_accordion_state == false) {
+    		septic_accordion_state = true;
+    		$( "html, body" ).animate({ scrollTop: $(document).height() }, "slow" );
+    	}
+    	else {
+    		septic_accordion_state = false;
+    		$( "html, body" ).animate({ scrollTop: 0 }, "slow" );
+    	}
     });
     $( "#asphalt_accordion" ).accordion({
     	collapsible: true,
     	active: false,
     	heightStyle: "content"
+    }).click(function() {
+    	if(asphalt_accordion_state == false) {
+    		asphalt_accordion_state = true;
+    		$( "html, body" ).animate({ scrollTop: $(document).height() }, "slow" );
+    	}
+    	else {
+    		asphalt_accordion_state = false;
+    		$( "html, body" ).animate({ scrollTop: 0 }, "slow" );
+    	}
     });
     $( "#landscape_accordion" ).accordion({
     	collapsible: true,
     	active: false,
     	heightStyle: "content"
+    }).click(function() {
+    	if(landscape_accordion_state == false) {
+    		landscape_accordion_state = true;
+    		$( "html, body" ).animate({ scrollTop: $(document).height() }, "slow" );
+    	}
+    	else {
+    		landscape_accordion_state = false;
+    		$( "html, body" ).animate({ scrollTop: 0 }, "slow" );
+    	}
     });
     $( "#snow_accordion" ).accordion({
     	collapsible: true,
     	active: false,
     	heightStyle: "content"
+    }).click(function() {
+    	if(snow_accordion_state == false) {
+    		snow_accordion_state = true;
+    		$( "html, body" ).animate({ scrollTop: $(document).height() }, "slow" );
+    	}
+    	else {
+    		snow_accordion_state = false;
+    		$( "html, body" ).animate({ scrollTop: 0 }, "slow" );
+    	}
     });
     $( "#technical_accordion" ).accordion({
     	collapsible: true,
     	active: false,
     	heightStyle: "content"
+    }).click(function() {
+    	if(technical_accordion_state == false) {
+    		technical_accordion_state = true;
+    		$( "html, body" ).animate({ scrollTop: $(document).height() }, "slow" );
+    	}
+    	else {
+    		technical_accordion_state = false;
+    		$( "html, body" ).animate({ scrollTop: 0 }, "slow" );
+    	}
     });
 
   
