@@ -210,22 +210,22 @@ $(function() {
     		"fields": {
     			"name": {
     				"type": "personalname",
-    				"size": 20,
+    				"size": 30,
     				"hideInitValidationError" : true
     			},
     			"email": {
     				"type": "email",
-    				"size": 20,
+    				"size": 30,
     				"hideInitValidationError" : true
     			},
     			"phone": {
     				"type": "phone",
-    				"size": 20,
+    				"size": 30,
     				"hideInitValidationError" : true
     			},
     			"subject": {
     				"type": "text",
-    				"size": 20
+    				"size": 30
     			},
     			"message": {
     				"type": "textarea",
