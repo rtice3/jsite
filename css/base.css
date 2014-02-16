@@ -7,13 +7,13 @@ body {
   	font-family: segoe ui,Arial,sans-serif;
   	margin-left:auto;
 	margin-right:auto;
-	
 	background-color:#2b2922;
 }
 
 #wrap {
 	border:0px solid black;
-	padding:2px;
+	padding-top:2px;
+	padding-bottom:15px;
 }
 
 #logo img {
@@ -164,19 +164,22 @@ a.captionOrange:hover {
 
 #footer_container {
 	width: auto;
-	height: 120px;
-	margin:auto;
 	font-size: .9em !important;
-	/*border: 1px solid #327E04;
-	background: #459e00 url(../jquery-ui-1.10.4.custom/css/themes/south-street/images/ui-bg_highlight-hard_15_459e00_1x100.png) 50% 50% repeat-x;
-	color: #ffffff;*/
+}
+
+#copyright_footer {
+	width: auto;
+	height: 20px;
+	font-size: .8em !important;
+	border: 1px solid #CCBE8A;
+	background: #D1C496;
+	color: #000000;
 }
 
 #footer {
-	width:970px;
-	height:20px;
+	width:auto;
+	height: 200px;
 	margin: 0 auto;
-	font-size: .9em !important;
 }
 
 #footer-left {
@@ -185,7 +188,7 @@ a.captionOrange:hover {
 }
 
 #footer-center {
-	float:left;
+	margin: 0 auto;
 	
 }
 #footer-right {
