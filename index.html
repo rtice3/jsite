@@ -21,7 +21,7 @@
 		<script src="js/jquery-1.10.2.min.js"></script>
 		<script src="jquery-ui-1.10.4.custom/js/jquery-ui-1.10.4.custom.min.js"></script>
 		<script src="jssor.Slider.FullPack/js/jssor.slider.mini.js"></script>
-		<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAfNROTIdy5rxuFT2LatUzDh0nj2v59QZM&sensor=false"></script>
+<!--		<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAfNROTIdy5rxuFT2LatUzDh0nj2v59QZM&sensor=false"></script> -->
 		<script src="alpaca-distribution/js/alpaca.js"></script>
 		<script src="js/logic.js"></script>
 	</head>
@@ -50,18 +50,18 @@
 						<div u="slides" style="cursor: move; position: absolute; left: 0px; top: 0px; width:600px; height:300px; overflow: hidden;">
 						<!-- Slide -->
 							<div>
-								<img u="image" src="img/home/home_00.jpg" />
+								<img u="image" src="img/home/home_00_scaled.jpg" />
 								<div u="caption" t="B|IE" style="position: absolute; top: 140px; left: 0px; width: 600px; height: 100%; padding:20px">
 									<div class="one"></div>
 									<div class="two"> 
 										<h1>Welcome to Jones Contracting, Inc.</h1>
-										<p>We are a family owned and operated excavation contractor based in Walpole, MA.  We service eastern Massachusetts specializing in excavation & site work, septic systems, utilities, asphalt paving, landscape construction, and snow plowing & removal.</p>
+										<p>We are a family owned and operated excavation contractor based in Walpole, MA.  We service eastern Massachusetts specializing in excavation and site work, septic systems, utilities, asphalt paving, landscape construction, and snow plowing and removal.</p>
 									</div>
 								</div>
 							</div>
 							<!-- Slide -->
 							<div>
-								<img u="image" src="img/home/home_01.jpg" />
+								<img u="image" src="img/home/home_01_scaled.jpg" />
 								<div u="caption" t="B|IE" style="position: absolute; top: 110px; left: 0px; width: 600px; height: 100%;">
 									<div class="one"></div>
 									<div class="two">
@@ -71,8 +71,8 @@
 								</div>
 							</div>
 							<div>
-								<img u="image" src="img/home/home_02.jpg" />
-								<div u="caption" t="B|IE" style="position: absolute; top: 190px; left: 0px; width: 600px; height: 100%;">
+								<img u="image" src="img/home/home_02_scaled.jpg" />
+								<div u="caption" t="B|IE" style="position: absolute; top: 210px; left: 0px; width: 600px; height: 100%;">
 									<div class="one"></div>
 									<div class="two">
 										<p>Please view our site for information about our work and pictures of past projects.  We are glad to provide free estimates and quotes and look forward to meeting and furthermore, working with you.</p>
@@ -175,7 +175,7 @@
     						<ul>
       							<li>Water Mains and Water Services</li>
       							<li>Gravity and Pressurized Sewer Mains and Sewer Services</li>
-     							<li>Drainage Systems & Roof Drain Collection Systems</li>
+     							<li>Drainage Systems and Roof Drain Collection Systems</li>
      							<li>Electric, Telephone, and Cable/Data Conduits</li>
      							<li>Gas Main and Gas Service Excavation and Backfill</li>
     						</ul>
@@ -304,11 +304,15 @@
 			</div>
 		</div><!-- /.wrap -->
 
-		<div id="footer" class="">
-			<div class="text-muted">
-				<div id="footer-left">&copy; 2014 Jones Contracting, Inc.</div>
-				<div id="footer-center"><div style="text-align:center; width:600px;">735 Washington St. Walpole, MA 02081</div></div>
-				<div id="footer-right">508.668.7888</div>
+		<div id="footer_container" class="ui-state-error">
+			<div id="footer" class="">
+				<div id="footer_contact">
+					Jones Contracting Inc.
+					(508) 668-7888
+					<span class="ui-icon ui-icon-mail-closed"></span> email@jonescontractinginc.com
+					<span class="ui-icon ui-icon-home"></span>735 Washington St.
+					Walpole, MA 02081
+				</div>
 			</div>
 		</div>
 	</body>

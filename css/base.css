@@ -3,12 +3,11 @@
 /* Padding below the footer and lighter body text */
 
 body {
-  	padding-bottom: 40px;
  	color: #66FF99;
   	font-family: segoe ui,Arial,sans-serif;
   	margin-left:auto;
 	margin-right:auto;
-	width:80%;
+	
 	background-color:#2b2922;
 }
 
@@ -126,7 +125,7 @@ a.captionOrange:hover {
 	position: relative; 
 	margin: 0 auto;
 	width: 580px; 
-	height: 300px;
+	height: 347px;
 	border:0px solid black;
 }
 
@@ -158,15 +157,25 @@ a.captionOrange:hover {
 	height: 100%;
 	color: White; 
 	font-size: 16px; 
-	font-weight: bold; 
+	/*font-weight: bold; */
 	line-height: 20px; 
 	text-align: center;
+}
+
+#footer_container {
+	width: auto;
+	height: 120px;
+	margin:auto;
+	font-size: .9em !important;
+	/*border: 1px solid #327E04;
+	background: #459e00 url(../jquery-ui-1.10.4.custom/css/themes/south-street/images/ui-bg_highlight-hard_15_459e00_1x100.png) 50% 50% repeat-x;
+	color: #ffffff;*/
 }
 
 #footer {
 	width:970px;
 	height:20px;
-	margin:auto;
+	margin: 0 auto;
 	font-size: .9em !important;
 }
 
