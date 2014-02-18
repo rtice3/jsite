@@ -18,12 +18,12 @@ $( document ).ready(function($) {
 			oldTab = ui.oldTab.index();
 			newTab = ui.newTab.index();
             if(newTab == 1) {
-                $( "html, body" ).addClass( "ui-widget-overlay" );
-                $( "#gallery_container" ).addClass( "ui-widget-shadow" );
+               // $( "html, body" ).addClass( "ui-widget-overlay" );
+               // $( "#gallery_container" ).addClass( "ui-widget-shadow" );
             }
             else {
-                $( "html, body" ).removeClass( "ui-widget-overlay" );
-                $( "#gallery_container" ).removeClass( "ui-widget-shadow" );
+               // $( "html, body" ).removeClass( "ui-widget-overlay" );
+               // $( "#gallery_container" ).removeClass( "ui-widget-shadow" );
             }
 		},
 		hide: 500,
