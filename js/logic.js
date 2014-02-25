@@ -10,32 +10,46 @@ var asphalt_accordion_state = false;
 var landscape_accordion_state = false;
 var snow_accordion_state = false;
 var technical_accordion_state = false;
+var gallery_open = false;
 
 $( document ).ready(function($) {
     $( "#gallery_container" ).hide();
+    $( "#wrap" ).click(function() {
+        if(newTab == 1 && gallery_open == true) {
+            $( "#wrap" ).removeClass( "ui-widget-shadow" );
+            $( "#tabs" ).tabs("option", "active", oldTab);
+            $( "#gallery_wrap" ).hide(1000);
+            $( "#gallery_container" ).hide(1000);
+            gallery_open = false;
+        }   
+    });
 	$( "#tabs" ).tabs({
-		activate:function(event, ui) {
-			oldTab = ui.oldTab.index();
-			newTab = ui.newTab.index();
+        activate: function(event, ui) {
+            oldTab = ui.oldTab.index();
+            newTab = ui.newTab.index();
             if(newTab == 1) {
-                $( "#wrap" ).addClass( "ui-widget-shadow" );
-                $( "#gallery_wrap" ).show();
-                $( "#gallery_container" ).show();
+//                event.preventDefault();  
+                gallery_open = true;
+            }
+        },
+        beforeActivate: function(event, ui) {
+            oldTab = ui.oldTab.index();
+            newTab = ui.newTab.index();
+            if(newTab == 1) {
+//                event.preventDefault();  
+ //               $( "#tabs" ).hide(0);
+                $( "#wrap" ).addClass( "ui-widget-shadow" );             
+                $( "#gallery_wrap" ).show(1000);
+                $( "#gallery_container" ).show(1000);
             }
             else {
-                $( "#gallery_wrap" ).hide();
-                $( "#gallery_container" ).hide();
-                $( "#wrap" ).removeClass( "ui-widget-shadow" );
+ //               $( "#tabs" ).hide(600);
             }
-		},
-		hide: 500,
-		show: 600
+        },
+        hide: 600,
+        show: 500
 	}).addClass( "ui-tabs-vertical ui-helper-clearfix" );
-    $( "#wrap" ).click(function() {
-        if(newTab == 1) {
-            $( "#tabs" ).tabs("option", "active", oldTab);            
-        }
-    });
+
     $( "#tabs li" ).removeClass( "ui-corner-top" ).addClass( "ui-corner-left" );
 
     $( "#about_accordion" ).accordion({
