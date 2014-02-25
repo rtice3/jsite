@@ -162,6 +162,15 @@ a.captionOrange:hover {
 	text-align: center;
 }
 
+#gallery_wrap {
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	margin-top: -300px;
+	margin-left: -480px;
+	z-index: 2;
+}
+
 #footer_container {
 	width: auto;
 	font-size: .9em !important;

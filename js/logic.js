@@ -1,7 +1,8 @@
 Alpaca.defaultUI = "jquery-ui";
 
-var oldTab;
-var newTab;
+var oldTab = 0;
+var newTab = 0;
+var about_accordion_state = true;
 var excavation_accordion_state = false;
 var utilities_accordion_state = false;
 var septic_accordion_state = false;
@@ -11,26 +12,46 @@ var snow_accordion_state = false;
 var technical_accordion_state = false;
 
 $( document ).ready(function($) {
-	$(".ui-widget-overlay").width($(document).width());
-	$(".ui-widget-overlay").height($(document).height());
+    $( "#gallery_container" ).hide();
 	$( "#tabs" ).tabs({
 		activate:function(event, ui) {
 			oldTab = ui.oldTab.index();
 			newTab = ui.newTab.index();
             if(newTab == 1) {
-               // $( "html, body" ).addClass( "ui-widget-overlay" );
-               // $( "#gallery_container" ).addClass( "ui-widget-shadow" );
+                $( "#wrap" ).addClass( "ui-widget-shadow" );
+                $( "#gallery_wrap" ).show();
+                $( "#gallery_container" ).show();
             }
             else {
-               // $( "html, body" ).removeClass( "ui-widget-overlay" );
-               // $( "#gallery_container" ).removeClass( "ui-widget-shadow" );
+                $( "#gallery_wrap" ).hide();
+                $( "#gallery_container" ).hide();
+                $( "#wrap" ).removeClass( "ui-widget-shadow" );
             }
 		},
 		hide: 500,
 		show: 600
 	}).addClass( "ui-tabs-vertical ui-helper-clearfix" );
-
+    $( "#wrap" ).click(function() {
+        if(newTab == 1) {
+            $( "#tabs" ).tabs("option", "active", oldTab);            
+        }
+    });
     $( "#tabs li" ).removeClass( "ui-corner-top" ).addClass( "ui-corner-left" );
+
+    $( "#about_accordion" ).accordion({
+        collapsible: true,
+//        active: true,
+        heightStyle: "content",
+    }).click(function() {
+        if(about_accordion_state == false) {
+            about_accordion_state = true;
+            $( "html, body" ).animate({ scrollTop: $(document).height() }, "slow" );
+        }
+        else {
+            about_accordion_state = false;
+            $( "html, body" ).animate({ scrollTop: 0 }, "slow" );
+        }
+    });
 
     $( "#excavation_accordion" ).accordion({
     	collapsible: true,
@@ -185,7 +206,7 @@ $( document ).ready(function($) {
         $AutoPlay: true,                                    //[Optional] Whether to auto play, to enable slideshow, this option must be set to true, default value is false
         $AutoPlayInterval: 1500,                            //[Optional] Interval (in milliseconds) to go for next slide since the previous stopped if the slider is auto playing, default value is 3000
         $PauseOnHover: 3,                                //[Optional] Whether to pause when mouse over if a slider is auto playing, 0 no pause, 1 pause for desktop, 2 pause for touch device, 3 pause for desktop and touch device, default value is 3
-
+        $FillMode: 4,
         $DragOrientation: 3,                                //[Optional] Orientation to drag slide, 0 no drag, 1 horizental, 2 vertical, 3 either, default value is 1 (Note that the $DragOrientation should be the same as $PlayOrientation when $DisplayPieces is greater than 1, or parking position is not 0)
         $ArrowKeyNavigation: true,                          //[Optional] Allows keyboard (arrow key) navigation or not, default value is false
         $SlideDuration: 600,                                //Specifies default duration (swipe) for slide in milliseconds
