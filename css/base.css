@@ -30,6 +30,18 @@ body {
 
 }
 
+#logo_img {
+	position: absolute;
+	top: 30px;
+	left:335px;
+	display: block;
+	background: url(../img/logo_img.png) repeat-x;
+	border: 0px solid black;
+	height: 70px;
+	width: 570px;
+	overflow:hidden;
+}
+
 #contact_form {
 	font-size: .7em !important;
 }
