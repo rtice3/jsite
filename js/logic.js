@@ -3,13 +3,13 @@ Alpaca.defaultUI = "jquery-ui";
 var oldTab = 0;
 var newTab = 0;
 var about_accordion_state = true;
-var excavation_accordion_state = false;
-var utilities_accordion_state = false;
-var septic_accordion_state = false;
-var asphalt_accordion_state = false;
-var landscape_accordion_state = false;
-var snow_accordion_state = false;
-var technical_accordion_state = false;
+var excavation_accordion_state = true;
+var utilities_accordion_state = true;
+var septic_accordion_state = true;
+var asphalt_accordion_state = true;
+var landscape_accordion_state = true;
+var snow_accordion_state = true;
+var technical_accordion_state = true;
 var gallery_open = false;
 
 $( document ).ready(function($) {
@@ -69,7 +69,7 @@ $( document ).ready(function($) {
 
     $( "#excavation_accordion" ).accordion({
     	collapsible: true,
-    	active: false,
+//    	active: false,
     	heightStyle: "content",
     }).click(function() {
     	if(excavation_accordion_state == false) {
@@ -83,7 +83,7 @@ $( document ).ready(function($) {
     });
     $( "#utilities_accordion" ).accordion({
     	collapsible: true,
-    	active: false,
+ //   	active: false,
     	heightStyle: "content"
     }).click(function() {
     	if(utilities_accordion_state == false) {
@@ -97,7 +97,7 @@ $( document ).ready(function($) {
     });
     $( "#septic_accordion" ).accordion({
     	collapsible: true,
-    	active: false,
+ //   	active: false,
     	heightStyle: "content"
     }).click(function() {
     	if(septic_accordion_state == false) {
@@ -111,7 +111,7 @@ $( document ).ready(function($) {
     });
     $( "#asphalt_accordion" ).accordion({
     	collapsible: true,
-    	active: false,
+ //   	active: false,
     	heightStyle: "content"
     }).click(function() {
     	if(asphalt_accordion_state == false) {
@@ -125,7 +125,7 @@ $( document ).ready(function($) {
     });
     $( "#landscape_accordion" ).accordion({
     	collapsible: true,
-    	active: false,
+ //   	active: false,
     	heightStyle: "content"
     }).click(function() {
     	if(landscape_accordion_state == false) {
@@ -139,7 +139,7 @@ $( document ).ready(function($) {
     });
     $( "#snow_accordion" ).accordion({
     	collapsible: true,
-    	active: false,
+ //   	active: false,
     	heightStyle: "content"
     }).click(function() {
     	if(snow_accordion_state == false) {
@@ -153,7 +153,7 @@ $( document ).ready(function($) {
     });
     $( "#technical_accordion" ).accordion({
     	collapsible: true,
-    	active: false,
+ //   	active: false,
     	heightStyle: "content"
     }).click(function() {
     	if(technical_accordion_state == false) {
@@ -256,7 +256,7 @@ $( document ).ready(function($) {
 
     var options = {
         $AutoPlay: true,                                    //[Optional] Whether to auto play, to enable slideshow, this option must be set to true, default value is false
-        $AutoPlayInterval: 2500,
+        $AutoPlayInterval: 3000,
         $DragOrientation: 3,                                //[Optional] Orientation to drag slide, 0 no drag, 1 horizental, 2 vertical, 3 either, default value is 1 (Note that the $DragOrientation should be the same as $PlayOrientation when $DisplayPieces is greater than 1, or parking position is not 0)
         $CaptionSliderOptions: {                            //[Optional] Options which specifies how to animate caption
             $Class: $JssorCaptionSlider$,                   //[Required] Class to create instance to animate caption
@@ -277,7 +277,7 @@ $( document ).ready(function($) {
     var asphalt_slider = new $JssorSlider$("asphalt_container", options);
     var landscape_slider = new $JssorSlider$("landscape_container", options);
     var snow_slider = new $JssorSlider$("snow_container", options);
-//  var technical_slider = new $JssorSlider$("technical_container", options);
+    var technical_slider = new $JssorSlider$("technical_container", options);
 
 });
 

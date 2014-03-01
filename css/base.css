@@ -33,12 +33,24 @@ body {
 #logo_img {
 	position: absolute;
 	top: 30px;
-	left:335px;
+	left:680px;
 	display: block;
-	background: url(../img/logo_img.png) repeat-x;
+	background: url(../img/logo_img.png) no-repeat;
 	border: 0px solid black;
 	height: 70px;
-	width: 570px;
+	width: 190px;
+	overflow:hidden;
+}
+
+#logo_img_left {
+	position: absolute;
+	top: 25px;
+	left:400px;
+	display: block;
+	background: url(../img/logo_img_left.png) no-repeat;
+	border: 0px solid black;
+	height: 70px;
+	width: 190px;
 	overflow:hidden;
 }
 
