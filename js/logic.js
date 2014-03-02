@@ -1,5 +1,3 @@
-Alpaca.defaultUI = "jquery-ui";
-
 var oldTab = 0;
 var newTab = 0;
 var about_accordion_state = true;
@@ -14,6 +12,9 @@ var gallery_open = false;
 
 $( document ).ready(function($) {
     $( "#gallery_container" ).hide();
+    $( "#contact_form_name_err" ).hide();
+    $( "#contact_form_phone_err" ).hide();
+    $( "#contact_form_email_err" ).hide();    
     $( "#wrap" ).click(function() {
         if(newTab == 1 && gallery_open == true) {
             $( "#wrap" ).removeClass( "ui-widget-shadow" );
@@ -283,92 +284,42 @@ $( document ).ready(function($) {
     var snow_slider = new $JssorSlider$("snow_container", options);
     var technical_slider = new $JssorSlider$("technical_container", options);
 
+    $( "contact_form" ).submit(function() {
+        validate();
+    });
+
 });
 
+function isEmail(field) {
+    var s = field.value;
+    if(isEmpty(s)) {
+        return false;
+    }
+    if(/[^@]+@[^@]+/.test(s)) {
+        return true;
+    }
+    $( "#contact_form_email_err" ).show();    
 
-// $(function() {
-// 	$("#contact_form").alpaca({
-// 		"data": {},
-// 		"schema": {
-//       		"title" : "Request Information",
-//       		"description" : "After filling out the below information please press Submit. A Jones Contracting associate will be in contact with you as soon as possible.",
-//       		"type" : "object",
-//       		"properties": {
-//         		"name": {
-//          	 		"type": "string",
-//           			"title": "Name",
-//           			"required": true
-//         		},
-//         		"email": {
-//         			"type": "string",
-//         			"title": "Email",
-//         			"required": true
-//         		},
-//         		"phone": {
-//         			"type": "string",
-//         			"title": "Phone",
-//         			"required": true
-//         		},
-//         		"subject": {
-//         			"type": "string",
-//         			"title": "Subject"
-//         		},
-//         		"message": {
-//         			"type": "string",
-//         			"title": "Message"
-//         		}
-//       		}
-//     	},
-//     	"options": {
-//     		"renderForm": true,
-//     		"form": {
-//     			"attributes": {
+    field.focus();
+    return false;
+}
 
-//     			},
-//     			"buttons": {
-//     				"submit": {}
-//     			}
-//     		},
-//     		"fields": {
-//     			"name": {
-//     				"type": "personalname",
-//     				"size": 30,
-//     				"hideInitValidationError" : true
-//     			},
-//     			"email": {
-//     				"type": "email",
-//     				"size": 30,
-//     				"hideInitValidationError" : true
-//     			},
-//     			"phone": {
-//     				"type": "phone",
-//     				"size": 30,
-//     				"hideInitValidationError" : true
-//     			},
-//     			"subject": {
-//     				"type": "text",
-//     				"size": 30
-//     			},
-//     			"message": {
-//     				"type": "textarea",
-//     				"rows": 5,
-//     				"cols": 30
-//     			}
-//     		}
-//     	},
-//     	"view": {
-//     		"parent": "VIEW_WEB_EDIT_LIST_LAYOUT_TWO_COLUMN",
-//     		"layout": {
-    			
-//     			"bindings": {
-//     				"name": "leftcolumn",
-//     				"email": "leftcolumn",
-//     				"phone": "leftcolumn",
-//     				"subject": "rightcolumn",
-//     				"message": "rightcolumn"
-//     			}
-//     		}
-//     	}
-// 	});	
-// });
+function isEmpty(s) {
+    var valid = /\S+/.test(s);
+    return !valid;
+}
 
+function validate() {
+    if(isEmpty($( "#name" ).val())) {
+        $( "#contact_form_name_err" ).show();
+        $( "#name" ).focus();
+        return false;
+    }
+    if(isEmpty($( "#phone" ).val())) {
+        $( "#contact_form_phone_err" ).show();
+        $( "#phone" ).focus();
+        return false;
+    }
+    alert('Not doing anything'); 
+    return false;
+}

@@ -229,3 +229,13 @@ a.captionOrange:hover {
 	float:right;
 	
 }
+
+#contact_form label span {
+	border:0px solid black;
+	width: 50px;
+	float:left;
+}
+
+#contact_form input {
+	float:left;
+}
