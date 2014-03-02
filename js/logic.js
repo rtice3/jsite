@@ -165,6 +165,10 @@ $( document ).ready(function($) {
     		$( "html, body" ).animate({ scrollTop: 0 }, "slow" );
     	}
     });
+    $( "#contact_accordion" ).accordion({
+        collapsible: false,
+        heightStyle: "content"
+    });
 
     var _SlideshowTransitions = [
             //Zoom- in
@@ -282,89 +286,89 @@ $( document ).ready(function($) {
 });
 
 
-$(function() {
-	$("#contact_form").alpaca({
-		"data": {},
-		"schema": {
-      		"title" : "Request Information",
-      		"description" : "After filling out the below information please press Submit. A Jones Contracting associate will be in contact with you as soon as possible.",
-      		"type" : "object",
-      		"properties": {
-        		"name": {
-         	 		"type": "string",
-          			"title": "Name",
-          			"required": true
-        		},
-        		"email": {
-        			"type": "string",
-        			"title": "Email",
-        			"required": true
-        		},
-        		"phone": {
-        			"type": "string",
-        			"title": "Phone",
-        			"required": true
-        		},
-        		"subject": {
-        			"type": "string",
-        			"title": "Subject"
-        		},
-        		"message": {
-        			"type": "string",
-        			"title": "Message"
-        		}
-      		}
-    	},
-    	"options": {
-    		"renderForm": true,
-    		"form": {
-    			"attributes": {
+// $(function() {
+// 	$("#contact_form").alpaca({
+// 		"data": {},
+// 		"schema": {
+//       		"title" : "Request Information",
+//       		"description" : "After filling out the below information please press Submit. A Jones Contracting associate will be in contact with you as soon as possible.",
+//       		"type" : "object",
+//       		"properties": {
+//         		"name": {
+//          	 		"type": "string",
+//           			"title": "Name",
+//           			"required": true
+//         		},
+//         		"email": {
+//         			"type": "string",
+//         			"title": "Email",
+//         			"required": true
+//         		},
+//         		"phone": {
+//         			"type": "string",
+//         			"title": "Phone",
+//         			"required": true
+//         		},
+//         		"subject": {
+//         			"type": "string",
+//         			"title": "Subject"
+//         		},
+//         		"message": {
+//         			"type": "string",
+//         			"title": "Message"
+//         		}
+//       		}
+//     	},
+//     	"options": {
+//     		"renderForm": true,
+//     		"form": {
+//     			"attributes": {
 
-    			},
-    			"buttons": {
-    				"submit": {}
-    			}
-    		},
-    		"fields": {
-    			"name": {
-    				"type": "personalname",
-    				"size": 30,
-    				"hideInitValidationError" : true
-    			},
-    			"email": {
-    				"type": "email",
-    				"size": 30,
-    				"hideInitValidationError" : true
-    			},
-    			"phone": {
-    				"type": "phone",
-    				"size": 30,
-    				"hideInitValidationError" : true
-    			},
-    			"subject": {
-    				"type": "text",
-    				"size": 30
-    			},
-    			"message": {
-    				"type": "textarea",
-    				"rows": 5,
-    				"cols": 30
-    			}
-    		}
-    	},
-    	"view": {
-    		"parent": "VIEW_WEB_EDIT_LIST_LAYOUT_TWO_COLUMN",
-    		"layout": {
+//     			},
+//     			"buttons": {
+//     				"submit": {}
+//     			}
+//     		},
+//     		"fields": {
+//     			"name": {
+//     				"type": "personalname",
+//     				"size": 30,
+//     				"hideInitValidationError" : true
+//     			},
+//     			"email": {
+//     				"type": "email",
+//     				"size": 30,
+//     				"hideInitValidationError" : true
+//     			},
+//     			"phone": {
+//     				"type": "phone",
+//     				"size": 30,
+//     				"hideInitValidationError" : true
+//     			},
+//     			"subject": {
+//     				"type": "text",
+//     				"size": 30
+//     			},
+//     			"message": {
+//     				"type": "textarea",
+//     				"rows": 5,
+//     				"cols": 30
+//     			}
+//     		}
+//     	},
+//     	"view": {
+//     		"parent": "VIEW_WEB_EDIT_LIST_LAYOUT_TWO_COLUMN",
+//     		"layout": {
     			
-    			"bindings": {
-    				"name": "leftcolumn",
-    				"email": "leftcolumn",
-    				"phone": "leftcolumn",
-    				"subject": "rightcolumn",
-    				"message": "rightcolumn"
-    			}
-    		}
-    	}
-	});	
-});
+//     			"bindings": {
+//     				"name": "leftcolumn",
+//     				"email": "leftcolumn",
+//     				"phone": "leftcolumn",
+//     				"subject": "rightcolumn",
+//     				"message": "rightcolumn"
+//     			}
+//     		}
+//     	}
+// 	});	
+// });
 

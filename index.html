@@ -10,19 +10,18 @@
 		<link rel="shortcut icon" href="">
 
 		<title>Jones Contracting Inc.</title>
-		<link href="jquery-ui-1.10.4.custom/css/themes/south-street/jquery-ui.css" rel="stylesheet" />
-		<link href="alpaca-distribution/css/alpaca.css" rel="stylesheet"/>
-		<link href="alpaca-distribution/css/alpaca-jqueryui.css" rel="stylesheet"/>
+		<link href="css/jquery-ui.css" rel="stylesheet" />
+		<link href="css/alpaca.css" rel="stylesheet"/>
+		<link href="css/alpaca-jqueryui.css" rel="stylesheet"/>
 		<link href="css/base.css" rel="stylesheet">
 		<!-- Bootstrap core CSS -->
 		
 		<!-- Custom styles for this template -->
 
 		<script src="js/jquery-1.10.2.min.js"></script>
-		<script src="jquery-ui-1.10.4.custom/js/jquery-ui-1.10.4.custom.min.js"></script>
-		<script src="jssor.Slider.FullPack/js/jssor.slider.mini.js"></script>
-<!--		<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAfNROTIdy5rxuFT2LatUzDh0nj2v59QZM&sensor=false"></script> -->
-		<script src="alpaca-distribution/js/alpaca.js"></script>
+		<script src="js/jquery-ui-1.10.4.custom.min.js"></script>
+		<script src="js/jssor.slider.mini.js"></script>
+		<script src="js/alpaca.js"></script>
 		<script src="js/logic.js"></script>
 	</head>
 
@@ -450,8 +449,24 @@
 					</div>
 				</div>
 				<div id="contact">	
-					<div id="contact_form"></div>		
-					
+					<div id="contact_accordion">
+						<h3>Request information or Quote</h3>
+						<form action="contact.php" target="_blank"
+							accept-charset="iso-8859-1"
+							method="post" name="contact_form" id="contact_form"
+							onsubmit="alert('Not doing anything'); return false;">
+							<p>Please fill out the below information to request more information or a quote. A Jones Contracting representative will be in contact with you shortly. If you need immediate assistance please call (508) 668-7888. We look forward to hearing from you.</p>
+							<fieldset>
+								<legend>Contact Info</legend>
+								<label>Name: <input type="text" name="name" id="name"></label><br>
+								<label>Phone: <input type="email" name="email" id="email"></label><br>
+								<label>Email: <input type="tel" name="phone" id="phone"></label><br>
+								<label>Subject: <input type="text" name="subject" id="subject" autocomplete="off"></label><br>
+								<label>Message: <textarea name="message" id="message" rows="10" cols="40"></textarea></label><br>
+							</fieldset>
+							<input type="submit" id="submit" value="submit">
+						</form>		
+					</div>
 				</div>
 			</div>
 		</div><!-- /.wrap -->
