@@ -9,12 +9,13 @@ var landscape_accordion_state = true;
 var snow_accordion_state = true;
 var technical_accordion_state = true;
 var gallery_open = false;
+var contact_form_phone_index = 0;
 
 $( document ).ready(function($) {
     $( "#gallery_container" ).hide();
     $( "#contact_form_name_err" ).hide();
     $( "#contact_form_phone_err" ).hide();
-    $( "#contact_form_email_err" ).hide();    
+    $( "#contact_form_email_err" ).hide();  
     $( "#wrap" ).click(function() {
         if(newTab == 1 && gallery_open == true) {
             $( "#wrap" ).removeClass( "ui-widget-shadow" );
@@ -32,19 +33,17 @@ $( document ).ready(function($) {
 //                event.preventDefault();  
                 gallery_open = true;
             }
+            if(newTab == 9) {
+                loadScript();
+            }
         },
         beforeActivate: function(event, ui) {
             oldTab = ui.oldTab.index();
             newTab = ui.newTab.index();
             if(newTab == 1) {
-//                event.preventDefault();  
- //               $( "#tabs" ).hide(0);
                 $( "#wrap" ).addClass( "ui-widget-shadow" );             
                 $( "#gallery_wrap" ).show(1000);
                 $( "#gallery_container" ).show(1000);
-            }
-            else {
- //               $( "#tabs" ).hide(600);
             }
         },
         hide: 600,
@@ -283,12 +282,43 @@ $( document ).ready(function($) {
     var landscape_slider = new $JssorSlider$("landscape_container", options);
     var snow_slider = new $JssorSlider$("snow_container", options);
     var technical_slider = new $JssorSlider$("technical_container", options);
+});
 
-    $( "contact_form" ).submit(function() {
-        validate();
+function initialize() {
+    var myLatlng = new google.maps.LatLng(42.144991, -71.232199);
+    var mapOptions = {
+        zoom: 11,
+        center: myLatlng,
+        mapTypeId: google.maps.MapTypeId.ROADMAP,
+        disableDefaultUI: true
+    };
+
+    var map = new google.maps.Map(document.getElementById('map-canvas'), mapOptions);
+
+    var contentString = 'Jones Contracting Inc.';
+
+  var infowindow = new google.maps.InfoWindow({
+      content: contentString
+  });
+
+
+    var marker = new google.maps.Marker({
+        position: myLatlng,
+        map: map,
+        title: "Jones Contracting Inc."
     });
 
-});
+    google.maps.event.addListener(marker, 'click', function() {
+    infowindow.open(map,marker);
+  });
+}
+
+function loadScript() {
+    var script = document.createElement('script');
+    script.type = 'text/javascript';
+    script.src = 'https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false&' + 'callback=initialize';
+    document.body.appendChild(script);
+}
 
 function isEmail(field) {
     var s = field.value;
@@ -309,7 +339,7 @@ function isEmpty(s) {
     return !valid;
 }
 
-function validate() {
+$( "contact_form" ).submit(function() {
     if(isEmpty($( "#name" ).val())) {
         $( "#contact_form_name_err" ).show();
         $( "#name" ).focus();
@@ -322,4 +352,16 @@ function validate() {
     }
     alert('Not doing anything'); 
     return false;
-}
+});
+
+$( "#contact_form_phone" ).keypress(function( event ) {
+    switch(contact_form_phone_index) {
+        case 0:
+            var key = $( "contact_form_phone" ).val();
+            console.log("keypress: " + key);
+            $( "contact_form_phone" ).val("(" + key);
+            break;
+        default:
+            break;
+    }
+});

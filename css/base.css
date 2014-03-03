@@ -230,12 +230,39 @@ a.captionOrange:hover {
 	
 }
 
+#contact_info {
+	font-size: 1.2em !important;
+	margin-left: 20px;
+	margin-top: 40px;
+}
+
+#contact_info h4 {
+	font-size: 1em !important;
+	margin-bottom: 5px;
+}
 #contact_form label span {
 	border:0px solid black;
-	width: 50px;
+	width: 100px;
 	float:left;
 }
 
-#contact_form input {
-	float:left;
+#contact_form input, textarea {
+	margin: 10px;
+}
+
+#contact_form fieldset {
+	width: 280px;
+	height: 450px;
+	float: left;
+	padding-top: 15px;
+	margin: 10px;
+}
+
+#map-canvas {
+    width: 260px;
+    height: 260px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+    padding: 0px
 }

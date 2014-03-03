@@ -4,7 +4,7 @@
 	<head>
 		<meta charset="utf-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
 		<meta name="description" content="">
 		<meta name="author" content="">
 		<link rel="shortcut icon" href="">
@@ -455,23 +455,34 @@
 							accept-charset="iso-8859-1"
 							method="post" name="contact_form" id="contact_form">
 							<p>Please fill out the below information to request more information or a quote. A Jones Contracting representative will be in contact with you shortly. If you need immediate assistance please call (508) 668-7888. We look forward to hearing from you.</p>
-							<fieldset>
-								<legend>Contact Info</legend>
-								<label><p>Name: *</p><input type="text" name="name" id="name" required></label><br>
+							<fieldset class="ui-state-highlight">
+								<legend><h3>Request Info</h3></legend>
+								<label><span>Name: *</span><input type="text" name="name" id="contact_form_name" required></label><br>
 								<div id="contact_form_name_err" class="ui-state-error"><p>Name is a required field. Please enter your name above.</p></div>
 
-								<label><p>Phone: *</p><input type="tel" name="phone" id="phone" pattern="\d{3}-\d{3}-\d{4}" required></label><br>
+								<label><span>Phone: *</span><input type="tel" name="phone" id="contact_form_phone" required></label><br>
 								<div id="contact_form_phone_err" class="ui-state-error"><p>A valid phone number is required. Please enter your phone number above.</p></div>
 
-								<label><p>Email: </p><input type="email" name="email" id="email"></label><br>
+								<label><span>Email: </span><input type="email" name="email" id="contact_form_email"></label><br>
 								<div id="contact_form_email_err" class="ui-state-error"><p>Please enter a valid email above.</p></div>
 
-								<label><p>Subject: </p><input type="text" name="subject" id="subject" autocomplete="off"></label><br>
+								<label><span>Subject: </span><input type="text" name="subject" id="contact_form_subject" autocomplete="off"></label><br>
 
-								<label><p>Message: </p><textarea name="message" id="message" rows="10" cols="40"></textarea></label><br>
-								<div class="ui-state-highlight"><p>* are required fields</p></div>
+								<label><span>Message: </span><textarea name="message" id="contact_form_message" rows="10" cols="40"></textarea></label><br>
+								<div class="ui-state-error"><p>* are required fields</p></div>
+								<input type="submit" id="submit" value="Submit">
 							</fieldset>
-							<input type="submit" id="submit" value="Submit">
+							<fieldset class="ui-state-highlight">
+								<legend><h3>Contact Us</h3></legend>
+								<div id="map-canvas"></div>
+								<div id="contact_info">
+									<h4>Jones Contracting Inc.</h4><br>
+									(508) 668-7888<br>
+									info@jonescontractinginc.com<br>
+									735 Washington St.<br>
+									Walpole, MA 02081
+								</div>
+							</fieldset>
 						</form>		
 					</div>
 				</div>
