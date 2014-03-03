@@ -290,7 +290,8 @@ function initialize() {
         zoom: 11,
         center: myLatlng,
         mapTypeId: google.maps.MapTypeId.ROADMAP,
-        disableDefaultUI: true
+        disableDefaultUI: true,
+        draggable: false
     };
 
     var map = new google.maps.Map(document.getElementById('map-canvas'), mapOptions);

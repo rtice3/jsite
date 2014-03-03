@@ -60,8 +60,9 @@ body {
 
 .learn_accordian {
 	width: 640px;
-	margin: auto;
-	padding-top:30px;
+	margin-left: auto;
+	margin-right: auto;
+	padding-top:20px;
 	padding-bottom:5px;
 	font-size: .7em !important;
 }
