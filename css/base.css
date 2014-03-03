@@ -60,10 +60,9 @@ body {
 
 .learn_accordian {
 	width: 640px;
-	margin-left: auto;
-	margin-right: auto;
+	margin: auto;
 	padding-top:20px;
-	padding-bottom:5px;
+	padding-bottom:0px;
 	font-size: .7em !important;
 }
 
@@ -149,9 +148,9 @@ a.captionOrange:hover {
 
 .slide_container {
 	position: relative; 
-	margin: 0 auto;
+	margin: 0 auto;	
 	width: 580px; 
-	height: 347px;
+	height: 327px;
 	border:0px solid black;
 }
 
