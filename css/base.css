@@ -102,6 +102,7 @@ body {
 }
 .ui-tabs-vertical .ui-tabs-nav li a { 
   	display:block; 
+  	width: 88%;
 }
 .ui-tabs-vertical .ui-tabs-nav li.ui-tabs-active { 
   	padding-bottom: 0; 
