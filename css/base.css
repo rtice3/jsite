@@ -258,6 +258,12 @@ a.captionOrange:hover {
 	margin: 10px;
 }
 
+#contact_form_required {
+	height: 40px;
+	width: 150px;
+	text-align: center;
+}
+
 #map-canvas {
     width: 260px;
     height: 260px;
