@@ -286,10 +286,13 @@ $( document ).ready(function($) {
         var data = JSON.stringify($( "#contact_form" ).serializeArray());
         console.log(data);
 
-        $.post('handle_form.php', data, function(in_data) {
-            console.log(in_data);
-        }).fail(function(err) {
-            alert(err.statusText);
+        $.ajax({ url: 'php/handle_form.php',
+            data: data,
+            type: 'post',
+            success: function(output) {
+                alert(output);
+            }
+
         });
     });
 
