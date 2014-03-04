@@ -309,10 +309,11 @@ $( document ).ready(function($) {
         if(xhr) {
             xhr.open("POST","php/handle_form.php", true);
             xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
-            xhr.onreadystatechange = function() {
-                handle_form(xhr);
-                xhr.send(data);
-            }
+            xhr.onreadystatechange = function() { handle_form(xhr); }
+            xhr.send(data);
+        }
+        else {
+            console.log("XHR Failed");
         }
     });
 
