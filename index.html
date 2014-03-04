@@ -449,22 +449,17 @@
 				<div id="contact">	
 					<div id="contact_accordion">
 						<h3>Request information or Quote</h3>
-						<form action="contact.php" target="_blank"
-							accept-charset="iso-8859-1"
-							method="post" name="contact_form" id="contact_form">
+						<form accept-charset="iso-8859-1" name="contact_form" id="contact_form">
 							<p>Please fill out the below information to request more information or a quote. A Jones Contracting representative will be in contact with you shortly. If you need immediate assistance please call (508) 668-7888. We look forward to hearing from you.</p>
 							<fieldset class="ui-state-highlight">
 								<legend><h3>Request Info</h3></legend>
-								<label><span>Name: *</span><input type="text" name="name" id="contact_form_name" required></label><br>
-								<div id="contact_form_name_err" class="ui-state-error"><p>Name is a required field. Please enter your name above.</p></div>
+								<label><span>Name: *</span><input type="text" name="name" id="contact_form_name" required title="Please enter your name"></label><br>
 
-								<label><span>Phone: *</span><input type="tel" name="phone" id="contact_form_phone" required></label><br>
-								<div id="contact_form_phone_err" class="ui-state-error"><p>A valid phone number is required. Please enter your phone number above.</p></div>
+								<label><span>Phone: *</span><input type="tel" name="phone" id="contact_form_phone" pattern="\d{3}-\d{3}-\d{4}" required title="Please enter your phone number in this format xxx-xxx-xxxx"></label><br>
 
 								<label><span>Email: </span><input type="email" name="email" id="contact_form_email"></label><br>
-								<div id="contact_form_email_err" class="ui-state-error"><p>Please enter a valid email above.</p></div>
 
-								<label><span>Subject: </span><input type="text" name="subject" id="contact_form_subject" autocomplete="off"></label><br>
+								<label><span>Subject: *</span><input type="text" name="subject" id="contact_form_subject" autocomplete="off" required></label><br>
 
 								<label><span>Message: </span><textarea name="message" id="contact_form_message" rows="10" cols="44"></textarea></label><br>
 								<div id="contact_form_required" class="ui-state-error"><p>* are required fields</p></div>
