@@ -286,14 +286,7 @@ $( document ).ready(function($) {
         var data = JSON.stringify($( "#contact_form" ).serializeArray());
         console.log(data);
 
-        $.ajax({ url: 'php/handle_form.php',
-            data: data,
-            type: 'post',
-            success: function(output) {
-                alert(output);
-            }
-
-        });
+        $.post( "php/handle_form.php", $( "#contact_form" ).serialize() );
     });
 
 });
