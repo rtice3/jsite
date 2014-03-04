@@ -11,24 +11,6 @@ var technical_accordion_state = true;
 var gallery_open = false;
 var contact_form_phone_index = 0;
 
-function createXHR() {
-    try { return new XMLHttpRequest(); } catch(e) {}
-    try { return new ActiveXObject("Msxml2.XMLHTTP.6.0"); } catch(e) {}
-    try { return new ActiveXObject("Msxml2.XMLHTTP.3.0"); } catch(e) {}
-    try { return new ActiveXObject("Msxml2.XMLHTTP"); } catch(e) {}
-    try { return new ActiveXObject("Microsoft.XMLHTTP"); } catch(e) {}
-    alert("XMLHttpRequest not supported");
-    return null;
-}
-
-function handle_form(xhr) {
-    if(xhr.readyState == 4 && xhr.status == 200) {
-        var parsedResponse = xhr.responseXML;
-        var msg = parsedResponse.getElementsByTagName("message")[0].firstChild.nodeValue;
-        consol.log("Dr. Server says: " + msg + ". Boy that's awkward.");
-    }
-}
-
 $( document ).ready(function($) {
     $( "#gallery_container" ).hide();
     
@@ -304,17 +286,11 @@ $( document ).ready(function($) {
         var data = JSON.stringify($( "#contact_form" ).serializeArray());
         console.log(data);
 
-        var xhr = createXHR();
-
-        if(xhr) {
-            xhr.open("POST","php/handle_form.php", true);
-            xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
-            xhr.onreadystatechange = function() { handle_form(xhr); }
-            xhr.send(data);
-        }
-        else {
-            console.log("XHR Failed");
-        }
+        $.post('handle_form.php', data, function(in_data) {
+            console.log(in_data);
+        }).fail(function(err) {
+            alert(err.statusText);
+        });
     });
 
 });
