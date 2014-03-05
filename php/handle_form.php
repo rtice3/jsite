@@ -9,7 +9,7 @@ date_default_timezone_set('America/New_York');
 
 if($_POST) {
 
-	$to_Email = "rtice3@gmail.com";
+	$to_Email = "russelljr@jonescontractinginc.com";
 
 	$name = filter_var($_POST["name"], FILTER_SANITIZE_STRING);
 	$phone = filter_var($_POST["phone"], FILTER_SANITIZE_STRING);
