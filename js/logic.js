@@ -283,20 +283,21 @@ $( document ).ready(function($) {
 
     $( "#contact_form" ).submit(function(event) {
         event.preventDefault();
-        var form_post = $.post( "php/handle_form.php", $( "#contact_form" ).serialize(), function(response) {
-            console.log(response);
-            if(response) {
-                alert("Thank you for contacting Jones Contracting Inc. We will be in touch with you shortly regarding your request.");
-                $( "#tabs" ).tabs("option", "active", 0);
-                $( "#contact_form_name" ).val("");
-                $( "#contact_form_phone" ).val("");
-                $( "#contact_form_email" ).val("");
-                $( "#contact_form_subject" ).val("");
-                $( "#contact_form_message" ).val("");
-            }
-            else {
-                alert("Internal server error. Please call 508.668.7888 for assistance.");
-            }
+        var form_post = $.post( "php/handle_form.php", $( "#contact_form" ).serialize() )
+            .done(function(response) {
+                console.log("Response: " + response);
+                if(response) {
+                    alert("Thank you for contacting Jones Contracting Inc. We will be in touch with you shortly regarding your request.");
+                    $( "#tabs" ).tabs("option", "active", 0);
+                    $( "#contact_form_name" ).val("");
+                    $( "#contact_form_phone" ).val("");
+                    $( "#contact_form_email" ).val("");
+                    $( "#contact_form_subject" ).val("");
+                    $( "#contact_form_message" ).val("");
+                }
+                else {
+                    alert("Internal server error. Please call 508.668.7888 for assistance.");
+                }
         });
     });
 });
