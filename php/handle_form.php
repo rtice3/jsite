@@ -4,6 +4,8 @@ header("Cache-Control: no-cache");
 header("Pragma: no-cache");
 header("Content-Type: text/xml");
 
+date_default_timezone_set()
+
 if($_POST) {
 
 	$to_Email = "rtice3@gmail.com";
@@ -19,10 +21,16 @@ if($_POST) {
     $headers = 'From: '.$email."\r\n".
     'Reply-To: '.$email."\r\n".
     'X-Mailer: PHP/' . phpversion();
-    
-    @mail($to_Email, 'Form submission: '.$subject, $message .'  -'.$name);
 
-    echo "Hi ".$name .", Thank you for your email! We will be in touch with you shortly.";
+    $email_subject = 'Form submission from '.$name.': '.$subject;
+    $email_message = date('l jS \of F Y h:i:s A')."\r\n".
+    					$name."\r\n".
+    					$phone."\r\n".
+    					$email."\r\n".
+    					$subject."\r\n\r\n".
+    					$message;
+    
+    @mail($to_Email, $email_subject, $email_message);
 }
 
 ?>
