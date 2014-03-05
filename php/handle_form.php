@@ -16,14 +16,9 @@ if($_POST) {
 	$subject = filter_var($_POST["subject"], FILTER_SANITIZE_STRING);
 	$message = filter_var($_POST["message"], FILTER_SANITIZE_STRING);
     
-    
-    //proceed with PHP email.
-    $headers = 'From: '.$email."\r\n".
-    'Reply-To: '.$email."\r\n".
-    'X-Mailer: PHP/' . phpversion();
 
-    $email_subject = 'Form submission from '.$name.': '.$subject;
-    $email_message = date('l jS \of F Y h:i:s A')."\r\n".
+    $email_subject = "Form submission from ".$name.": ".$subject;
+    $email_message = date("l jS \of F Y h:i:s A")."\r\n".
     					$name."\r\n".
     					$phone."\r\n".
     					$email."\r\n".

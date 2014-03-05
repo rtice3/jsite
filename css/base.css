@@ -227,15 +227,34 @@ a.captionOrange:hover {
 #contact_form {
 	margin: 0 auto;
 }
-#contact_form label span {
-	border:0px solid black;
-	width: 100px;
-	float:left;
+
+#contact_form label {
+  	width: 60px;
 }
 
-#contact_form input, textarea {
-	margin: 10px;
+
+#contact_form label span {
+	display: inline-block;
+	border:0px solid black;
+	width: 60px;
+	margin-left: 10px;
+	margin-right: 10px;
+	margin-top: 8px;
+	margin-bottom: 8px;
 }
+
+#contact_form input {
+	width: 160px;
+	margin-right: 10px;
+}
+
+#contact_form textarea {
+	margin-top:0px;
+	margin-left: 10px;
+	margin-right: 10px;
+	margin-bottom: 15px;
+}
+
 
 #contact_form fieldset {
 	width: 275px;
@@ -249,6 +268,7 @@ a.captionOrange:hover {
 	height: 40px;
 	width: 150px;
 	text-align: center;
+	margin-bottom: 20px;
 }
 
 #map-canvas {
