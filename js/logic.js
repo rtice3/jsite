@@ -286,7 +286,7 @@ $( document ).ready(function($) {
         var data = JSON.stringify($( "#contact_form" ).serializeArray());
         console.log(data);
 
-        $.post( "php/handle_form.php", $( "#contact_form" ).serialize() );
+        $.post( "php/handle_form.php", $( "#contact_form" ).serialize(), function(msg) { alert(msg); } );
     });
 
 });
