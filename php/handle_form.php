@@ -32,6 +32,12 @@ if($_POST) {
     
     $sm = mail($to_Email, $email_subject, $email_message);
 
+    if($sm) {
+    	echo true;
+    }
+    else {
+    	echo false;
+    }
     echo $sm;
 }
 
