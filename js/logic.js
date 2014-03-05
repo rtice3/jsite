@@ -291,6 +291,11 @@ $( document ).ready(function($) {
             else {
                 alert("Thank you for contacting Jones Contracting Inc. We will be in touch with you shortly regarding your request.");
                 $( "#tabs" ).tabs("option", "active", 0);
+                $( "#contact_form_name" ).val("");
+                $( "#contact_form_phone" ).val("");
+                $( "#contact_form_email" ).val("");
+                $( "#contact_form_subject" ).val("");
+                $( "#contact_form_message" ).val("");
             }
         });
     });

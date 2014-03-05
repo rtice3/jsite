@@ -18,7 +18,7 @@ if($_POST) {
     
 
     $email_subject = "Form submission from ".$name.": ".$subject;
-    $email_message = date("l jS \of F Y h:i:s A")."\r\n".
+    $email_message = // date("l jS \of F Y h:i:s A")."\r\n".
     					$name."\r\n".
     					$phone."\r\n".
     					$email."\r\n".
