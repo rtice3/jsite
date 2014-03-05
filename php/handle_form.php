@@ -3,6 +3,7 @@
 header("Cache-Control: no-cache");
 header("Pragma: no-cache");
 header("Content-Type: text/xml");
+header("Content-Type: text/html; charset=utf-8");
 
 date_default_timezone_set('America/New_York');
 
