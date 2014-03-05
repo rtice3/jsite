@@ -283,8 +283,8 @@ $( document ).ready(function($) {
 
     $( "#contact_form" ).submit(function(event) {
         event.preventDefault();
-        var form_post = $.post( "php/handle_form.php", $( "#contact_form" ).serialize() )
-            .done( function(response) {
+        var form_post = $.post( "php/handle_form.php", $( "#contact_form" ).serialize(), function(response) {
+            if(response) {
                 alert("Thank you for contacting Jones Contracting Inc. We will be in touch with you shortly regarding your request.");
                 $( "#tabs" ).tabs("option", "active", 0);
                 $( "#contact_form_name" ).val("");
@@ -292,12 +292,12 @@ $( document ).ready(function($) {
                 $( "#contact_form_email" ).val("");
                 $( "#contact_form_subject" ).val("");
                 $( "#contact_form_message" ).val("");
-            })
-            .fail(function() {
+            }
+            else {
                 alert("Internal server error. Please call 508.668.7888 for assistance.");
+            }
         });
     });
-
 });
 
 function initialize() {
