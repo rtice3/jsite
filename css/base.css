@@ -274,6 +274,7 @@ a.captionOrange:hover {
 #map-canvas {
     width: 260px;
     height: 260px;
+    background-color: #B2B2B2;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 20px;
