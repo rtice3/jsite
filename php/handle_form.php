@@ -25,7 +25,9 @@ if($_POST) {
     					$subject."\r\n\r\n".
     					$message;
     
-    @mail($to_Email, $email_subject, $email_message);
+    $sm = mail($to_Email, $email_subject, $email_message);
+
+    echo $sm;
 }
 
 ?>
