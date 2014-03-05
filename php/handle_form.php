@@ -4,17 +4,7 @@ header("Cache-Control: no-cache");
 header("Pragma: no-cache");
 header("Content-Type: text/xml");
 
-$ip = $_SERVER['REMOTE_ADDR'];
-$msg = "Hello World to user from " . $ip . " at ". date("h:i:s A");
-
-print "<?xml version='1.0' encoding='UTF-8'?>";
-print "<message>$msg</message>";
-
-if($_POST)
-{
-    if(!isset['HTTP_X_REQUESTED_WITH']) AND strtolower($_SERVER['HTTP_X_REQUESTED_WITH']) != 'xmlhttprequest') {
-		die();
-	}
+if($_POST) {
 
 	$to_Email = "rtice3@gmail.com";
 
@@ -30,10 +20,10 @@ if($_POST)
     'Reply-To: '.$email."\r\n".
     'X-Mailer: PHP/' . phpversion();
     
-    @mail($to_Email, 'Form submission: '.$subject, $message .'  -'.$name, $headers);
+    @mail($to_Email, 'Form submission: '.$subject, $message .'  -'.$name);
+
+    echo "Hi ".$name .", Thank you for your email! We will be in touch with you shortly.";
+}
 
 ?>
-    alert("Hi ".$name .", Thank you for your email! We will get be in touch shortly.");
-<?php
-}
-?>
+   
