@@ -286,7 +286,11 @@ $( document ).ready(function($) {
         var data = JSON.stringify($( "#contact_form" ).serializeArray());
         console.log(data);
 
-        $.post( "php/handle_form.php", $( "#contact_form" ).serialize(), function(msg) { alert(msg); } );
+        var form_post = $.post( "php/handle_form.php", $( "#contact_form" ).serialize() );
+
+        form_post.done( function() {
+            $( "#tabs" ).tabs("option", "active", 0);
+        });
     });
 
 });

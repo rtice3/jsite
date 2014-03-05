@@ -26,19 +26,14 @@ if($_POST)
     
     
     //proceed with PHP email.
-    $headers = 'From: '.$email.'' . "rn" .
-    'Reply-To: '.$email.'' . "rn" .
+    $headers = 'From: '.$email."\r\n".
+    'Reply-To: '.$email."\r\n".
     'X-Mailer: PHP/' . phpversion();
     
-    @$sentMail = mail($to_Email, 'Form submission: '.$subject, $message .'  -'.$name, $headers);
-    
-    if(!$sentMail)
-    {
-        header('HTTP/1.1 500 Couldnot send mail! Sorry..');
-        exit();
-    }else{
-        echo 'Hi '.$name .', Thank you for your email! ';
-        echo 'Your email has already arrived in my Inbox, all I need to do is Check it.';
-    }
+    @mail($to_Email, 'Form submission: '.$subject, $message .'  -'.$name, $headers);
+
+?>
+    alert("Hi ".$name .", Thank you for your email! We will get be in touch shortly.");
+<?php
 }
 ?>
