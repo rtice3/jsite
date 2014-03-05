@@ -23,14 +23,14 @@ if($_POST) {
     
 
     $email_subject = "Form submission from ".$name.": ".$subject;
-    $email_message = date("l jS \of F Y h:i:s A")."\r\n".
+    $email_message = wordwrap(date("l jS \of F Y h:i:s A")."\r\n".
     					$name."\r\n".
     					$phone."\r\n".
     					$email."\r\n".
     					$subject."\r\n\r\n".
-    					$message;
+    					$message, 70, "\r\n");
     
-    $sm = mail($to_Email, $email_subject, $email_message, $headers);
+    $sm = mail($to_Email, "subject", "message");
 
     echo $sm;
 }
