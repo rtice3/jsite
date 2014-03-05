@@ -4,7 +4,7 @@ header("Cache-Control: no-cache");
 header("Pragma: no-cache");
 header("Content-Type: text/xml");
 
-date_default_timezone_set()
+date_default_timezone_set('America/New_York');
 
 if($_POST) {
 
@@ -30,7 +30,7 @@ if($_POST) {
     					$subject."\r\n\r\n".
     					$message, 70, "\r\n");
     
-    $sm = mail($to_Email, "subject", "message");
+    $sm = mail($to_Email, $email_subject, $email_message);
 
     echo $sm;
 }
