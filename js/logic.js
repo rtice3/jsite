@@ -10,6 +10,7 @@ var snow_accordion_state = true;
 var technical_accordion_state = true;
 var gallery_open = false;
 var contact_form_phone_index = 0;
+var load_map_one_shot = 0;
 
 $( document ).ready(function($) {
     $( "#gallery_container" ).hide();
@@ -31,7 +32,8 @@ $( document ).ready(function($) {
 //                event.preventDefault();  
                 gallery_open = true;
             }
-            if(newTab == 9) {
+            if(newTab == 9 && load_map_one_shot == 0) {
+                load_map_one_shot = 1;
                 loadScript();
             }
         },
