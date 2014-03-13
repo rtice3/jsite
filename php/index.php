@@ -7,6 +7,7 @@ header("Content-Type: text/html; charset=utf-8");
 header( "Location: index.html" );
 
 $browser = get_browser();
+echo "Test";
 
 if($browser->browser == 'IE' && $browser->majorver < 9) {
 	echo '<script language="javascript">';
