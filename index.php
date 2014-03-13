@@ -8,7 +8,7 @@ if($browser->browser == 'IE' && $browser->majorver < 9) {
 }
 else {
 	alert("Your browser works.");
-	readfile("index.html");
+	readfile("../index.html");
 }
 
 ?>
