@@ -12,7 +12,7 @@ else {
 	echo '<script language="javascript">';
 	echo 'alert("Your browser works.")';
 	echo '</script>';
-	header( "index.html" );
+	header( "Location: index.html" );
 }
 
 ?>
