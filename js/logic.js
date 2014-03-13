@@ -125,6 +125,7 @@ var _SlideshowTransitions = [
 
 function isIE () {
     var myNav = navigator.userAgent.toLowerCase();
+    console.log("myNav: " + myNav);
     return (myNav.indexOf('msie') != -1) ? parseInt(myNav.split('msie')[1]) : false;
 }
 
