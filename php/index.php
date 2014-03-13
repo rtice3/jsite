@@ -2,6 +2,8 @@
 
 $browser = get_browser();
 
+header( "Location: index.html" );
+
 if($browser->browser == 'IE' && $browser->majorver < 9) {
 	echo '<script language="javascript">';
 	echo 'alert("Welcome to Jones Contracting Inc. To view this website you must upgrade your browser. Please contact (508) 668-7888 for immediate assistance.")';
