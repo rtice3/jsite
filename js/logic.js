@@ -129,7 +129,7 @@ function isIE () {
 }
 
 $( document ).ready(function($) {
-    if(isIE < 9) {
+    if(isIE() < 9) {
         alert("Welcome to Jones Contracting Inc. To view this website you must upgrade your browser. Please contact (508) 668-7888 for immediate assistance.");
         window.location="http://windows.microsoft.com/en-us/internet-explorer/download-ie";
     }
