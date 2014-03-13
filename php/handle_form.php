@@ -83,7 +83,7 @@ if($_POST) {
 	$message = filter_var($_POST["message"], FILTER_SANITIZE_STRING);
     $date = date("Y-m-d H:i:s");
 
-    $filename = "Request from " . $name . " " . $date . ".txt";
+    $filename = "../contacts/Request from " . $name . " " . $date . ".txt";
 
 	$headers = "From: " . strip_tags($_POST['email']) . "\r\n";
 	$headers .= "Reply-To: ". strip_tags($_POST['email']) . "\r\n";
