@@ -4,7 +4,6 @@ header("Cache-Control: no-cache");
 header("Pragma: no-cache");
 header("Content-Type: text/xml");
 header("Content-Type: text/html; charset=utf-8");
-header( "Location: index.html" );
 
 $browser = get_browser();
 echo "Test";
@@ -19,7 +18,7 @@ else {
 	echo '<script language="javascript">';
 	echo 'alert("Your browser works.")';
 	echo '</script>';
-	header( "Location: index.html" );
+	header( "Location: home.html" );
 }
 
 ?>
