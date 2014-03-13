@@ -180,7 +180,7 @@ $( document ).ready(function($) {
             else if(newTab == 5) {
                 if(asphalt_oneshot == 0) {
                     asphalt_oneshot = 1;
-                    $( "#ashpalt" ).load("html/asphalt.html");
+                    $( "#asphalt" ).load("html/asphalt.html");
                 }
             }
             else if(newTab == 6) {
