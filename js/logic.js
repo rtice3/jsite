@@ -141,14 +141,15 @@ function checkVersion() {
     var ver = getInternetExplorerVersion();
 
     if ( ver > -1 ) {
-        if ( ver >= 8.0 ) 
+        if ( ver >= 8.0 ) {
             msg = "You're using a recent copy of Internet Explorer."
-    else
-        msg = "Welcome to Jones Contracting Inc. To view this website you must upgrade your browser. Please contact (508) 668-7888 for immediate assistance.";
-        alert(msg);
-        window.location="http://windows.microsoft.com/en-us/internet-explorer/download-ie";
-    }
-    
+        }
+        else {
+            msg = "Welcome to Jones Contracting Inc. To view this website you must upgrade your browser. Please contact (508) 668-7888 for immediate assistance.";
+            alert(msg);
+            window.location="http://windows.microsoft.com/en-us/internet-explorer/download-ie"; 
+        }    
+    }  
     console.log(msg);
 }
 
