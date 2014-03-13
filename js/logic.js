@@ -10,9 +10,28 @@ var snow_accordion_state = true;
 var technical_accordion_state = true;
 var gallery_open = false;
 var contact_form_phone_index = 0;
-var load_map_one_shot = 0;
+
+var gallery_oneshot = 0;
+var excavation_oneshot = 0;
+var utilities_oneshot = 0;
+var spectic_oneshot = 0;
+var asphalt_oneshot = 0;
+var landscape_oneshot = 0;
+var snow_oneshot = 0;
+var technical_oneshot = 0;
+var contact_oneshot = 0;
+
+function isIE () {
+    var myNav = navigator.userAgent.toLowerCase();
+    return (myNav.indexOf('msie') != -1) ? parseInt(myNav.split('msie')[1]) : false;
+}
 
 $( document ).ready(function($) {
+    if(isIE < 9) {
+        alert("Welcome to Jones Contracting Inc. To view this website you must upgrade your browser. Please contact (508) 668-7888 for immediate assistance.");
+        window.location="http://windows.microsoft.com/en-us/internet-explorer/download-ie";
+    }
+    $( "#about" ).load("html/home.html");
     $( "#gallery_container" ).hide();
     
     $( "#wrap" ).click(function() {
@@ -31,10 +50,59 @@ $( document ).ready(function($) {
             if(newTab == 1) {
 //                event.preventDefault();  
                 gallery_open = true;
+                if(gallery_oneshot == 0) {
+                    gallery_oneshot = 1;
+                    $( "#gallery_wrap" ).load("html/gallery.html");
+                }
             }
-            if(newTab == 9 && load_map_one_shot == 0) {
-                load_map_one_shot = 1;
-                loadScript();
+            else if(newTab == 2) {
+                if(excavation_oneshot == 0) {
+                    excavation_oneshot = 1;
+                    $( "#excavation" ).load("html/excavation.html");
+                }
+            }
+            else if(newTab == 3) {
+                if(utilities_oneshot == 0) {
+                    utilities_oneshot = 1;
+                    $( "#utilities" ).load("html/utilities.html");
+                }
+            }
+            else if(newTab == 4) {
+                if(septic_oneshot == 0) {
+                    septic_oneshot = 1;
+                    $( "#septic" ).load("html/septic.html");
+                }
+            }
+            else if(newTab == 5) {
+                if(asphalt_oneshot == 0) {
+                    asphalt_oneshot = 1;
+                    $( "#ashpalt" ).load("html/asphalt.html");
+                }
+            }
+            else if(newTab == 6) {
+                if(landscape_oneshot == 0) {
+                    landscape_oneshot = 1;
+                    $( "#landscape" ).load("html/landscape.html");
+                }
+            }
+            else if(newTab == 7) {
+                if(snow_oneshot == 0) {
+                    snow_oneshot = 1;
+                    $( "#snow" ).load("html/snow.html");
+                }
+            }
+            else if(newTab == 8) {
+                if(technical_oneshot == 0) {
+                    technical_oneshot = 1;
+                    $( "#technical" ).load("html/technical.html");
+                }
+            }
+            else if(newTab == 9) {
+                if(contact_oneshot == 0) {
+                    contact_oneshot = 1;
+                    $( "#contact" ).load("html/contact.html");
+                    loadScript();
+                }
             }
         },
         beforeActivate: function(event, ui) {
@@ -294,7 +362,7 @@ $( document ).ready(function($) {
                 $( "#contact_form_subject" ).val("");
                 $( "#contact_form_message" ).val("");
         }).fail(function (jqXHR, textStatus, errorThrown) {
-            console.error("The following error occured: "+textStatus, errorThrown);
+            alert("The following error occured: "+textStatus, errorThrown);
         }).always(function(response) {
             console.log("Response: " + response);
             alert(response);
