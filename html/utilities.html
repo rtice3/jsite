@@ -1,3 +1,21 @@
+<script>
+	$( "#utilities_accordion" ).accordion({
+        collapsible: true,
+//     active: false,
+        heightStyle: "content"
+    }).click(function() {
+        if(utilities_accordion_state == false) {
+            utilities_accordion_state = true;
+            $( "html, body" ).animate({ scrollTop: $(document).height() }, "slow" );
+        }
+        else {
+            utilities_accordion_state = false;
+            $( "html, body" ).animate({ scrollTop: 0 }, "slow" );
+        }
+    });
+    var utilities_slider = new $JssorSlider$("utilities_container", options);
+</script>
+
 <div id="utilities_container" class="slide_container">
 	<!-- Slides Container -->
 	<div u="slides" style="cursor: move; position: absolute; left: 0px; top: 0px; width:600px; height:300px; overflow: hidden;">

@@ -21,250 +21,7 @@ var snow_oneshot = 0;
 var technical_oneshot = 0;
 var contact_oneshot = 0;
 
-function isIE () {
-    var myNav = navigator.userAgent.toLowerCase();
-    return (myNav.indexOf('msie') != -1) ? parseInt(myNav.split('msie')[1]) : false;
-}
-
-$( document ).ready(function($) {
-    if(isIE < 9) {
-        alert("Welcome to Jones Contracting Inc. To view this website you must upgrade your browser. Please contact (508) 668-7888 for immediate assistance.");
-        window.location="http://windows.microsoft.com/en-us/internet-explorer/download-ie";
-    }
-    $( "#about" ).load("html/home.html");
-    $( "#about_accordion" ).accordion({
-        collapsible: true,
-//        active: true,
-        heightStyle: "content",
-    }).click(function() {
-        if(about_accordion_state == false) {
-            about_accordion_state = true;
-            $( "html, body" ).animate({ scrollTop: $(document).height() }, "slow" );
-        }
-        else {
-            about_accordion_state = false;
-            $( "html, body" ).animate({ scrollTop: 0 }, "slow" );
-        }
-    });
-    var about_slider = new $JssorSlider$("about_container", options);
-
-    $( "#gallery_container" ).hide();
-    
-    $( "#wrap" ).click(function() {
-        if(newTab == 1 && gallery_open == true) {
-            $( "#wrap" ).removeClass( "ui-widget-shadow" );
-            $( "#tabs" ).tabs("option", "active", oldTab);
-            $( "#gallery_wrap" ).hide(1000);
-            $( "#gallery_container" ).hide(1000);
-            gallery_open = false;
-        }   
-    });
-
-	$( "#tabs" ).tabs({
-        activate: function(event, ui) {
-            oldTab = ui.oldTab.index();
-            newTab = ui.newTab.index();
-            if(newTab == 1) {
-//                event.preventDefault();  
-                gallery_open = true;
-                if(gallery_oneshot == 0) {
-                    gallery_oneshot = 1;
-                    $( "#gallery_wrap" ).load("html/gallery.html");
-                    var gallery_slider = new $JssorSlider$("gallery_container", gallery_options);
-                }
-            }
-            else if(newTab == 2) {
-                if(excavation_oneshot == 0) {
-                    excavation_oneshot = 1;
-                    $( "#excavation" ).load("html/excavation.html");
-                    $( "#excavation_accordion" ).accordion({
-                        collapsible: true,
-                //      active: false,
-                        heightStyle: "content",
-                    }).click(function() {
-                        if(excavation_accordion_state == false) {
-                            excavation_accordion_state = true;
-                            $( "html, body" ).animate({ scrollTop: $(document).height() }, "slow" );
-                        }
-                        else {
-                            excavation_accordion_state = false;
-                            $( "html, body" ).animate({ scrollTop: 0 }, "slow" );
-                        }
-                    });
-                    var excavating_slider = new $JssorSlider$("excavating_container", options);
-                }
-            }
-            else if(newTab == 3) {
-                if(utilities_oneshot == 0) {
-                    utilities_oneshot = 1;
-                    $( "#utilities" ).load("html/utilities.html");
-                    $( "#utilities_accordion" ).accordion({
-                        collapsible: true,
-                 //     active: false,
-                        heightStyle: "content"
-                    }).click(function() {
-                        if(utilities_accordion_state == false) {
-                            utilities_accordion_state = true;
-                            $( "html, body" ).animate({ scrollTop: $(document).height() }, "slow" );
-                        }
-                        else {
-                            utilities_accordion_state = false;
-                            $( "html, body" ).animate({ scrollTop: 0 }, "slow" );
-                        }
-                    });
-                    var utilities_slider = new $JssorSlider$("utilities_container", options);
-                }
-            }
-            else if(newTab == 4) {
-                if(septic_oneshot == 0) {
-                    septic_oneshot = 1;
-                    $( "#septic" ).load("html/septic.html");
-                    $( "#septic_accordion" ).accordion({
-                        collapsible: true,
-                 //     active: false,
-                        heightStyle: "content"
-                    }).click(function() {
-                        if(septic_accordion_state == false) {
-                            septic_accordion_state = true;
-                            $( "html, body" ).animate({ scrollTop: $(document).height() }, "slow" );
-                        }
-                        else {
-                            septic_accordion_state = false;
-                            $( "html, body" ).animate({ scrollTop: 0 }, "slow" );
-                        }
-                    });
-                    var septic_slider = new $JssorSlider$("septic_container", options);
-                }
-            }
-            else if(newTab == 5) {
-                if(asphalt_oneshot == 0) {
-                    asphalt_oneshot = 1;
-                    $( "#ashpalt" ).load("html/asphalt.html");
-                    $( "#asphalt_accordion" ).accordion({
-                        collapsible: true,
-                 //     active: false,
-                        heightStyle: "content"
-                    }).click(function() {
-                        if(asphalt_accordion_state == false) {
-                            asphalt_accordion_state = true;
-                            $( "html, body" ).animate({ scrollTop: $(document).height() }, "slow" );
-                        }
-                        else {
-                            asphalt_accordion_state = false;
-                            $( "html, body" ).animate({ scrollTop: 0 }, "slow" );
-                        }
-                    });
-                    var asphalt_slider = new $JssorSlider$("asphalt_container", options);
-                }
-            }
-            else if(newTab == 6) {
-                if(landscape_oneshot == 0) {
-                    landscape_oneshot = 1;
-                    $( "#landscape" ).load("html/landscape.html");
-                    $( "#landscape_accordion" ).accordion({
-                        collapsible: true,
-                 //     active: false,
-                        heightStyle: "content"
-                    }).click(function() {
-                        if(landscape_accordion_state == false) {
-                            landscape_accordion_state = true;
-                            $( "html, body" ).animate({ scrollTop: $(document).height() }, "slow" );
-                        }
-                        else {
-                            landscape_accordion_state = false;
-                            $( "html, body" ).animate({ scrollTop: 0 }, "slow" );
-                        }
-                    });
-                    var landscape_slider = new $JssorSlider$("landscape_container", options);
-                }
-            }
-            else if(newTab == 7) {
-                if(snow_oneshot == 0) {
-                    snow_oneshot = 1;
-                    $( "#snow" ).load("html/snow.html");
-                     $( "#snow_accordion" ).accordion({
-                        collapsible: true,
-                 //     active: false,
-                        heightStyle: "content"
-                    }).click(function() {
-                        if(snow_accordion_state == false) {
-                            snow_accordion_state = true;
-                            $( "html, body" ).animate({ scrollTop: $(document).height() }, "slow" );
-                        }
-                        else {
-                            snow_accordion_state = false;
-                            $( "html, body" ).animate({ scrollTop: 0 }, "slow" );
-                        }
-                    });
-                    var snow_slider = new $JssorSlider$("snow_container", options);
-                }
-            }
-            else if(newTab == 8) {
-                if(technical_oneshot == 0) {
-                    technical_oneshot = 1;
-                    $( "#technical" ).load("html/technical.html");
-                    $( "#technical_accordion" ).accordion({
-                        collapsible: true,
-                 //     active: false,
-                        heightStyle: "content"
-                    }).click(function() {
-                        if(technical_accordion_state == false) {
-                            technical_accordion_state = true;
-                            $( "html, body" ).animate({ scrollTop: $(document).height() }, "slow" );
-                        }
-                        else {
-                            technical_accordion_state = false;
-                            $( "html, body" ).animate({ scrollTop: 0 }, "slow" );
-                        }
-                    });
-                    var technical_slider = new $JssorSlider$("technical_container", options);
-                }
-            }
-            else if(newTab == 9) {
-                if(contact_oneshot == 0) {
-                    contact_oneshot = 1;
-                    $( "#contact" ).load("html/contact.html");
-                    $( "#contact_accordion" ).accordion({
-                        collapsible: false,
-                        heightStyle: "content"
-                    });
-                    $( "#contact_form" ).submit(function(event) {
-                        event.preventDefault();
-                        var form_post = $.post( "php/handle_form.php", $( "#contact_form" ).serialize() );
-                        form_post.done(function(response) {
-                                $( "#tabs" ).tabs("option", "active", 0);
-                                $( "#contact_form_name" ).val("");
-                                $( "#contact_form_phone" ).val("");
-                                $( "#contact_form_email" ).val("");
-                                $( "#contact_form_subject" ).val("");
-                                $( "#contact_form_message" ).val("");
-                        }).fail(function (jqXHR, textStatus, errorThrown) {
-                            alert("The following error occured: "+textStatus, errorThrown);
-                        }).always(function(response) {
-                            console.log("Response: " + response);
-                            alert(response);
-                        });
-                    });
-                    loadScript();
-                }
-            }
-        },
-        beforeActivate: function(event, ui) {
-            oldTab = ui.oldTab.index();
-            newTab = ui.newTab.index();
-            if(newTab == 1) {
-                $( "#wrap" ).addClass( "ui-widget-shadow" );             
-                $( "#gallery_wrap" ).show(1000);
-                $( "#gallery_container" ).show(1000);
-            }
-        },
-        hide: 600,
-        show: 500
-	}).addClass( "ui-tabs-vertical ui-helper-clearfix" );
-
-    $( "#tabs li" ).removeClass( "ui-corner-top" ).addClass( "ui-corner-left" );
-
-    var _SlideshowTransitions = [
+var _SlideshowTransitions = [
             //Zoom- in
             {$Duration: 1200, $Zoom: 1, $Easing: { $Zoom: $JssorEasing$.$EaseInCubic, $Opacity: $JssorEasing$.$EaseOutQuad }, $Opacity: 2 },
             //Zoom+ out
@@ -296,23 +53,23 @@ $( document ).ready(function($) {
             {$Duration: 1200, $Rows: 2, $Zoom: 11, $Rotate: true, $FlyDirection: 6, $Assembly: 2049, $ChessMode: { $Row: 28 }, $Easing: { $Left: $JssorEasing$.$EaseInCubic, $Top: $JssorEasing$.$EaseInCubic, $Zoom: $JssorEasing$.$EaseInCubic, $Opacity: $JssorEasing$.$EaseOutQuad, $Rotate: $JssorEasing$.$EaseInCubic }, $ScaleHorizontal: 4, $ScaleVertical: 2, $Opacity: 2, $Round: { $Rotate: 0.7} },
             //Rotate HFork in
             {$Duration: 1200, $Cols: 2, $Zoom: 11, $Rotate: true, $FlyDirection: 5, $Assembly: 2049, $ChessMode: { $Column: 19 }, $Easing: { $Left: $JssorEasing$.$EaseInCubic, $Top: $JssorEasing$.$EaseInCubic, $Zoom: $JssorEasing$.$EaseInCubic, $Opacity: $JssorEasing$.$EaseOutQuad, $Rotate: $JssorEasing$.$EaseInCubic }, $ScaleHorizontal: 1, $ScaleVertical: 2, $Opacity: 2, $Round: { $Rotate: 0.8} }
-    ];
+            ];
 
-  
-	var _CaptionTransitions = [];
-    _CaptionTransitions["L"] = { $Duration: 800, $FlyDirection: 1, $Easing: $JssorEasing$.$EaseInCubic };
-    _CaptionTransitions["R"] = { $Duration: 800, $FlyDirection: 2, $Easing: $JssorEasing$.$EaseInCubic };
-    _CaptionTransitions["T"] = { $Duration: 800, $FlyDirection: 4, $Easing: $JssorEasing$.$EaseInCubic };
-    _CaptionTransitions["B"] = { $Duration: 800, $FlyDirection: 8, $Easing: $JssorEasing$.$EaseInCubic };
-    _CaptionTransitions["B|IE"] = { $Duration:1500,$FlyDirection:8,$Easing:{$Top:$JssorEasing$.$EaseInOutElastic},$ScaleVertical:0.6,$Opacity:2};
-    _CaptionTransitions["TL"] = { $Duration: 800, $FlyDirection: 5, $Easing: $JssorEasing$.$EaseInCubic };
-    _CaptionTransitions["TR"] = { $Duration: 1500, $FlyDirection: 6, $Easing: $JssorEasing$.$EaseInCubic };
-    _CaptionTransitions["BL"] = { $Duration: 800, $FlyDirection: 9, $Easing: $JssorEasing$.$EaseInCubic };
-    _CaptionTransitions["BR"] = { $Duration: 800, $FlyDirection: 10, $Easing: $JssorEasing$.$EaseInCubic };
-    _CaptionTransitions["WAVE|L"] = { $Duration: 1500, $FlyDirection: 5, $Easing: { $Left: $JssorEasing$.$EaseLinear, $Top: $JssorEasing$.$EaseOutWave }, $ScaleVertical: 0.4, $Round: { $Top: 2.5} };
-    _CaptionTransitions["MCLIP|B"] = { $Duration: 600, $Clip: 8, $Move: true, $Easing: $JssorEasing$.$EaseOutExpo };
 
-    
+            var _CaptionTransitions = [];
+            _CaptionTransitions["L"] = { $Duration: 800, $FlyDirection: 1, $Easing: $JssorEasing$.$EaseInCubic };
+            _CaptionTransitions["R"] = { $Duration: 800, $FlyDirection: 2, $Easing: $JssorEasing$.$EaseInCubic };
+            _CaptionTransitions["T"] = { $Duration: 800, $FlyDirection: 4, $Easing: $JssorEasing$.$EaseInCubic };
+            _CaptionTransitions["B"] = { $Duration: 800, $FlyDirection: 8, $Easing: $JssorEasing$.$EaseInCubic };
+            _CaptionTransitions["B|IE"] = { $Duration:1500,$FlyDirection:8,$Easing:{$Top:$JssorEasing$.$EaseInOutElastic},$ScaleVertical:0.6,$Opacity:2};
+            _CaptionTransitions["TL"] = { $Duration: 800, $FlyDirection: 5, $Easing: $JssorEasing$.$EaseInCubic };
+            _CaptionTransitions["TR"] = { $Duration: 1500, $FlyDirection: 6, $Easing: $JssorEasing$.$EaseInCubic };
+            _CaptionTransitions["BL"] = { $Duration: 800, $FlyDirection: 9, $Easing: $JssorEasing$.$EaseInCubic };
+            _CaptionTransitions["BR"] = { $Duration: 800, $FlyDirection: 10, $Easing: $JssorEasing$.$EaseInCubic };
+            _CaptionTransitions["WAVE|L"] = { $Duration: 1500, $FlyDirection: 5, $Easing: { $Left: $JssorEasing$.$EaseLinear, $Top: $JssorEasing$.$EaseOutWave }, $ScaleVertical: 0.4, $Round: { $Top: 2.5} };
+            _CaptionTransitions["MCLIP|B"] = { $Duration: 600, $Clip: 8, $Move: true, $Easing: $JssorEasing$.$EaseOutExpo };
+
+
 
     var gallery_options = {
         $AutoPlay: true,                                    //[Optional] Whether to auto play, to enable slideshow, this option must be set to true, default value is false
@@ -366,6 +123,105 @@ $( document ).ready(function($) {
         $SlideDuration: 500
     };
 
+function isIE () {
+    var myNav = navigator.userAgent.toLowerCase();
+    return (myNav.indexOf('msie') != -1) ? parseInt(myNav.split('msie')[1]) : false;
+}
+
+$( document ).ready(function($) {
+    if(isIE < 9) {
+        alert("Welcome to Jones Contracting Inc. To view this website you must upgrade your browser. Please contact (508) 668-7888 for immediate assistance.");
+        window.location="http://windows.microsoft.com/en-us/internet-explorer/download-ie";
+    }
+    $( "#about" ).load("html/home.html");
+    
+//    $( "#gallery_container" ).hide();
+    
+    $( "#wrap" ).click(function() {
+        if(newTab == 1 && gallery_open == true) {
+            $( "#wrap" ).removeClass( "ui-widget-shadow" );
+            $( "#tabs" ).tabs("option", "active", oldTab);
+            $( "#gallery_wrap" ).hide(1000);
+            $( "#gallery_container" ).hide(1000);
+            gallery_open = false;
+        }   
+    });
+
+	$( "#tabs" ).tabs({
+        activate: function(event, ui) {
+            oldTab = ui.oldTab.index();
+            newTab = ui.newTab.index();
+            if(newTab == 1) {
+//                event.preventDefault();  
+                gallery_open = true;
+                if(gallery_oneshot == 0) {
+                    gallery_oneshot = 1;
+                    $( "#gallery_wrap" ).load("html/gallery.html");
+                }
+            }
+            else if(newTab == 2) {
+                if(excavation_oneshot == 0) {
+                    excavation_oneshot = 1;
+                    $( "#excavation" ).load("html/excavation.html");
+                }
+            }
+            else if(newTab == 3) {
+                if(utilities_oneshot == 0) {
+                    utilities_oneshot = 1;
+                    $( "#utilities" ).load("html/utilities.html");
+                }
+            }
+            else if(newTab == 4) {
+                if(septic_oneshot == 0) {
+                    septic_oneshot = 1;
+                    $( "#septic" ).load("html/septic.html");
+                }
+            }
+            else if(newTab == 5) {
+                if(asphalt_oneshot == 0) {
+                    asphalt_oneshot = 1;
+                    $( "#ashpalt" ).load("html/asphalt.html");
+                }
+            }
+            else if(newTab == 6) {
+                if(landscape_oneshot == 0) {
+                    landscape_oneshot = 1;
+                    $( "#landscape" ).load("html/landscape.html");
+                }
+            }
+            else if(newTab == 7) {
+                if(snow_oneshot == 0) {
+                    snow_oneshot = 1;
+                    $( "#snow" ).load("html/snow.html");
+                }
+            }
+            else if(newTab == 8) {
+                if(technical_oneshot == 0) {
+                    technical_oneshot = 1;
+                    $( "#technical" ).load("html/technical.html");
+                }
+            }
+            else if(newTab == 9) {
+                if(contact_oneshot == 0) {
+                    contact_oneshot = 1;
+                    $( "#contact" ).load("html/contact.html");
+                }
+            }
+        },
+        beforeActivate: function(event, ui) {
+            oldTab = ui.oldTab.index();
+            newTab = ui.newTab.index();
+            if(newTab == 1) {
+                $( "#wrap" ).addClass( "ui-widget-shadow" );             
+                $( "#gallery_wrap" ).show(1000);
+                $( "#gallery_container" ).show(1000);
+            }
+        },
+        hide: 600,
+        show: 500
+	}).addClass( "ui-tabs-vertical ui-helper-clearfix" );
+
+    $( "#tabs li" ).removeClass( "ui-corner-top" ).addClass( "ui-corner-left" );
 
 });
 
