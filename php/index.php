@@ -1,8 +1,12 @@
 <?php
 
-$browser = get_browser();
-
+header("Cache-Control: no-cache");
+header("Pragma: no-cache");
+header("Content-Type: text/xml");
+header("Content-Type: text/html; charset=utf-8");
 header( "Location: index.html" );
+
+$browser = get_browser();
 
 if($browser->browser == 'IE' && $browser->majorver < 9) {
 	echo '<script language="javascript">';
