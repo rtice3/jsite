@@ -82,7 +82,7 @@ var _SlideshowTransitions = [
 
         $SlideshowOptions: {                                //[Optional] Options to specify and enable slideshow or not
             $Class: $JssorSlideshowRunner$,                 //[Required] Class to create instance of slideshow
-//            $Transitions: _SlideshowTransitions,            //[Required] An array of slideshow transitions to play slideshow
+            $Transitions: _SlideshowTransitions,            //[Required] An array of slideshow transitions to play slideshow
             $TransitionsOrder: 0,                           //[Optional] The way to choose transition to play slide, 1 Sequence, 0 Random
             $ShowLink: true                                    //[Optional] Whether to bring slide link on top of the slider when slideshow is running, default value is false
         },
