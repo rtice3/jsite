@@ -153,7 +153,7 @@ function checkVersion() {
  //   console.log(msg);
 }
 
-var minW = 1200;
+/*var minW = 1200;
 
 $(function () {
     CheckSizeZoom();
@@ -187,7 +187,7 @@ function CheckSizeZoom() {
         $('#wrap').css('-moz-transform', "");
         $('#wrap').width("");
     }
-}
+}*/
 
 $( document ).ready(function($) {
 
