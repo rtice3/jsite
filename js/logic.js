@@ -150,52 +150,12 @@ function checkVersion() {
             window.location="http://windows.microsoft.com/en-us/internet-explorer/download-ie"; 
         }    
     }  
- //   console.log(msg);
 }
-
-/*var minW = 1200;
-
-$(function () {
-    CheckSizeZoom();
-    $('#wrap').css('visibility', 'visible');
-});
-
-$(window).resize(CheckSizeZoom);
-
-function CheckSizeZoom() {
-    if ($(window).width() < minW) {
-        var zoomLev = $(window).width() / minW;
-
-        if (typeof (document.body.style.zoom) != "undefined") {
-          $(document.body).css('zoom', zoomLev);
-        }
-        else {
-            // Mozilla doesn't support zoom, use -moz-transform to scale and compensate for lost width
-            $('#wrap').css('-moz-transform', "scale(" + zoomLev + ")");
-            $('#wrap').width($(window).width() / zoomLev + 10);
-            $('#wrap').css('position', 'relative');
-            $('#wrap').css('left', (($(window).width() - minW - 16) / 2) + "px");
-            $('#wrap').css('top', "-19px");
-            $('#wrap').css('position', 'relative');
-        }
-    }
-    else {
-        $(document.body).css('zoom', '');
-        $('#wrap').css('position', '');
-        $('#wrap').css('left', "");
-        $('#wrap').css('top', "");
-        $('#wrap').css('-moz-transform', "");
-        $('#wrap').width("");
-    }
-}*/
-
 $( document ).ready(function($) {
 
     checkVersion();
     
     $( "#about" ).load("html/home.html");
-    
-//    $( "#gallery_container" ).hide();
     
     $( "#wrap" ).click(function() {
         if(newTab == 1 && gallery_open == true) {
