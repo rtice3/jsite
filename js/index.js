@@ -32,5 +32,5 @@ window.onload = function() {
     checkVersion();
     var wrap_dom = document.getElementById("wrap");
 
-    wrap_dom.innerHTML = '<object type="text/html" data="html/layout.html" ></object>';
+    wrap_dom.innerHTML = '<object width="1200" height="800" type="text/html" data="html/layout.html" ></object>';
 };
