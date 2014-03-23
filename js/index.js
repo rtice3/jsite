@@ -27,40 +27,10 @@ function checkVersion() {
     }  
 }
 
-function createXHR() {
-    try { return new XMLHttpRequest(); } catch(e) {}
-    try { return new ActiveXObject("Msxml2.XMLHTTP.6.0"); } catch(e) {}
-    try { return new ActiveXObject("Msxml2.XMLHTTP.3.0"); } catch(e) {}
-    try { return new ActiveXObject("Msxml2.XMLHTTP"); } catch(e) {}
-    try { return new ActiveXObject("Microsoft.XMLHTTP"); } catch(e) {}
-    alert("Thank you for visiting Jones Contracting Inc.\nYour browser does not support AJAX features required by this page.\nPlease update your browser to view this page.\nFor immediate assistance please contact (508) 668-7888.");
-    return null;
-}
-
 window.onload = function() {
     document.getElementById("hide_me").style.visibility = 'hidden';
     checkVersion();
-    var xhr = createXHR();
+    var wrap_dom = document.getElementById("wrap");
 
-    if(xhr) {   
-        xhr.open("GET", "css/jquery-ui.css", false);
-        xhr.send(null);
-
-        xhr.open("GET", "js/jquery-1.10.2.min.js", false);
-        xhr.send(null);
-
-        xhr.open("GET", "js/jquery-ui-1.10.4.custom.min.js", false);
-        xhr.send(null);
-
-        xhr.open("GET", "js/jssor.slider.mini.js", false);
-        xhr.send(null);
-
-        xhr.open("GET", "js/layout.js", false);
-        xhr.send(null);
-
-        xhr.open("GET", "html/layout.html", false);
-        xhr.send(null);
-        document.getElementById("wrap").innerHTML = xhr.responseText;
-    }
-
+    wrap_dom.innerHTML = '<object type="text/html" data="html/layout.html" ></object>';
 };
