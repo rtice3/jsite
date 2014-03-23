@@ -7,8 +7,10 @@ body {
   	margin-left: 0 auto;
 	margin-right: 0 auto;
 	background-color:#2b2922;
+}
 
-/*	border: 1px solid #CCBE8A;
+#hide_me {
+	/*	border: 1px solid #CCBE8A;
 	background: #D1C496;*/
 	color: #f5f3e5;
 	text-align: center;
