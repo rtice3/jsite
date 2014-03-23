@@ -3,11 +3,16 @@
 /* Padding below the footer and lighter body text */
 
 body {
- 	color: #66FF99;
   	font-family: segoe ui,Arial,sans-serif;
   	margin-left:auto;
 	margin-right:auto;
 	background-color:#2b2922;
+
+	font-size: .8em !important;
+/*	border: 1px solid #CCBE8A;
+	background: #D1C496;*/
+	color: #f5f3e5;
+	text-align: center;
 }
 
 #wrap {
