@@ -27,7 +27,7 @@ $(document).ready(function() {
         close_gallery();
     });
 
-    $( "#hide_me" ).addClass("emptydiv");
+//    $( "#hide_me" ).addClass("emptydiv");
 
     $( "#about" ).load("../html/home.html");
 
