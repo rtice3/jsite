@@ -293,5 +293,5 @@ img.close {
 img.close:hover {
 	width: 30px;
 	height: 30px;
-	background:url(img/close.png) 30 0;
+	background:url(img/close.png) -30 0;
 }
