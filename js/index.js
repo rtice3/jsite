@@ -43,6 +43,18 @@ window.onload = function() {
     var xhr = createXHR();
 
     if(xhr) {   
+        xhr.open("GET", "js/jquery-1.10.2.min.js", false);
+        xhr.send(null);
+
+        xhr.open("GET", "js/jquery-ui-1.10.4.custom.min.js", false);
+        xhr.send(null);
+
+        xhr.open("GET", "js/jssor.slider.mini.js", false);
+        xhr.send(null);
+
+        xhr.open("GET", "js/layout.js", false);
+        xhr.send(null);
+
         xhr.open("GET", "html/layout.html", false);
         xhr.send(null);
         document.getElementById("wrap").innerHTML = xhr.responseText;
