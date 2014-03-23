@@ -283,3 +283,15 @@ a.captionOrange:hover {
     margin-bottom: 20px;
     padding: 0px
 }
+
+img.close {
+	width: 30px;
+	height: 30px;
+	background:url(img/close.png) 0 0;
+}
+
+img.close:hover {
+	width: 30px;
+	height: 30px;
+	background:url(img/close.png) 30 0;
+}
