@@ -283,15 +283,3 @@ a.captionOrange:hover {
     margin-bottom: 20px;
     padding: 0px
 }
-
-.close {
-	position: absolute;
-	cursor: pointer;
-	display: block;
-	background: url(img/close.png) no-repeat;
-	overflow:hidden;
-}
-
-.close { background-position: 0px 0px; }
-
-.close:hover { background-position: -30px 0px; }
