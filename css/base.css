@@ -12,8 +12,6 @@ body {
 	background: #D1C496;*/
 	color: #f5f3e5;
 	text-align: center;
-	width: 1200px;
-	height: 500px;
 }
 
 #wrap {
@@ -21,7 +19,8 @@ body {
 	border:0px solid black;
 	padding-top:2px;
 	padding-bottom:5px;
-	width: 100%;
+	width: 1200px;
+	height: 500px;
 }
 
 #logo img {
