@@ -40,7 +40,7 @@ $( "#contact_accordion" ).accordion({
 });
 $( "#contact_form" ).submit(function(event) {
     event.preventDefault();
-    var form_post = $.post( "php/handle_form.php", $( "#contact_form" ).serialize() );
+    var form_post = $.post( "../php/handle_form.php", $( "#contact_form" ).serialize() );
     form_post.done(function(response) {
             $( "#tabs" ).tabs("option", "active", 0);
             $( "#contact_form_name" ).val("");
