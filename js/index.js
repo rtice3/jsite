@@ -33,10 +33,7 @@ function createXHR() {
     try { return new ActiveXObject("Msxml2.XMLHTTP.3.0"); } catch(e) {}
     try { return new ActiveXObject("Msxml2.XMLHTTP"); } catch(e) {}
     try { return new ActiveXObject("Microsoft.XMLHTTP"); } catch(e) {}
-    alert("Thank you for visiting Jones Contracting Inc. 
-        Your browser does not support AJAX features required by this page. 
-        Please update your browser to view this page. 
-        For immediate assistance please contact (508) 668-7888.");
+    alert("Thank you for visiting Jones Contracting Inc.\nYour browser does not support AJAX features required by this page.\nPlease update your browser to view this page.\nFor immediate assistance please contact (508) 668-7888.");
     return null;
 }
 
