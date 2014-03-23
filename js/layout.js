@@ -106,7 +106,7 @@ $(document).ready(function() {
     }).addClass( "ui-tabs-vertical ui-helper-clearfix" );
 
     $( "#tabs li" ).removeClass( "ui-corner-top" ).addClass( "ui-corner-left" ); 
-}
+});
 
 
 var _SlideshowTransitions = [
