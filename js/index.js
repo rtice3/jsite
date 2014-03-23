@@ -43,7 +43,9 @@ window.onload = function() {
     var xhr = createXHR();
 
     if(xhr) {   
-        document.getElementById("wrap").innerHTML = xhr.open("GET", "html/layout.html", true);
+        xhr.open("GET", "html/layout.html", false);
+        xhr.send(null);
+        document.getElementById("wrap").innerHTML = xhr.responseText;
     }
 
 };
