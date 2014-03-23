@@ -43,6 +43,9 @@ window.onload = function() {
     var xhr = createXHR();
 
     if(xhr) {   
+        xhr.open("GET", "css/jquery-ui.css", false);
+        xhr.send(null);
+
         xhr.open("GET", "js/jquery-1.10.2.min.js", false);
         xhr.send(null);
 
