@@ -151,6 +151,17 @@ function checkVersion() {
         }    
     }  
 }
+
+function close_gallery() {
+    if(newTab == 1 && gallery_open == true) {
+        $( "#wrap" ).removeClass( "ui-widget-shadow" );
+        $( "#tabs" ).tabs("option", "active", oldTab);
+        $( "#gallery_wrap" ).hide(1000);
+        $( "#gallery_container" ).hide(1000);
+        gallery_open = false;
+    }   
+}
+
 $( document ).ready(function($) {
 
     checkVersion();
@@ -158,13 +169,7 @@ $( document ).ready(function($) {
     $( "#about" ).load("html/home.html");
     
     $( "#wrap" ).click(function() {
-        if(newTab == 1 && gallery_open == true) {
-            $( "#wrap" ).removeClass( "ui-widget-shadow" );
-            $( "#tabs" ).tabs("option", "active", oldTab);
-            $( "#gallery_wrap" ).hide(1000);
-            $( "#gallery_container" ).hide(1000);
-            gallery_open = false;
-        }   
+        close_gallery();
     });
 
 	$( "#tabs" ).tabs({
