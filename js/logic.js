@@ -167,7 +167,7 @@ $( document ).ready(function($) {
     $( "#hide_me" ).hide();
     checkVersion();
 
-    $( "#content" ).load("html/layout.html");
+    $( "#wrap" ).load("html/layout.html");
 
     $( "#about" ).load("html/home.html");
     
