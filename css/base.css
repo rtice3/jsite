@@ -148,9 +148,6 @@ a.captionOrange:hover {
 	background-color: #eeeeee;
 	background-color: rgba(238, 238, 238, 0.7);
 }
-.bricon {
-	background: url(../img/browser-icons.png);
-}
 
 .slide_container {
 	position: relative; 
