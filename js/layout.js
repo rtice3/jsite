@@ -29,7 +29,7 @@ $(document).ready(function() {
 
     $( "#hide_me" ).addClass("emptydiv");
 
-    $( "#about" ).load("html/home.html");
+    $( "#about" ).load("../html/home.html");
 
     $( "#tabs" ).tabs({
         activate: function(event, ui) {
@@ -40,55 +40,55 @@ $(document).ready(function() {
                 gallery_open = true;
                 if(gallery_oneshot == 0) {
                     gallery_oneshot = 1;
-                    $( "#gallery_wrap" ).load("html/gallery.html");
+                    $( "#gallery_wrap" ).load("../html/gallery.html");
                 }
             }
             else if(newTab == 2) {
                 if(excavation_oneshot == 0) {
                     excavation_oneshot = 1;
-                    $( "#excavation" ).load("html/excavation.html");
+                    $( "#excavation" ).load("../html/excavation.html");
                 }
             }
             else if(newTab == 3) {
                 if(utilities_oneshot == 0) {
                     utilities_oneshot = 1;
-                    $( "#utilities" ).load("html/utilities.html");
+                    $( "#utilities" ).load("../html/utilities.html");
                 }
             }
             else if(newTab == 4) {
                 if(septic_oneshot == 0) {
                     septic_oneshot = 1;
-                    $( "#septic" ).load("html/septic.html");
+                    $( "#septic" ).load("../html/septic.html");
                 }
             }
             else if(newTab == 5) {
                 if(asphalt_oneshot == 0) {
                     asphalt_oneshot = 1;
-                    $( "#asphalt" ).load("html/asphalt.html");
+                    $( "#asphalt" ).load("../html/asphalt.html");
                 }
             }
             else if(newTab == 6) {
                 if(landscape_oneshot == 0) {
                     landscape_oneshot = 1;
-                    $( "#landscape" ).load("html/landscape.html");
+                    $( "#landscape" ).load("../html/landscape.html");
                 }
             }
             else if(newTab == 7) {
                 if(snow_oneshot == 0) {
                     snow_oneshot = 1;
-                    $( "#snow" ).load("html/snow.html");
+                    $( "#snow" ).load("../html/snow.html");
                 }
             }
             else if(newTab == 8) {
                 if(technical_oneshot == 0) {
                     technical_oneshot = 1;
-                    $( "#technical" ).load("html/technical.html");
+                    $( "#technical" ).load("../html/technical.html");
                 }
             }
             else if(newTab == 9) {
                 if(contact_oneshot == 0) {
                     contact_oneshot = 1;
-                    $( "#contact" ).load("html/contact.html");
+                    $( "#contact" ).load("../html/contact.html");
                 }
             }
         },

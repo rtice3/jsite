@@ -19,6 +19,7 @@ body {
 	border:0px solid black;
 	padding-top:2px;
 	padding-bottom:5px;
+	width: 100%;
 }
 
 #logo img {
