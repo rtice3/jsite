@@ -164,8 +164,11 @@ function close_gallery() {
 
 $( document ).ready(function($) {
 
+    $( "#hide_me" ).hide();
     checkVersion();
-    
+
+    $( "#content" ).load("html/layout.html");
+
     $( "#about" ).load("html/home.html");
     
     $( "#wrap" ).click(function() {
