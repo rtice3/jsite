@@ -52,7 +52,7 @@ window.onload = function() {
     var headID = document.getElementsByTagName("head")[0];
     var newScript = document.createElement('script');
     newScript.type = 'text/javascript';
-    newScript.src = 'js/jquery-1.10.2.min.js.js';
+    newScript.src = 'js/jquery-1.10.2.min.js';
     headID.appendChild(newScript);
     newScript.src = 'js/jquery-ui-1.10.4.custom.min.js';
     headID.appendChild(newScript);
