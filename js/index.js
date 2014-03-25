@@ -27,6 +27,28 @@ function checkVersion() {
     }  
 }
 
+function load_script(url, callback) {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+
+    if(script.readyState) {
+        script.onreadystatechange = function() {
+            if(script.readyState == "loaded" || script.readyState == "complete") {
+                script.onreadystatechange = null;
+                callback();
+            }
+        };
+    }
+    else {
+        script.onload = function () {
+            callback();
+        };
+    }
+
+    script.src = url;
+    document.getElementsByTagName("head")[0].appendChild(script);
+}
+
 window.onload = function() {
     document.getElementById("hide_me").style.visibility = 'hidden';
     checkVersion();
@@ -49,21 +71,13 @@ window.onload = function() {
     xmlhttp.open("GET", "html/layout.html", true);
     xmlhttp.send();
 
-    var headID = document.getElementsByTagName("head")[0];
-    var newScript0 = document.createElement('script');
-    newScript0.type = 'text/javascript';
-    newScript0.src = 'js/jquery-1.10.2.min.js';
-    headID.appendChild(newScript0);
-    var newScript1 = document.createElement('script');  
-    newScript1.type = 'text/javascript';
-    newScript1.src = 'js/jquery-ui-1.10.4.custom.min.js';
-    headID.appendChild(newScript1);
-    var newScript2 = document.createElement('script');  
-    newScript2.type = 'text/javascript';
-    newScript2.src = 'js/jssor.slider.mini.js';
-    headID.appendChild(newScript2);
-    var newScript3 = document.createElement('script');  
-    newScript3.type = 'text/javascript';
-    newScript3.src = 'js/layout.js';
-    headID.appendChild(newScript3); 
+    load_script("js/jquery-1.10.2.min.js", function() {
+        load_script("js/jquery-ui-1.10.4.custom.min.js", function() {
+            load_script("js/jssor.slider.mini.js", function() {
+                load_script("js/layout.js", function() {
+                    
+                });
+            });
+        });
+    });
 };
