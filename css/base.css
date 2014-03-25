@@ -163,6 +163,7 @@ a.captionOrange:hover {
 
 #left-bar {
 	float:left;
+	border: 2px solid black;
 }
 
 .slide_outer {
