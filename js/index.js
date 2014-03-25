@@ -43,6 +43,10 @@ window.onload = function() {
     xmlhttp.onreadystatechange = function() {
         if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
             document.getElementById("wrap").innerHTML = xmlhttp.responseText;
+            var arr = wrap.getElementsByTagName('script');
+            for(var n = 0; n < arr.length; n++) {
+                eval(arr[n].innerHTML);
+            }
         }
     }
 
