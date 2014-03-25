@@ -30,7 +30,22 @@ function checkVersion() {
 window.onload = function() {
     document.getElementById("hide_me").style.visibility = 'hidden';
     checkVersion();
-    var wrap_dom = document.getElementById("wrap");
+    var xmlhttp;
 
-    wrap_dom.innerHTML = '<object width="1200" height="800" type="text/html" data="html/layout.html" ></object>';
+    if (window.XMLHttpRequest) {
+        // code for IE7+, Firefox, Chrome, Opera, Safari
+        xmlhttp = new XMLHttpRequest();
+    } else {
+        // code for IE6, IE5
+        xmlhttp = new ActiveXObject("Microsoft.XMLHTTP");
+    }
+
+    xmlhttp.onreadystatechange = function() {
+        if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
+            document.getElementById("wrap").innerHTML = xmlhttp.responseText;
+        }
+    }
+
+    xmlhttp.open("GET", "html/layout.html", true);
+    xmlhttp.send();
 };
