@@ -52,6 +52,12 @@ window.onload = function() {
     var headID = document.getElementsByTagName("head")[0];
     var newScript = document.createElement('script');
     newScript.type = 'text/javascript';
-    newScript.src = 'js/layout.js';
+    newScript.src = 'js/jquery-1.10.2.min.js.js';
     headID.appendChild(newScript);
+    newScript.src = 'js/jquery-ui-1.10.4.custom.min.js';
+    headID.appendChild(newScript);
+    newScript.src = 'js/jssor.slider.mini.js';
+    headID.appendChild(newScript);
+    newScript.src = 'js/layout.js';
+    headID.appendChild(newScript); 
 };
