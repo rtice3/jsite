@@ -43,13 +43,15 @@ window.onload = function() {
     xmlhttp.onreadystatechange = function() {
         if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
             document.getElementById("wrap").innerHTML = xmlhttp.responseText;
-            var arr = wrap.getElementsByTagName('script');
-            for(var n = 0; n < arr.length; n++) {
-                eval(arr[n].innerHTML);
-            }
         }
     }
 
     xmlhttp.open("GET", "html/layout.html", true);
     xmlhttp.send();
+
+    var headID = document.getElementsByTagName("head")[0];
+    var newScript = document.createElement('script');
+    newScript.type = 'text/javascript';
+    newScript.src = 'js/layout.js';
+    headID.appendChild(newScript);
 };
