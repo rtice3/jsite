@@ -50,14 +50,20 @@ window.onload = function() {
     xmlhttp.send();
 
     var headID = document.getElementsByTagName("head")[0];
-    var newScript = document.createElement('script');
-    newScript.type = 'text/javascript';
-    newScript.src = 'js/jquery-1.10.2.min.js';
+    var newScript0 = document.createElement('script');
+    newScript0.type = 'text/javascript';
+    newScript0.src = 'js/jquery-1.10.2.min.js';
     headID.appendChild(newScript);
-    newScript.src = 'js/jquery-ui-1.10.4.custom.min.js';
+    var newScript1 = document.createElement('script');  
+    newScript1.type = 'text/javascript';
+    newScript1.src = 'js/jquery-ui-1.10.4.custom.min.js';
     headID.appendChild(newScript);
-    newScript.src = 'js/jssor.slider.mini.js';
+    var newScript2 = document.createElement('script');  
+    newScript2.type = 'text/javascript';
+    newScript2.src = 'js/jssor.slider.mini.js';
     headID.appendChild(newScript);
-    newScript.src = 'js/layout.js';
+    var newScript3 = document.createElement('script');  
+    newScript3.type = 'text/javascript';
+    newScript3.src = 'js/layout.js';
     headID.appendChild(newScript); 
 };
