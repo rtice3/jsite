@@ -55,7 +55,7 @@ window.onload = function() {
 
     checkVersion();
 
- //   load_script("js/jquery-1.10.2.min.js", function() {
+    load_script("js/jquery-1.10.2.min.js", function() {
         $( "#wrap" ).load("html/layout.html");
- //   });
+    });
 };
