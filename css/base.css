@@ -127,33 +127,6 @@ body {
 	width: 40em;
 }
 
-.captionOrange, .captionBlack {
-	color: #fff;
-	font-size: 20px;
-	line-height: 30px;
-	text-align: center;
-	border-radius: 4px;
-}
-.captionOrange {
-	background: #EB5100;
-	background-color: rgba(235, 81, 0, 0.6);
-}
-.captionBlack {
-	font-size:16px;
-	background: #000;
-	background-color: rgba(0, 0, 0, 0.4);
-}
-a.captionOrange, A.captionOrange:active, A.captionOrange:visited {
-	color: #ffffff;
-	text-decoration: none;
-}
-a.captionOrange:hover {
-	color: #eb5100;
-	text-decoration: underline;
-	background-color: #eeeeee;
-	background-color: rgba(238, 238, 238, 0.7);
-}
-
 .slide_container {
 	position: relative; 
 	margin: 0 auto;	
@@ -197,7 +170,6 @@ a.captionOrange:hover {
 	text-align: center;
 }
 
-
 #contact_info {
 	font-size: 1.2em !important;
 	margin-left: 20px;
@@ -216,7 +188,6 @@ a.captionOrange:hover {
 #contact_form label {
   	width: 60px;
 }
-
 
 #contact_form label span {
 	display: inline-block;
@@ -241,7 +212,6 @@ a.captionOrange:hover {
 	width: 230px;
 	height: 130px;
 }
-
 
 #contact_form fieldset {
 	width: 275px;
