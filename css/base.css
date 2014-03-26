@@ -83,8 +83,7 @@ body {
 #tabs {
 	padding-top:2px;
 	padding-bottom: 40px;
-	margin-left: auto;
-	margin-right: auto;
+	margin: auto;
 	border:0px solid white;
 }
 .ui-tabs .ui-tabs-nav li a {
@@ -160,13 +159,10 @@ a.captionOrange:hover {
 	width: 580px; 
 	height: 327px;
 	border:0px solid black;
-	display: inline;
 }
 
 #left-bar {
 	float:left;
-	border: 0px solid black;
-	display: inline;
 }
 
 .slide_outer {
