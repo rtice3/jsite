@@ -163,13 +163,13 @@ a.captionOrange:hover {
 }
 
 #left-bar {
-	float:right;
+	float:left;
 	border: 0px solid black;
 }
 
 .slide_outer {
 	border:0px solid black;
-	float:right;
+	float:left;
 }
 
 .one {
