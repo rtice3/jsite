@@ -160,13 +160,11 @@ a.captionOrange:hover {
 	width: 580px; 
 	height: 327px;
 	border:0px solid black;
-	display: inline-block;
 }
 
 #left-bar {
 	float:left;
 	border: 0px solid black;
-	display: inline-block;
 }
 
 .slide_outer {
