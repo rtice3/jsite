@@ -74,6 +74,7 @@ body {
 	padding-top:20px;
 	padding-bottom:0px;
 	font-size: .7em !important;
+	float:clear;
 }
 
 .text-muted {
@@ -169,7 +170,7 @@ a.captionOrange:hover {
 
 .slide_outer {
 	border:2px solid black;
-	float:right;
+	float:left;
 }
 
 .one {
