@@ -40,7 +40,6 @@ $(document).ready(function() {
                 gallery_open = true;
                 if(gallery_oneshot == 0) {
                     gallery_oneshot = 1;
-                    $( "#gallery_wrap" ).load("html/gallery.html");
                 }
             }
             else if(newTab == 2) {
@@ -97,6 +96,7 @@ $(document).ready(function() {
             newTab = ui.newTab.index();
             if(newTab == 1) {
                 $( "#wrap" ).addClass( "ui-widget-shadow" );             
+                $( "#gallery_wrap" ).load("html/gallery.html");
                 $( "#gallery_wrap" ).show(1000);
                 $( "#gallery_container" ).show(1000);
             }
