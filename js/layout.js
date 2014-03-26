@@ -95,8 +95,8 @@ $(document).ready(function() {
             oldTab = ui.oldTab.index();
             newTab = ui.newTab.index();
             if(newTab == 1) {
-                $( "#wrap" ).addClass( "ui-widget-shadow" );             
                 $( "#gallery_wrap" ).load("html/gallery.html", function() {
+                    $( "#wrap" ).addClass( "ui-widget-shadow" );             
                     $( "#gallery_wrap" ).show(1000);
                     $( "#gallery_container" ).show(1000);
                 });
