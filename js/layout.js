@@ -2,15 +2,8 @@ var gallery_open = false;
 var oldTab = 0;
 var newTab = 0;
 
-var gallery_oneshot = 0;
-var excavation_oneshot = 0;
-var utilities_oneshot = 0;
-var septic_oneshot = 0;
-var asphalt_oneshot = 0;
-var landscape_oneshot = 0;
-var snow_oneshot = 0;
-var technical_oneshot = 0;
-var contact_oneshot = 0;
+var tab_index = [ "about", "gallery", "excavation", "utilities", "septic", "asphalt", "landscape", "snow", "technical", "contact" ];
+var oneshot =   [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ];
 
 function close_gallery() {
     if(newTab == 1 && gallery_open == true) {
@@ -22,6 +15,20 @@ function close_gallery() {
     }   
 }
 
+function load_tab(callback) {
+    if(oneshot[newTab] == 0) {
+        oneshot[newTab] = 1;
+        if(callback) {
+            $( "#" + tab_index[newTab] ).load("html/" + tab_index[newTab] + ".html", function() {
+                basic_tab(tab_index[newTab]);
+            });
+        }
+        else {
+            $( "#" + tab_index[newTab] ).load("html/" + tab_index[newTab] + ".html");
+        }
+    }
+}
+
 $(document).ready(function() {
     $( "#footer_container" ).before( '<div id="gallery_wrap"></div>' );
 
@@ -29,8 +36,7 @@ $(document).ready(function() {
         close_gallery();
     });
 
-//    $( "#hide_me" ).addClass("emptydiv");
-
+    oneshot[0] = 1;
     $( "#about" ).load("html/home.html", function() {
         basic_tab("about");
     });
@@ -40,75 +46,14 @@ $(document).ready(function() {
             oldTab = ui.oldTab.index();
             newTab = ui.newTab.index();
             if(newTab == 1) {
-    //                event.preventDefault();  
                 gallery_open = true;
-                if(gallery_oneshot == 0) {
-                    gallery_oneshot = 1;
-                    $( "#gallery_wrap" ).load("html/gallery.html");
-                }
-            }
-            else if(newTab == 2) {
-                if(excavation_oneshot == 0) {
-                    excavation_oneshot = 1;
-                    $( "#excavation" ).load("html/excavation.html", function() {
-                        basic_tab("excavation");
-                    });
-                }
-            }
-            else if(newTab == 3) {
-                if(utilities_oneshot == 0) {
-                    utilities_oneshot = 1;
-                    $( "#utilities" ).load("html/utilities.html", function() {
-                        basic_tab("utilities");
-                    });
-
-                }
-            }
-            else if(newTab == 4) {
-                if(septic_oneshot == 0) {
-                    septic_oneshot = 1;
-                    $( "#septic" ).load("html/septic.html", function() {
-                        basic_tab("septic");
-                    });
-                }
-            }
-            else if(newTab == 5) {
-                if(asphalt_oneshot == 0) {
-                    asphalt_oneshot = 1;
-                    $( "#asphalt" ).load("html/asphalt.html", function() {
-                        basic_tab("asphalt");
-                    });
-                }
-            }
-            else if(newTab == 6) {
-                if(landscape_oneshot == 0) {
-                    landscape_oneshot = 1;
-                    $( "#landscape" ).load("html/landscape.html", function() {
-                        basic_tab("landscape");
-                    });
-                }
-            }
-            else if(newTab == 7) {
-                if(snow_oneshot == 0) {
-                    snow_oneshot = 1;
-                    $( "#snow" ).load("html/snow.html", function() {
-                        basic_tab("snow");
-                    });
-                }
-            }
-            else if(newTab == 8) {
-                if(technical_oneshot == 0) {
-                    technical_oneshot = 1;
-                    $( "#technical" ).load("html/technical.html", function() {
-                        basic_tab("technical");
-                    });
-                }
+                load_tab(false);
             }
             else if(newTab == 9) {
-                if(contact_oneshot == 0) {
-                    contact_oneshot = 1;
-                    $( "#contact" ).load("html/contact.html");
-                }
+                load_tab(false);
+            }
+            else {
+                load_tab(true);
             }
         },
         beforeActivate: function(event, ui) {

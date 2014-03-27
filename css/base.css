@@ -148,7 +148,7 @@ body {
 #gallery_wrap {
 	position: absolute;
 
-	top: 50px;
+	top: -50px;
 	left: 50%;
 	margin-top: -260px;
 	margin-left: -480px;
