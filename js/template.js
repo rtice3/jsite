@@ -28,18 +28,8 @@ var options = {
 
 function basic_tab(acc, slider) {
 	acc.accordion({
-	collapsible: true,
-     //     active: false,
-     heightStyle: "content"
- }).click(function() {
- 	if(asphalt_accordion_state == false) {
- 		asphalt_accordion_state = true;
- 		$( "html, body" ).animate({ scrollTop: $(document).height() }, "slow" );
- 	}
- 	else {
- 		asphalt_accordion_state = false;
- 		$( "html, body" ).animate({ scrollTop: 0 }, "slow" );
- 	}
- });
- var asphalt_slider = new $JssorSlider$(slider, options);
+		collapsible: true,
+     	heightStyle: "content"
+ 	});
+	new $JssorSlider$(slider, options);
 }
