@@ -36,7 +36,8 @@ $(document).ready(function() {
         close_gallery();
     });
 
-    load_tab(false);
+    newTab = 0;
+    load_tab(true);
 
     $( "#tabs" ).tabs({
         activate: function(event, ui) {
