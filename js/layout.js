@@ -32,7 +32,7 @@ $(document).ready(function() {
 //    $( "#hide_me" ).addClass("emptydiv");
 
     $( "#about" ).load("html/home.html", function() {
-        basic_tab($( "#about_accordion" ), "about_container");
+        basic_tab("about");
     });
 
     $( "#tabs" ).tabs({
@@ -51,7 +51,7 @@ $(document).ready(function() {
                 if(excavation_oneshot == 0) {
                     excavation_oneshot = 1;
                     $( "#excavation" ).load("html/excavation.html", function() {
-                        basic_tab($( "#excavation_accordion" ), "excavation_container");
+                        basic_tab("excavation");
                     });
                 }
             }
@@ -59,7 +59,7 @@ $(document).ready(function() {
                 if(utilities_oneshot == 0) {
                     utilities_oneshot = 1;
                     $( "#utilities" ).load("html/utilities.html", function() {
-                        basic_tab($( "#utilities_accordion" ), "utilities_container");
+                        basic_tab("utilities");
                     });
 
                 }
@@ -68,7 +68,7 @@ $(document).ready(function() {
                 if(septic_oneshot == 0) {
                     septic_oneshot = 1;
                     $( "#septic" ).load("html/septic.html", function() {
-                        basic_tab($( "#septic_accordion" ), "septic_container");
+                        basic_tab("septic");
                     });
                 }
             }
@@ -76,7 +76,7 @@ $(document).ready(function() {
                 if(asphalt_oneshot == 0) {
                     asphalt_oneshot = 1;
                     $( "#asphalt" ).load("html/asphalt.html", function() {
-                        basic_tab($( "#asphalt_accordion" ), "asphalt_container");
+                        basic_tab("asphalt");
                     });
                 }
             }
@@ -84,7 +84,7 @@ $(document).ready(function() {
                 if(landscape_oneshot == 0) {
                     landscape_oneshot = 1;
                     $( "#landscape" ).load("html/landscape.html", function() {
-                        basic_tab($( "#landscape_accordion" ), "landscape_container");
+                        basic_tab("landscape");
                     });
                 }
             }
@@ -92,7 +92,7 @@ $(document).ready(function() {
                 if(snow_oneshot == 0) {
                     snow_oneshot = 1;
                     $( "#snow" ).load("html/snow.html", function() {
-                        basic_tab($( "#snow_accordion" ), "snow_container");
+                        basic_tab("snow");
                     });
                 }
             }
@@ -100,7 +100,7 @@ $(document).ready(function() {
                 if(technical_oneshot == 0) {
                     technical_oneshot = 1;
                     $( "#technical" ).load("html/technical.html", function() {
-                        basic_tab($( "#technical_accordion" ), "technical_container");
+                        basic_tab("technical");
                     });
                 }
             }

@@ -26,8 +26,10 @@ var options = {
 };
 
 
-function basic_tab(acc, slider) {
-	acc.accordion({
+function basic_tab(prefix) {
+	var acc = "#" + prefix + "_accordion";
+	var slider = prefix + "_container";
+	$( acc ).accordion({
 		collapsible: true,
      	heightStyle: "content"
  	});
