@@ -35,18 +35,8 @@ $(document).ready(function() {
         activate: function(event, ui) {
             oldTab = ui.oldTab.index();
             newTab = ui.newTab.index();
-            if(newTab == 1) { 
-                
-            }
-        },
-        beforeActivate: function(event, ui) {
-            oldTab = ui.oldTab.index();
-            newTab = ui.newTab.index();
             if(newTab == 1) {
-                $( "#gallery" ).load("html/gallery.html");
-                $( "#wrap" ).addClass( "ui-widget-shadow" );             
-                $( "#gallery_wrap" ).show(1000);
-                $( "#gallery_container" ).show(1000);   
+    //                event.preventDefault();  
                 gallery_open = true;
                 if(gallery_oneshot == 0) {
                     gallery_oneshot = 1;
@@ -99,6 +89,16 @@ $(document).ready(function() {
                     contact_oneshot = 1;
                     $( "#contact" ).load("html/contact.html");
                 }
+            }
+        },
+        beforeActivate: function(event, ui) {
+            oldTab = ui.oldTab.index();
+            newTab = ui.newTab.index();
+            if(newTab == 1) {
+                $( "#gallery" ).load("html/gallery.html");
+                $( "#wrap" ).addClass( "ui-widget-shadow" );             
+                $( "#gallery_wrap" ).show(1000);
+                $( "#gallery_container" ).show(1000);   
             }
         },
         hide: 600,
