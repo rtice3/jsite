@@ -36,10 +36,7 @@ $(document).ready(function() {
         close_gallery();
     });
 
-    oneshot[0] = 1;
-    $( "#about" ).load("html/home.html", function() {
-        basic_tab("about");
-    });
+    load_tab(false);
 
     $( "#tabs" ).tabs({
         activate: function(event, ui) {
