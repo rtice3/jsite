@@ -56,10 +56,7 @@ window.onload = function() {
     hide.parentNode.removeChild(hide);
 
     var load = document.getElementById("intro_loading");
-    load.innerHTML =    '<div u="loading" style="position: absolute; top: 0px; left: 0px;">
-                            <div style="filter: alpha(opacity=70); opacity:0.7; position: absolute; display: block;background-color: #000000; top: 0px; left: 0px;width: 100%;height:100%;"></div>
-                            <div style="position: absolute; display: block; background: url(img/loading.gif) no-repeat center center;top: 0px; left: 0px;width: 100%;height:100%;"></div>
-                        </div>'; 
+    load.innerHTML = '<div u="loading" style="position: absolute; top: 0px; left: 0px;"><div style="filter: alpha(opacity=70); opacity:0.7; position: absolute; display: block;background-color: #000000; top: 0px; left: 0px;width: 100%;height:100%;"></div><div style="position: absolute; display: block; background: url(img/loading.gif) no-repeat center center;top: 0px; left: 0px;width: 100%;height:100%;"></div></div>'; 
 
     checkVersion();
 
