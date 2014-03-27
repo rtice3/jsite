@@ -55,13 +55,9 @@ window.onload = function() {
     var hide = document.getElementById("hide_me");
     hide.parentNode.removeChild(hide);
 
-    var load = document.getElementById("intro_loading");
-    load.innerHTML = '<div u="loading" style="position: absolute; top: 0px; left: 0px;"><div style="filter: alpha(opacity=70); opacity:0.7; position: absolute; display: block;background-color: #000000; top: 0px; left: 0px;width: 100%;height:100%;"></div><div style="position: absolute; display: block; background: url(img/loading.gif) no-repeat center center;top: 0px; left: 0px;width: 100%;height:100%;"></div></div>'; 
-
     checkVersion();
 
     load_script("js/jquery-1.10.2.min.js", "js", function() {
         $( "#wrap" ).load("html/layout.html");
-        load.parentNode.removeChild(load);
     });
 };
