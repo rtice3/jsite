@@ -15,7 +15,6 @@ body {
 }
 
 #wrap {
-	position: absolute;
 	border:0px solid white;
 	padding-top:2px;
 	padding-bottom:5px;
@@ -145,7 +144,6 @@ body {
 }
 
 #gallery_wrap {
-	position: absolute;
 	top: -100px;
 	left: -100px;
 	margin-left: auto;
