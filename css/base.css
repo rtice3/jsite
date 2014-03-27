@@ -10,19 +10,18 @@ body {
 }
 
 #hide_me {
-	/*	border: 1px solid #CCBE8A;
-	background: #D1C496;*/
 	color: #f5f3e5;
 	text-align: center;
 }
 
 #wrap {
-/*	visibility: hidden;*/
+	position: absolute;
 	border:0px solid white;
 	padding-top:2px;
 	padding-bottom:5px;
 	margin-left: auto;
 	margin-right: auto;
+	z-index: -1;
 	
 }
 
@@ -147,8 +146,8 @@ body {
 
 #gallery_wrap {
 	position: absolute;
-
-	top: 100px;
+	top: -100px;
+	left: -100px;
 	margin-left: auto;
 	margin-right: auto;
 	z-index: 2;
@@ -163,8 +162,6 @@ body {
 	width: 100%;
 	height: 15px;
 	font-size: .8em !important;
-/*	border: 1px solid #CCBE8A;
-	background: #D1C496;*/
 	color: #f5f3e5;
 	text-align: center;
 }
