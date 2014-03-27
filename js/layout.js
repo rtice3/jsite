@@ -40,6 +40,11 @@ $(document).ready(function() {
                 gallery_open = true;
                 if(gallery_oneshot == 0) {
                     gallery_oneshot = 1;
+                    $( "#gallery_wrap" ).load("html/gallery.html", function(response, status, xhr) {
+                    if( status == "error" ) {
+                        alert( "Gallery AJAX Error!! " + xhr.status + " " + xhr.statusText );
+                    }
+                });
                 }
             }
             else if(newTab == 2) {
@@ -95,11 +100,6 @@ $(document).ready(function() {
             oldTab = ui.oldTab.index();
             newTab = ui.newTab.index();
             if(newTab == 1) {
-                $( "#gallery_wrap" ).load("html/gallery.html", function(response, status, xhr) {
-                    if( status == "error" ) {
-                        alert( "Gallery AJAX Error!! " + xhr.status + " " + xhr.statusText );
-                    }
-                });
                 $( "#wrap" ).addClass( "ui-widget-shadow" );             
                 $( "#gallery_wrap" ).show(1000);
                 $( "#gallery_container" ).show(1000);   
