@@ -30,6 +30,7 @@ $(document).ready(function() {
 //    $( "#hide_me" ).addClass("emptydiv");
 
     $( "#about" ).load("html/home.html");
+    $( "#footer_container" ).before( '<div id="gallery_wrap"></div>' );
 
     $( "#tabs" ).tabs({
         activate: function(event, ui) {
@@ -40,6 +41,7 @@ $(document).ready(function() {
                 gallery_open = true;
                 if(gallery_oneshot == 0) {
                     gallery_oneshot = 1;
+                    $( "#gallery_wrap" ).load("html/gallery.html");
                 }
             }
             else if(newTab == 2) {
@@ -95,7 +97,6 @@ $(document).ready(function() {
             oldTab = ui.oldTab.index();
             newTab = ui.newTab.index();
             if(newTab == 1) {
-                $( "#gallery" ).load("html/gallery.html");
                 $( "#wrap" ).addClass( "ui-widget-shadow" );             
                 $( "#gallery_wrap" ).show(1000);
                 $( "#gallery_container" ).show(1000);   
