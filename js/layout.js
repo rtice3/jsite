@@ -52,7 +52,9 @@ $(document).ready(function() {
                 if(oneshot[newTab] == 0) {
                     oneshot[newTab] = 1;
                     $( "#gallery_wrap" ).html('<div class="spinner" style="position:fixed;top:50%;left:50%;margin-top:-9px;margin-left:-9px;"><div class="bounce1"></div><div class="bounce2"></div><div class="bounce3"></div></div>');
-                    $( "#gallery_wrap" ).load("html/" + tab_index[newTab] + ".html");
+                    $( "#gallery_wrap" ).load("html/" + tab_index[newTab] + ".html", function() {
+                        $( ".spinner" ).remove();
+                    });
                 }
             }
             else if(newTab == 9) {
