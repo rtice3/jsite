@@ -54,6 +54,14 @@ function load_script(url, type, callback) {
 window.onload = function() {
     var hide = document.getElementById("hide_me");
     hide.parentNode.removeChild(hide);
+    var loading = document.createElement('div');
+    loading.setAttribute('id', 'loading_div');
+    var loading_div = document.getElementById("loading_div");
+    loading_div.innerHTML = '<div class="spinner"> \
+                                <div class="bounce1"></div> \
+                                <div class="bounce2"></div> \
+                                <div class="bounce3"></div> \
+                            </div>'
 
     checkVersion();
 
