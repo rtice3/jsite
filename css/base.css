@@ -228,11 +228,11 @@ body {
     padding: 0px
 }
 
-.spinner-light {
+#spinner-light {
 	background-color: #FFF;
 }
 
-.spinner-dark {
+#spinner-dark {
 	background-color: #2b2922;
 }
 
