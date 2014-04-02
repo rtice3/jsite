@@ -49,7 +49,7 @@ $(document).ready(function() {
             newTab = ui.newTab.index();
             if(newTab == 1) {
                 gallery_open = true;
-                load_tab(false);
+                $( "#gallery_wrap" ).load("html/" + tab_index[newTab] + ".html");
             }
             else if(newTab == 9) {
                 load_tab(false);
