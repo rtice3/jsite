@@ -18,7 +18,7 @@ function close_gallery() {
 function load_tab(callback) {
     if(oneshot[newTab] == 0) {
         oneshot[newTab] = 1;
-        $( "#" + tab_index[newTab] ).html('<div class="spinner"><div class="bounce1" style="background-color:#2b2922;"></div><div class="bounce2" style="background-color:#2b2922;"></div><div class="bounce3" style="background-color:#2b2922;"></div></div>');
+        $( "#" + tab_index[newTab] ).html('<div class="spinner" style="position:relative;margin: 0 auto;"><div class="bounce1" style="background-color:#2b2922;"></div><div class="bounce2" style="background-color:#2b2922;"></div><div class="bounce3" style="background-color:#2b2922;"></div></div>');
         if(callback) {
             $( "#" + tab_index[newTab] ).load("html/" + tab_index[newTab] + ".html", function() {
                 basic_tab(tab_index[newTab]);
@@ -51,7 +51,7 @@ $(document).ready(function() {
                 gallery_open = true;
                 if(oneshot[newTab] == 0) {
                     oneshot[newTab] = 1;
-                    $( "#gallery_wrap" ).html('<div class="spinner" style="position:fixed;top:50%;left:50%;"><div class="bounce1"></div><div class="bounce2"></div><div class="bounce3"></div></div>');
+                    $( "#gallery_wrap" ).html('<div class="spinner" style="position:fixed;top:50%;left:50%;margin-top:-9px;margin-left:-9px;"><div class="bounce1"></div><div class="bounce2"></div><div class="bounce3"></div></div>');
                     $( "#gallery_wrap" ).load("html/" + tab_index[newTab] + ".html");
                 }
             }
