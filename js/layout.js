@@ -48,10 +48,10 @@ $(document).ready(function() {
             oldTab = ui.oldTab.index();
             newTab = ui.newTab.index();
             if(newTab == 1) {
+                gallery_open = true;
                 if(oneshot[newTab] == 0) {
                     oneshot[newTab] = 1;
                     $( "#gallery_wrap" ).html('<div class="spinner" style="position:fixed;top:50%;left:50%;"><div class="bounce1"></div><div class="bounce2"></div><div class="bounce3"></div></div>');
-                    gallery_open = true;
                     $( "#gallery_wrap" ).load("html/" + tab_index[newTab] + ".html");
                 }
             }
