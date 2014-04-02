@@ -61,7 +61,8 @@ window.onload = function() {
     checkVersion();
 
     load_script("js/jquery-1.10.2.min.js", "js", function() {
-        $( "#wrap" ).load("html/layout.html");
-        loading_div.parentNode.removeChild(loading_div);
+        $( "#wrap" ).load("html/layout.html", function() {
+            loading_div.parentNode.removeChild(loading_div);
+        });
     });
 };
