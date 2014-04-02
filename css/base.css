@@ -228,14 +228,6 @@ body {
     padding: 0px
 }
 
-#spinner-light {
-	background-color: #FFF;
-}
-
-#spinner-dark {
-	background-color: #2b2922;
-}
-
 .spinner {
   	margin: 100px auto 0;
   	width: 70px;
@@ -246,7 +238,7 @@ body {
 .spinner > div {
   	width: 18px;
   	height: 18px;
-
+  	background-color: #FFF;
   	border-radius: 100%;
   	display: inline-block;
   	-webkit-animation: bouncedelay 1.4s infinite ease-in-out;
