@@ -3,3 +3,4 @@ tmp
 *.sublime-workspace
 libs
 img
+*.png
