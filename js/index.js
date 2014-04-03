@@ -1,3 +1,5 @@
+var animation_support = true;
+
 function getInternetExplorerVersion() {
 // Returns the version of Internet Explorer or a -1
 // (indicating the use of another browser).
@@ -51,18 +53,38 @@ function load_script(url, type, callback) {
     }  
 }
 
+function browserSupportsCSSProperty(propertyName) {
+    var elm = document.createElement('div');
+    propertyName = propertyName.toLowerCase();
+    if (elm.style[propertyName] != undefined)
+        return true;
+    var propertyNameCapital = propertyName.charAt(0).toUpperCase() + propertyName.substr(1), domPrefixes = 'Webkit Moz ms O'.split(' ');
+    for (var i = 0; i < domPrefixes.length; i++) {
+        if (elm.style[domPrefixes[i] + propertyNameCapital] != undefined)
+            return true;
+    }
+    return false;
+}
+
 window.onload = function() {
     var hide = document.getElementById("hide_me");
     hide.parentNode.removeChild(hide);
-    
-    var loading_div = document.getElementById("loading");
-    loading_div.innerHTML = '<div class="spinner"><div class="bounce1"></div><div class="bounce2"></div><div class="bounce3"></div></div>';
 
+    if (!browserSupportsCSSProperty('animation')) {
+        animation_support = false;
+    }
+    else {
+        var loading_div = document.getElementById("loading");
+        loading_div.innerHTML = '<div class="spinner"><div class="bounce1"></div><div class="bounce2"></div><div class="bounce3"></div></div>';
+    }
+   
     checkVersion();
 
     load_script("js/jquery-1.10.2.min.js", "js", function() {
         $( "#wrap" ).load("html/layout.html", function() {
-            loading_div.parentNode.removeChild(loading_div);
+            if(animation_support) {
+                loading_div.parentNode.removeChild(loading_div);
+            }
         });
     });
 };
