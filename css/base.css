@@ -161,6 +161,7 @@ body {
 	color: #f5f3e5;
 	text-align: center;
 	border:2px solid black;
+	margin: 0 auto !important;
 }
 
 #contact_info {
