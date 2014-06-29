@@ -12,7 +12,15 @@ body {
 
 #hide_me {
 	color: #f5f3e5;
-	text-align: center;
+	width: 600px;
+	margin: 0 auto;
+	font-size: .8em;
+	text-align: left;
+}
+
+.err {
+	color: #ff0000;
+	font-size: 1.2em;
 }
 
 #wrap {
@@ -160,8 +168,8 @@ body {
 	font-size: .8em !important;
 	color: #f5f3e5;
 	text-align: center;
-	border:0px solid black;
-	margin: 0 auto !important;
+	border:2px solid black;
+	margin: 0 auto;
 }
 
 #contact_info {
