@@ -49,12 +49,12 @@ $(document).ready(function() {
     newTab = 0;
     load_tab(true);
     var active_tab = 0;
-
+/*
     $.post( "php/catch_path.php", function( data ) {
         active_tab = parseInt(data, 10);
         alert(data);
     });
-
+*/
     $( "#tabs" ).tabs({
         active: active_tab,
         activate: function(event, ui) {

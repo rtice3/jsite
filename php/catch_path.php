@@ -1,6 +1,7 @@
 <?php
 
 $path = $_SERVER['REQUEST_URI'];
+echo "<script type='text/javascript'>alert('$path');</script>";
 
 
 switch ( $path ) {
