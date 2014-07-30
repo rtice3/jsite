@@ -50,18 +50,8 @@ $(document).ready(function() {
     load_tab(true);
     var active_tab = 0;
 
-    $.ajax({
-        url : '/php/catch_path.php',
-        type : 'POST',
-        data : data,
-        dataType : 'text',
-        success : function (result) {
-            alert(result);
-            active_tab = parseInt(result, 10);
-        },
-        error : function () {
-            alert("error");
-        }
+    $.post( "php/catch_path.php", function( data ) {
+        active_tab = parseInt(data, 10);
     });
 
     $( "#tabs" ).tabs({
