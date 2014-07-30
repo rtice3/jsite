@@ -52,6 +52,7 @@ $(document).ready(function() {
 
     $.post( "php/catch_path.php", function( data ) {
         active_tab = parseInt(data, 10);
+        alert(data);
     });
 
     $( "#tabs" ).tabs({
