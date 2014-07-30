@@ -51,6 +51,9 @@ switch ( $path ) {
 		$active_tab = "0";
 		echo $active_tab;
 		break;
+	default:
+		echo($path);
+		break;
 }
 
 ?>
