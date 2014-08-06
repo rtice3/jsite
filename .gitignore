@@ -5,3 +5,6 @@ libs
 img
 *.png
 *.ico
+*.[oa]
+*.rtf
+*.DS_Store
