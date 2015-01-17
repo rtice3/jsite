@@ -48,15 +48,11 @@ $(document).ready(function() {
 
     newTab = 0;
     load_tab(true);
-    var active_tab = 0;
-/*
-    $.post( "php/catch_path.php", function( data ) {
-        active_tab = parseInt(data, 10);
-        alert(data);
-    });
-*/
+    var tab_path = $(location).attr('pathname'); 
+    var tab_num = 0; 
+
     $( "#tabs" ).tabs({
-        active: active_tab,
+        active: tab_num,
         activate: function(event, ui) {
             oldTab = ui.oldTab.index();
             newTab = ui.newTab.index();
