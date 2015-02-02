@@ -1,19 +1,8 @@
-var gallery_open = false;
 var oldTab = 0;
 var newTab = 0;
 
-var tab_index = [ "about", "gallery", "excavation", "utilities", "septic", "asphalt", "landscape", "snow", "technical", "contact" ];
+var tab_index = [ "about", "excavation", "septic", "utilities", "stormwater", "asphalt", "landscape", "snow", "technical", "contact" ];
 var oneshot =   [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ];
-
-function close_gallery() {
-    if(newTab == 1 && gallery_open == true) {
-        $( "#wrap" ).removeClass( "ui-widget-shadow" );
-        $( "#tabs" ).tabs("option", "active", oldTab);
-        $( "#gallery_wrap" ).hide(1000);
-        $( "#gallery_container" ).hide(1000);
-        gallery_open = false;
-    }   
-}
 
 function load_tab(callback) {
     if(oneshot[newTab] == 0) {
@@ -40,12 +29,6 @@ function load_tab(callback) {
 }
 
 $(document).ready(function() {
-    $( "#footer_container" ).before( '<div id="gallery_wrap"></div>' );
-
-    $( "#wrap" ).click(function() {
-        close_gallery();
-    });
-
     newTab = 0;
     load_tab(true);
     var tab_path = $(location).attr('pathname'); 
@@ -56,21 +39,7 @@ $(document).ready(function() {
         activate: function(event, ui) {
             oldTab = ui.oldTab.index();
             newTab = ui.newTab.index();
-            if(newTab == 1) {
-                gallery_open = true;
-                if(oneshot[newTab] == 0) {
-                    oneshot[newTab] = 1;
-                    if(animation_support) {
-                        $( "#gallery_wrap" ).html('<div class="spinner" style="position:fixed;top:50%;left:50%;margin-top:-9px;margin-left:-9px;"><div class="bounce1"></div><div class="bounce2"></div><div class="bounce3"></div></div>');
-                    }
-                    $( "#gallery_wrap" ).load("html/" + tab_index[newTab] + ".html", function() {
-                        if(animation_support) {
-                            $( ".spinner" ).remove();
-                        }
-                    });
-                }
-            }
-            else if(newTab == 9) {
+            if(newTab == 9) {
                 load_tab(false);
             }
             else {
@@ -80,11 +49,6 @@ $(document).ready(function() {
         beforeActivate: function(event, ui) {
             oldTab = ui.oldTab.index();
             newTab = ui.newTab.index();
-            if(newTab == 1) {
-                $( "#wrap" ).addClass( "ui-widget-shadow" );             
-                $( "#gallery_wrap" ).show(1000);
-                $( "#gallery_container" ).show(1000);   
-            }
         },
         hide: 600,
         show: 500
