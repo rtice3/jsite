@@ -5,6 +5,14 @@
 body {
   padding-bottom: 40px;
   color: #5a5a5a;
+  background-color:#2b2922;
+}
+
+#wrapper {
+  margin-left: auto;
+  margin-right: auto;
+  width: 980px;
+  
 }
 
 #header_logo {
