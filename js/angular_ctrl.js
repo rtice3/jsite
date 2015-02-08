@@ -1,5 +1,5 @@
 (function() {
-  var app = angular.module('angular_app', ['ui.bootstrap', 'ngRoute']);
+  var app = angular.module('angular_app', ['ui.bootstrap', 'ngRoute', 'ngAnimate']);
 
   app.config(['$routeProvider', function($routeProvider) {
     $routeProvider.
@@ -35,6 +35,10 @@
   app.controller('about_ctrl', function() {
     this.carousel_data = about_carousel;
     this.marketing_data = about_marketing;
+  });
+
+  app.controller('contact_ctrl', function() {
+
   });
 
   var about_carousel = [{

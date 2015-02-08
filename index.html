@@ -24,11 +24,14 @@
 
 		<link href="css/bootstrap.min.css" rel="stylesheet">
 		<link href="css/carousel.css" rel="stylesheet">
+		<link href="css/animate.css" rel="stylesheet">
 	</head>
 	<body ng-app="angular_app">
 		<div id="wrapper">
 			<top-nav></top-nav>
-	    	<div ng-view></div> <!-- content -->
+			<div class="view-animate-container">
+	    		<div ng-view class="view-animate"></div> <!-- content -->
+	    	</div>
 			<!-- FOOTER -->
       		<bottom-footer></bottom-footer>
 		</div>
