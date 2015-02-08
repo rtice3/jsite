@@ -31,15 +31,15 @@ body {
 
 contact-form {
   float: left;
-  width: 400px;
-  height: 700px;
+  width: 375px;
+  height: 550px;
   padding-right: 37px;
 }
 
 #map_container {
   float: left;
-  width: 400px;
-  height: 700px;
+  width: 375px;
+  height: 550px;
 }
 
 h2 {
