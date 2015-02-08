@@ -5,6 +5,11 @@
 body {
   padding-bottom: 40px;
   color: #5a5a5a;
+  background-color:#2b2922;
+}
+
+h2 {
+  color: #f5f3e5;
 }
 
 #wrapper {
@@ -33,6 +38,10 @@ footer img {
 footer div {
   position: relative;
   bottom: 0;
+}
+
+.img-circle {
+  background-color: #f5f3e5;
 }
 
 
