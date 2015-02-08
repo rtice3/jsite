@@ -32,7 +32,8 @@ body {
 contact-form {
   float: left;
   width: 400px;
-  height: 400px;
+  height: 700px;
+  padding-right: 37px;
 }
 
 #map_container {
