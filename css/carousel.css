@@ -35,11 +35,24 @@ footer div {
   bottom: 0;
 }
 
-.fb-wrap {
-padding-top: 10px; width:90%; margin: 0 auto;}
-
-.fb-like-box, .fb-like-box span, .fb-like-box span iframe[style]
-{width:  100% !important; }
+.fb_iframe_widget {
+ display: block !important;
+}
+ 
+.fb-like-box iframe {
+ width: 100% !important;
+}
+ 
+.fb-like-box span {
+ width: auto !important;
+ position: initial !important;
+}
+.fb_iframe_widget_fluid span {
+ width:100% !important;
+}
+.fb_iframe_widget span {
+ position: static !important;
+}
 
 
 /* CUSTOMIZE THE NAVBAR
