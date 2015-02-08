@@ -1,4 +1,4 @@
-{
+[
   { img_src: "img/home/home_00.jpeg",
     header_txt: "Welcome to Jones Contracting Inc.",
     caption_txt: "Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.",
@@ -17,4 +17,4 @@
     btn_dest: "#municipal",
     btn_txt: "Municipal & State Services",
   }
-}
+]

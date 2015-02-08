@@ -1,4 +1,4 @@
-{
+[
   { 
     img_src: "img/construction11.png",
     header_txt: "Local",
@@ -20,4 +20,4 @@
     btn_dest: "#",
     btn_txt: "View details",
   }
-}
+]
