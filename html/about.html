@@ -1,24 +1,47 @@
-<link href="css/slider.css" rel="stylesheet">
+<div id="about">
+	<!-- Carousel
+	================================================== -->
+	<div id="about_carousel">
+		<carousel interval="4000">
+			<slide ng-repeat="slide in ctrl.carousel_data" active="slide.active">
+		        <img ng-src="{{slide.img_src}}" style="margin:auto;">
+		        <div class="carousel-caption">
+		          	<h1>{{ slide.header_txt }}</h1>
+		          	<p>{{ slide.caption_txt }}</p>
+		          	<p><a class="btn btn-lg btn-primary" href="#contact" role="button">{{ slide.btn_txt }}</a></p>
+		        </div>
+		    </slide>
+		</carousel>
+	</div>
 
-<div id="about_container" class="slide_container">
-	<!-- Slides Container -->
-	<div u="slides" style="cursor: move; position: absolute; left: 0px; top: 0px; width:600px; height:300px; overflow: hidden;">
-		
-		<div><img u="image" src="img/home/home_00_scaled.jpg" /></div>
-		<div><img u="image" src="img/home/home_01_scaled.jpg" /></div>
-		<div><img u="image" src="img/home/home_02_scaled.jpg" /></div>
-		<div><img u="image" src="img/home/home_03_scaled.jpg" /></div>
-		<div><img u="image" src="img/home/home_04_scaled.jpg" /></div>
-		<div><img u="image" src="img/home/home_05_scaled.jpg" /></div>
-	</div>
+	<!-- Marketing messaging and featurettes
+	================================================== -->
+	<!-- Wrap the rest of the page in another container to center all the content. -->
+	<div class="container marketing">
+		<!-- Three columns of text below the carousel -->
+	  	<div class="row">
+	        <div class="col-lg-4" ng-repeat="col in ctrl.marketing_data">
+	        	<img class="img-circle" ng-src="{{ col.img_src }}" style="width: 140px; height: 140px;">
+	          	<h2>{{ col.header_txt }}</h2>
+	          	<p>{{ col.body_txt }}</p>
+	          	<p><a class="btn btn-default" href="#" role="button">{{ col.btn_txt }}  &raquo;</a></p>
+	        </div><!-- /.col-lg-4 -->
+	  	</div><!-- /.row -->
+	  	<!-- START THE FEATURETTES -->
+	  	<hr class="featurette-divider">
+
+	  	<div class="row featurette">
+	    	<div class="col-md-7">
+	          	<h2 class="featurette-heading">News & <span class="text-muted">Information</span></h2>
+	          	<p class="lead"></p>
+	        </div>
+	        <div class="col-md-5">
+	          	<div class="fb-like-box" data-href="https://www.facebook.com/pages/Jones-Contracting-Inc/159086087447871" data-width="800" data-height="500" data-colorscheme="dark" data-show-faces="false" data-header="false" data-stream="true" data-show-border="false"></div>
+	        </div>
+	  	</div>
+			<hr class="featurette-divider">
+			<!-- /END THE FEATURETTES -->
+	</div><!-- /.container -->
+	<!-- Bootstrap core JavaScript
+	================================================== -->
 </div>
-<div id="about_accordion" class="learn_accordian">
-	<h3>Learn More about Jones Contracting Inc.</h3>
-	<div>
-		<h1>Welcome to Jones Contracting, Inc.</h1>
-		<p>Jones Contracting, Inc. is a family owned and operated excavation company offering services in excavation and site work, septic system, utilities, asphalt paving, landscape construction, and snow plowing and removal.  Located in Walpole, MA, we take on residential, commercial and public projects across Eastern Massachusetts.</p>
-		<p>Our team is made up of seasoned professionals, including our experienced crew and degreed engineers. Jones Contracting, Inc. is licensed, insured, and bonded for any of your excavation service needs. We are committed to superior quality work, customer service, and attention to detail. We believe in serving our clients without cutting corners.</p> 
-		<p>Please browse our site for information about our work and photographs of our past projects. We are glad to provide free estimates and quotes for any of your excavation needs - big or small. </p>
-		<p>We look forward to working with you.</p>
-	</div>
-</div>				
