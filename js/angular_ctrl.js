@@ -3,13 +3,13 @@
 
   app.config(['$routeProvider', function($routeProvider) {
     $routeProvider.
-      when('about', {
+      when('/about', {
         templateUrl: 'html/about.html',
         controller: 'about_ctrl',
         controllerAs: 'ctrl'
       }).
       otherwise({
-        redirectTo: 'about'
+        redirectTo: '/about'
       });
   }]);
 
