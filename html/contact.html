@@ -1,65 +1,13 @@
-<form name="contact_form" ng-submit="reviewCtrl.addReview(product)">
-
-<!--  Live Preview -->
-  <blockquote >
-    <strong>{{reviewCtrl.review.stars}} Stars</strong>
-    {{reviewCtrl.review.body}}
-    <cite class="clearfix">—{{reviewCtrl.review.author}}</cite>
-  </blockquote>
-
-  <!--  Review Form -->
-  <h4>Submit a Review</h4>
-  <fieldset class="form-group">
-    <select ng-model="reviewCtrl.review.stars" class="form-control" ng-options="stars for stars in [5,4,3,2,1]" title="Stars">
-      <option value="">Rate the Product</option>
-    </select>
-  </fieldset>
-  <fieldset class="form-group">
-    <textarea ng-model="reviewCtrl.review.body" class="form-control" placeholder="Write a short review of the product..." title="Review"></textarea>
-  </fieldset>
-  <fieldset class="form-group">
-    <input ng-model="reviewCtrl.review.author" type="email" class="form-control" placeholder="jimmyDean@example.org" title="Email" />
-  </fieldset>
-  <fieldset class="form-group">
-    <input type="submit" class="btn btn-primary pull-right" value="Submit Review" />
-  </fieldset>
-</form>
-
-
-
-
-
-
 <script src="js/contact.js"></script>
 
-<div id="contact_accordion">
-	<h3>Request information or Quote</h3>
-	<form accept-charset="iso-8859-1" name="contact_form" id="contact_form">
-		<p>Please fill out the below information to request more information or a quote. A Jones Contracting representative will be in contact with you shortly. If you need immediate assistance please call (508) 668-7888. We look forward to hearing from you.</p>
-		<fieldset class="ui-state-highlight">
-			<legend><h3>Request Info</h3></legend>
-			<label><span>Name: *</span><input type="text" name="name" id="contact_form_name" required title="Please enter your name"></label><br>
-
-			<label><span>Phone: *</span><input type="tel" name="phone" id="contact_form_phone" pattern="\d{3}-\d{3}-\d{4}" required title="Please enter your phone number in this format xxx-xxx-xxxx"></label><br>
-
-			<label><span>Email: </span><input type="email" name="email" id="contact_form_email"></label><br>
-
-			<label><span>Subject: *</span><input type="text" name="subject" id="contact_form_subject" autocomplete="off" required></label><br>
-
-			<label><span>Message: </span><textarea name="message" id="contact_form_message"></textarea></label><br>
-			<div id="contact_form_required" class="ui-state-error"><p>* are required fields</p></div>
-			<input type="submit" id="submit" value="Submit">
-		</fieldset>
-		<fieldset class="ui-state-highlight">
-			<legend><h3>Contact Us</h3></legend>
-			<div id="map-canvas"></div>
-			<div id="contact_info">
-				<h4>Jones Contracting Inc.</h4><br>
-				(508) 668-7888<br>
-				info@jonescontractinginc.com<br>
-				735 Washington St.<br>
-				Walpole, MA 02081
-			</div>
-		</fieldset>
-	</form>		
+<contact-form></contact-form>
+<div class="well">
+	<div id="map-canvas"></div>
+	<div id="contact_info">
+		<h4>Jones Contracting Inc.</h4><br>
+		(508) 668-7888<br>
+		info@jonescontractinginc.com<br>
+		735 Washington St.<br>
+		Walpole, MA 02081
+	</div>
 </div>

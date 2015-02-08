@@ -32,6 +32,13 @@
     }
   });
 
+  app.directive('contactForm', function() {
+    return {
+      restrict: 'E',
+      templateUrl: 'html/contact-form.html', 
+    }
+  });
+
   app.controller('about_ctrl', function() {
     this.carousel_data = about_carousel;
     this.marketing_data = about_marketing;
