@@ -35,6 +35,12 @@ footer div {
   bottom: 0;
 }
 
+.fb-wrap {
+padding-top: 10px; width:90%; margin: 0 auto;}
+
+.fb-like-box, .fb-like-box span, .fb-like-box span iframe[style]
+{width:  100% !important; }
+
 
 /* CUSTOMIZE THE NAVBAR
 -------------------------------------------------- */
