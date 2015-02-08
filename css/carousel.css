@@ -8,6 +8,22 @@ body {
   background-color:#2b2922;
 }
 
+#map-canvas {
+    width: 260px;
+    height: 260px;
+    background-color: #B2B2B2;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+    padding: 0px
+}
+
+#contact_container {
+  position: absolute;
+  top: 50px;
+  left: 0px;
+}
+
 h2 {
   color: #f5f3e5;
 }
