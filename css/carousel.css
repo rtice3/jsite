@@ -29,16 +29,16 @@ body {
   width: 100%;
 }
 
-contact-form.well {
+#contact_form.well {
   float: left;
-  width: 375px;
+  width: 400px;
   height: 550px;
   padding-right: 37px;
 }
 
 #map_container.well {
   float: left;
-  width: 375px;
+  width: 400px;
   height: 550px;
 }
 
