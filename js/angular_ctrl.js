@@ -3,15 +3,34 @@
 
   app.config(['$routeProvider', function($routeProvider) {
     $routeProvider.
-      when('/about', {
+      when('/', {
         templateUrl: 'html/about.html',
         controller: 'about_ctrl',
         controllerAs: 'ctrl'
       }).
+      when('/contact', {
+        templateUrl: 'html/contact.html',
+        controller: 'contact_ctrl',
+        controllerAs: 'ctrl'
+      }).
       otherwise({
-        redirectTo: '/about'
+        redirectTo: '/'
       });
   }]);
+
+  app.directive('topNav', function() {
+    return {
+      restrict: 'E',
+      templateUrl: 'html/top-nav.html', 
+    }
+  });
+
+  app.directive('bottomFooter', function() {
+    return {
+      restrict: 'E',
+      templateUrl: 'html/footer.html', 
+    }
+  });
 
   app.controller('about_ctrl', function() {
     this.carousel_data = about_carousel;

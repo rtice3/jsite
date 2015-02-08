@@ -6,7 +6,6 @@
 		<meta name="Description" content="Family owned and operated excavation contractor based in Walpole, MA.  Service eastern Massachusetts specializing in excavation and site work, septic systems, utilities, asphalt paving, landscape construction, and snow plowing and removal." />
 		<title>Jones Contracting, Inc. – Excavation, Heavy Civil Construction, Site Work, Septic Systems, Utilities, Sewer, Water, Drain, Asphalt Paving</title>
 		
-
 		<link rel="apple-touch-icon" sizes="57x57" href="/apple-touch-icon-57x57.png">
 		<link rel="apple-touch-icon" sizes="114x114" href="/apple-touch-icon-114x114.png">
 		<link rel="apple-touch-icon" sizes="72x72" href="/apple-touch-icon-72x72.png">
@@ -28,56 +27,10 @@
 	</head>
 	<body ng-app="angular_app">
 		<div id="wrapper">
-			<div class="navbar-wrapper">
-	      		<div class="container">
-			        <nav class="navbar navbar-inverse navbar-fixed-top">
-			          	<div class="container">
-				            <div class="navbar-header">
-					            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-					                <span class="sr-only">Toggle navigation</span>
-					                <span class="icon-bar"></span>
-					                <span class="icon-bar"></span>
-					                <span class="icon-bar"></span>
-					            </button>
-					            <img src="img/joneslogonoaddr.png">
-				            </div>
-				            <div id="navbar" class="navbar-collapse collapse">
-					            <ul class="nav navbar-nav">
-					                <li class="active"><a href="#about">The Company</a></li>
-					                <li><a href="#residential">Residential</a></li>
-					                <li><a href="#commercial">Commerical</a></li>
-					                <li><a href="#municipal">Municipal & State</a></li>
-					                <li class="dropdown">
-					                  	<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Services <span class="caret"></span></a>
-					                  	<ul class="dropdown-menu" role="menu">
-					                    	<li><a href="#excavation">Heavy Civil & Site Work</a></li>
-					                    	<li><a href="#septic">Septic Systems & Title V</a></li>
-					                    	<li><a href="#utilities">Utilities, Water, & Sewer</a></li>
-					                    	<li><a href="#stormwater">Stormwater Management</a></li>
-					                    	<li><a href="#asphalt">Asphalt Paving</a></li>
-					                    	<li><a href="#landscape">Landscape Construction</a></li>
-					                    	<li><a href="#snow">Snow Services</a></li>
-					                    	<li><a href="#technical">Technical Services</a></li>
-					                  	</ul>
-					                </li>
-					                <li><a href="#contact">Contact & Estimates</a></li>
-					            </ul>
-				            </div>
-			          	</div>
-			        </nav>
-	      		</div>
-	    	</div>
+			<top-nav></top-nav>
 	    	<div ng-view></div> <!-- content -->
 			<!-- FOOTER -->
-      		<footer>
-    			<div class="pull-right">
-    				<a href="https://www.facebook.com/pages/Jones-Contracting-Inc/159086087447871"><img src="img/FB-f-Logo__white_20.png">Facebook</a><br>
-    				<a href="https://plus.google.com/104048477192327928434/about"><img src="img/gplus_btn_white.png">Google+</a>
-    			</div>
-        		<div class="pull-left">&copy; 2015 Jones Contracting Inc.<br>
-        		735 Washington St. Walpole, MA<br>
-        		508&middot;668&middot;7888</div>
-      		</footer>
+      		<bottom-footer></bottom-footer>
 		</div>
 	    <!-- Placed at the end of the document so the pages load faster -->
 	    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
