@@ -5,27 +5,31 @@
 body {
   padding-bottom: 40px;
   color: #5a5a5a;
-  background-color:#2b2922;
+}
+
+footer {
+  height: 20px;
+}
+
+footer img {
+  padding-left: 0px;
+  padding-right: 40px;
 }
 
 #wrapper {
+  position: relative;
   margin-left: auto;
   margin-right: auto;
-  width: 980px;
-  
+  width: 837px;
 }
 
 #header_logo {
-  position: absolute;
-  top: 0;
-  right: 0;
-  left: 0;
-  z-index: 20;
+  display: inline-block;
+  float: none;
 }
 
 /* CUSTOMIZE THE NAVBAR
 -------------------------------------------------- */
-
 /* Special class on .container surrounding .navbar, used for positioning it into place. */
 .navbar-wrapper {
   position: absolute;
@@ -45,9 +49,16 @@ body {
   padding-left: 15px;
 }
 .navbar-wrapper .navbar .container {
-  width: 100%;
-  margin-left: auto;
-  margin-right: auto;
+  width: auto;
+}
+
+.navbar .nav li {
+    display: inline-block;
+    float: none;
+}
+.navbar .nav {
+    float: none;
+    text-align: center;
 }
 
 
@@ -57,7 +68,7 @@ body {
 /* Carousel base class */
 .carousel {
   height: 500px;
-  margin-bottom: 60px;
+  margin-bottom: 20px;
 }
 /* Since positioning the image, we need to help out the caption */
 .carousel-caption {
@@ -81,9 +92,21 @@ body {
 /* MARKETING CONTENT
 -------------------------------------------------- */
 
+.container.marketing {
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+}
+
+.col-md-7 {
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+}
+
 /* Center align the text within the three columns below the carousel */
 .marketing .col-lg-4 {
-  margin-bottom: 20px;
+  margin-bottom: 15px;
   text-align: center;
 }
 .marketing h2 {
@@ -99,7 +122,7 @@ body {
 ------------------------- */
 
 .featurette-divider {
-  margin: 80px 0; /* Space out the Bootstrap <hr> more */
+  margin: 20px 0; /* Space out the Bootstrap <hr> more */
 }
 
 /* Thin out the marketing headings */
@@ -109,11 +132,15 @@ body {
   letter-spacing: -1px;
 }
 
+.lead {
+  font-size: 18px;
+}
+
 
 /* RESPONSIVE CSS
 -------------------------------------------------- */
 
-@media (min-width: 768px) {
+@media (min-width: 900px) {
   /* Navbar positioning foo */
   .navbar-wrapper {
     margin-top: 20px;
@@ -146,6 +173,43 @@ body {
 
 @media (min-width: 992px) {
   .featurette-heading {
-    margin-top: 120px;
+    margin-top: 30px;
+  }
+}
+
+@media (max-width: 900px) {
+    .navbar-header {
+        float: none;
+    }
+    .navbar-left,.navbar-right {
+        float: none !important;
+    }
+    .navbar-toggle {
+        display: block;
+    }
+    .navbar-collapse {
+        border-top: 1px solid transparent;
+        box-shadow: inset 0 1px 0 rgba(255,255,255,0.1);
+    }
+    .navbar-fixed-top {
+    top: 0;
+    border-width: 0 0 1px;
+  }
+    .navbar-collapse.collapse {
+        display: none!important;
+    }
+    .navbar-nav {
+        float: none!important;
+    margin-top: 7.5px;
+  }
+  .navbar-nav>li {
+        float: none;
+    }
+    .navbar-nav>li>a {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    .collapse.in{
+      display:block !important;
   }
 }
