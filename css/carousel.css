@@ -18,10 +18,17 @@ body {
     padding: 0px
 }
 
-#contact_container {
+#content {
   position: absolute;
   top: 50px;
   left: 0px;
+}
+
+#contact_container {
+  position: absolute;
+  top: 80px;
+  left: 0px;
+  width: 100%;
 }
 
 h2 {
