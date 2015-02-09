@@ -1,6 +1,6 @@
 {
 	"carousel": {
-		"interval": "4000",
+		"interval": 4000,
 		"img": [
 			{ 
 				"src": "img/home/home_00.jpeg",
