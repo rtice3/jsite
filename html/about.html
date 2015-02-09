@@ -2,7 +2,7 @@
 ================================================== -->
 <div id="about_carousel">
 	<carousel interval="4000">
-		<slide ng-repeat="slide in ctrl.carousel_data track by $index" active="slide.active">
+		<slide ng-repeat="slide in ctrl.carousel_data.values" active="slide.active">
 	        <img ng-src="{{slide.img_src}}" style="margin:auto;">
 	        <div class="carousel-caption">
 	          	<h1>{{ slide.header_txt }}</h1>
@@ -19,7 +19,7 @@
 <div class="container marketing">
 	<!-- Three columns of text below the carousel -->
   	<div class="row">
-        <div class="col-lg-4" ng-repeat="col in ctrl.marketing_data track by $index">
+        <div class="col-lg-4" ng-repeat="col in ctrl.marketing_data.values">
         	<img class="img-circle" ng-src="{{ col.img_src }}" style="width: 140px; height: 140px;">
           	<h2>{{ col.header_txt }}</h2>
           	<p>{{ col.body_txt }}</p>
