@@ -4,7 +4,7 @@
   app.config(['$routeProvider', function($routeProvider) {
     $routeProvider.
       when('/', {
-        templateUrl: 'html/about.html',
+        templateUrl: 'html/template.html',
         controller: 'about_ctrl',
         controllerAs: 'ctrl'
       }).
@@ -44,13 +44,19 @@
     }
   });
 
-  app.controller('about_ctrl', function() {
-    this.carousel_data = about_carousel;
-    this.marketing_data = about_marketing;
-  });
+  app.controller('about_ctrl', [ '$http', function($http) {
+    var store = this;
+    store.data = [];
+    $http.get("/json/about.json").success(function(response) {
+      store.data = response;
+    });
+  }]);
 
   app.controller('excavation_ctrl', function() {
-    this.service_data = excavation_service;
+    this.carousel_data = excavation_carousel;
+    this.header_txt = "Heavy Civil & ";
+    this.mute_txt = "Sitework";
+    this.body_txt = "From cut and fill to curb and sidewalk, Jones Contracting, Inc. has extensive experience providing site work for housing developments and buildings. Our main goal is to offer comprehensive site work services with as little subcontracting as possible to maximize efficiency and minimize your cost.";
   });
 
   app.controller('contact_ctrl', function() {
@@ -99,19 +105,11 @@
       btn_txt: "View details",
   }];
 
-  var excavation_service = [{
+  var excavation_carousel = [{
       img_src: "img/excavating/excavating_07.png",
-      header_txt: "From cut and fill to curb and sidewalk, ",
-      mute_txt: "Jones Contracting, Inc. ",
-      body_txt: "has extensive experience providing site work for housing developments and buildings. Our main goal is to offer comprehensive site work services with as little subcontracting as possible to maximize efficiency and minimize your cost.",
-      left_hand: false
     },
     {
       img_src: "img/excavating/excavating_03.png",
-      header_txt: "From cut and fill to curb and sidewalk, ",
-      mute_txt: "Jones Contracting, Inc. ",
-      body_txt: "has extensive experience providing site work for housing developments and buildings. Our main goal is to offer comprehensive site work services with as little subcontracting as possible to maximize efficiency and minimize your cost.",
-      left_hand: true
   }];
 
 })();
