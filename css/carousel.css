@@ -29,14 +29,14 @@ body {
   width: 100%;
 }
 
-#contact_form.well {
+#contact_form {
   float: left;
   width: 400px;
   height: 550px;
   padding-right: 37px;
 }
 
-#map_container.well {
+#map_container {
   float: left;
   width: 400px;
   height: 550px;
