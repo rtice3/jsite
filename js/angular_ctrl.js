@@ -8,6 +8,11 @@
         controller: 'about_ctrl',
         controllerAs: 'ctrl'
       }).
+      when('/excavation', {
+        templateUrl: 'html/service-template.html',
+        controller: 'excavation_ctrl',
+        controllerAs: 'ctrl'
+      }).
       when('/contact', {
         templateUrl: 'html/contact.html',
         controller: 'contact_ctrl',
@@ -42,6 +47,10 @@
   app.controller('about_ctrl', function() {
     this.carousel_data = about_carousel;
     this.marketing_data = about_marketing;
+  });
+
+  app.controller('excavation_ctrl', function() {
+    this.service_data = excavation_service;
   });
 
   app.controller('contact_ctrl', function() {
@@ -88,6 +97,21 @@
       body_txt: "Please browse our site for information about our work and photographs of our past projects. We are glad to provide free estimates and quotes for any of your excavation needs - big or small.</p><p>We look forward to working with you.",
       btn_dest: "#",
       btn_txt: "View details",
+  }];
+
+  var excavation_service = [{
+      img_src: "img/excavating/excavating_07.png",
+      header_txt: "From cut and fill to curb and sidewalk, ",
+      mute_txt: "Jones Contracting, Inc. ",
+      body_txt: "has extensive experience providing site work for housing developments and buildings. Our main goal is to offer comprehensive site work services with as little subcontracting as possible to maximize efficiency and minimize your cost.",
+      left_hand: false
+    },
+    {
+      img_src: "img/excavating/excavating_03.png",
+      header_txt: "From cut and fill to curb and sidewalk, ",
+      mute_txt: "Jones Contracting, Inc. ",
+      body_txt: "has extensive experience providing site work for housing developments and buildings. Our main goal is to offer comprehensive site work services with as little subcontracting as possible to maximize efficiency and minimize your cost.",
+      left_hand: true
   }];
 
 })();
