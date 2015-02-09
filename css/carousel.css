@@ -226,7 +226,7 @@ footer div {
   }
 }
 
-@media (min-width: 992px) {
+@media (min-width: 800px) {
   .featurette-heading {
     margin-top: 15px;
   }
