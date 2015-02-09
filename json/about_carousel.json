@@ -11,7 +11,8 @@
     "caption_txt": "Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.",
     "btn_dest": "#residential",
     "btn_txt": "Residential Services"
-  }, {
+  }, 
+  {
     "img_src": "img/home/home_07.jpeg",
     "header_txt": "Municipal & State Services",
     "caption_txt": "Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.",
