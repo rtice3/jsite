@@ -47,7 +47,7 @@
   app.controller('about_ctrl', [ '$http', function($http) {
     var store = this;
     store.data = [];
-    $http.get("/json/about.json").success(function(response) {
+    $http.jsonp("/json/about.json").success(function(response) {
       store.data = response;
     });
   }]);
