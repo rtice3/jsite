@@ -1,4 +1,4 @@
-<carousel interval="{{ ctrl.data.carousel.interval }}" ng-show="ctrl.data.carousel.img.length">
+<carousel interval={{ ctrl.data.carousel.interval }} ng-show="ctrl.data.carousel.img.length">
 	<slide ng-repeat="slide in ctrl.data.carousel.img" active="slide.active">
 	    <img ng-src="{{ slide.src }}" style="margin:auto;">
 	    <div class="carousel-caption">
