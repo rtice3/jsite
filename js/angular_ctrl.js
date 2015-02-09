@@ -44,10 +44,10 @@
     store.carousel_data = [ ];
     store.marketing_data = [ ];
     $http.get('/json/about_carousel.json').success(function(data) {
-      store.carousel_data = data;
+      store.carousel_data = data.data;
     });
     $http.get('/json/about_marketing.json').success(function(data) {
-      store.marketing_data = data;
+      store.marketing_data = data.data;
     });
   }]);
 
