@@ -1,4 +1,4 @@
-<carousel interval="4000" ng-show="ctrl.data.carousel.img.length">
+<carousel interval="{{ ctrl.data.carousel.interval }}" ng-show="ctrl.data.carousel.img.length">
 	<slide ng-repeat="slide in ctrl.data.carousel.img" active="slide.active">
 	    <img ng-src="{{ slide.src }}" style="margin:auto;">
 	    <div class="carousel-caption">
@@ -24,15 +24,15 @@
   	<!-- START THE FEATURETTES -->
   	<hr class="featurette-divider" ng-show="ctrl.data.cells.length">
 
-  	<div class="row featurette" ng-show="ctrl.data.featurette.length">
+  	<div class="row featurette" ng-show="ctrl.data.featurette.length" ng-repeat="f in ctrl.data.featurette">
     	<div class="col-md-7">
-          	<h2 class="featurette-heading">{{ ctrl.data.featurette.header_txt }}<span class="text-muted">{{ ctrl.data.featurette.mute_txt }}</span></h2>
+          	<h2 class="featurette-heading">{{ f.header_txt }}<span class="text-muted">{{ f.mute_txt }}</span></h2>
           	<p class="lead"></p>
         </div>
         <div class="col-md-5 light well">
-          	{{ ctrl.data.featurette.body_txt }}
+          	{{ f.body_txt }}
         </div>
+        <hr class="featurette-divider" ng-show="ctrl.data.featurette.length">
   	</div>
-	<hr class="featurette-divider" ng-show="ctrl.data.featurette.length">
 		<!-- /END THE FEATURETTES -->
 </div><!-- /.container -->
