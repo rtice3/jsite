@@ -3,7 +3,7 @@
 
   app.config(['$routeProvider', function($routeProvider) {
     $routeProvider.
-      when('', {
+      when('/', {
         templateUrl: 'html/about.html',
         controller: 'about_ctrl',
         controllerAs: 'ctrl'
@@ -14,7 +14,7 @@
         controllerAs: 'ctrl'
       }).
       otherwise({
-        redirectTo: ''
+        redirectTo: '/'
       });
   }]);
 
