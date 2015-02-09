@@ -1,10 +1,10 @@
-<carousel interval="ctrl.data.carousel.interval" ng-show="ctrl.data.carousel.img.length">
+<carousel interval="{{ ctrl.data.carousel.interval }}" ng-show="ctrl.data.carousel.img.length">
 	<slide ng-repeat="slide in ctrl.data.carousel.img" active="slide.active">
 	    <img ng-src="{{ slide.src }}" style="margin:auto;">
 	    <div class="carousel-caption">
           	<h1>{{ slide.header_txt }}</h1>
           	<p>{{ slide.caption_txt }}</p>
-          	<p><a class="btn btn-lg btn-primary" href="#contact" role="button">{{ slide.btn_txt }}</a></p>
+          	<p><a class="btn btn-lg btn-primary" href="{{ slide.btn_dest }}" role="button">{{ slide.btn_txt }}</a></p>
         </div>
 	</slide>
 </carousel>
@@ -18,7 +18,7 @@
         	<img class="img-circle" ng-src="{{ col.img }}" style="width: 140px; height: 140px;">
           	<h2>{{ col.header_txt }}</h2>
           	<p>{{ col.body_txt }}</p>
-          	<p><a class="btn btn-default" href="#" role="button">{{ col.btn_txt }}  &raquo;</a></p>
+          	<p><a class="btn btn-default" href="{{ col.btn_dest }}" role="button">{{ col.btn_txt }}  &raquo;</a></p>
         </div><!-- /.col-lg-4 -->
   	</div><!-- /.row -->
   	<!-- START THE FEATURETTES -->
