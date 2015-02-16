@@ -8,6 +8,44 @@ body {
   background-color:#2b2922;
 }
 
+#logo img {
+  border:0px solid black;
+  position:relative;
+  top: -10px;
+  right: 0px;
+}
+
+#logo {
+  border:0px solid black;
+  height:130px;
+  width:980px;
+
+}
+
+#logo_img {
+  position: absolute;
+  top: 30px;
+  left:680px;
+  display: block;
+  background: url(../img/logo_img.png) no-repeat;
+  border: 0px solid black;
+  height: 70px;
+  width: 190px;
+  overflow:hidden;
+}
+
+#logo_img_left {
+  position: absolute;
+  top: 25px;
+  left:400px;
+  display: block;
+  background: url(../img/logo_img_left.png) no-repeat;
+  border: 0px solid black;
+  height: 70px;
+  width: 190px;
+  overflow:hidden;
+}
+
 #map-canvas {
     width: 260px;
     height: 260px;

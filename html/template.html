@@ -23,16 +23,17 @@
   	</div><!-- /.row -->
   	<!-- START THE FEATURETTES -->
   	<hr class="featurette-divider" ng-show="ctrl.data.cells.length">
-
-  	<div class="row featurette" ng-show="ctrl.data.featurette.length" ng-repeat="f in ctrl.data.featurette">
-    	<div class="col-md-7">
-          	<h2 class="featurette-heading">{{ f.header_txt }}<span class="text-muted">{{ f.mute_txt }}</span></h2>
-          	<p class="lead"></p>
-        </div>
-        <div class="col-md-5 light well">
-          	{{ f.body_txt }}
-        </div>
-        <hr class="featurette-divider" ng-show="ctrl.data.featurette.length">
-  	</div>
+  	<div ng-repeat="f in ctrl.data.featurette">
+	  	<div class="row featurette" ng-show="ctrl.data.featurette.length">
+	    	<div class="col-md-7">
+	          	<h2 class="featurette-heading">{{ f.header_txt }}<span class="text-muted">{{ f.mute_txt }}</span></h2>
+	          	<p class="lead"></p>
+	        </div>
+	        <div class="col-md-5 light well">
+	          	{{ f.body_txt }}
+	        </div>
+	  	</div>
 		<!-- /END THE FEATURETTES -->
+		<hr class="featurette-divider" ng-show="ctrl.data.featurette.length">
+	</div>
 </div><!-- /.container -->
