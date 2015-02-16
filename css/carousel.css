@@ -14,7 +14,7 @@ body {
 #logo img {
   border:0px solid black;
   position:relative;
-  top: -10px;
+  top: 0px;
   right: 0px;
 }
 
@@ -171,6 +171,8 @@ footer div {
   height: 347px;
   margin-bottom: 60px;
   width: 580px;
+  margin-left: auto;
+  margin-right: auto;
 }
 /* Since positioning the image, we need to help out the caption */
 .carousel-caption {
@@ -179,7 +181,7 @@ footer div {
 
 /* Declare heights because of positioning of img element */
 .carousel .item {
-  height: 500px;
+  height: 347px;
   background-color: #777;
 }
 .carousel-inner > .item > img {

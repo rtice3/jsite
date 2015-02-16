@@ -3,13 +3,8 @@
 <div id="logo_img"></div>
 
 <carousel interval="4000" ng-show="ctrl.data.carousel.img.length">
-	<slide ng-repeat="slide in ctrl.data.carousel.img" active="slide.active">
-	    <img ng-src="{{ slide.src }}" style="margin:auto;">
-	    <div class="carousel-caption">
-          	<h1>{{ slide.header_txt }}</h1>
-          	<p>{{ slide.caption_txt }}</p>
-          	<p><a class="btn btn-lg btn-primary" href="{{ slide.btn_dest }}" role="button">{{ slide.btn_txt }}</a></p>
-        </div>
+	<slide ng-repeat="slide in ctrl.data.carousel.img.array" active="slide.active">
+	    <img ng-src="{{ ctrl.data.carousel.img.prefix }}_{{ slide }}_{{ ctrl.data.carousel.img.suffix }}.{{ ctrl.data.carousel.img.ext }}" style="margin:auto;">
 	</slide>
 </carousel>
 

@@ -1,38 +1,12 @@
 {
 	"carousel": {
 		"interval": "4000",
-		"img": [
-			{ 
-				"src": "img/home/home_00_scaled.jpg",
-				"header_txt": "",
-      			"caption_txt": ""
-			},
-			{ 
-				"src": "img/home/home_01_scaled.jpg",
-				"header_txt": "",
-      			"caption_txt": ""
-			},
-			{ 
-				"src": "img/home/home_02_scaled.jpg",
-				"header_txt": "",
-      			"caption_txt": ""
-			},
-			{ 
-				"src": "img/home/home_03_scaled.jpg",
-				"header_txt": "",
-      			"caption_txt": ""
-			},
-			{ 
-				"src": "img/home/home_04_scaled.jpg",
-				"header_txt": "",
-      			"caption_txt": ""
-			},
-			{ 
-				"src": "img/home/home_05_scaled.jpg",
-				"header_txt": "",
-      			"caption_txt": ""
-			}
-		]
+		"img": {
+			"prefix": "home",
+			"array": [ "00", "01", "02", "03", "04", "05" ],
+			"suffix": "scaled",
+			"ext": "jpg"
+		}
 	},
 	"cells": [
 		{
