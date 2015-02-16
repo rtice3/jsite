@@ -57,7 +57,8 @@ body {
 }
 
 #content {
-  margin-top: 50px
+  margin-top: 150px;
+  background: #f5f3e5;
 }
 
 #contact_container {
