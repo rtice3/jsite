@@ -3,54 +3,40 @@
 		"interval": "4000",
 		"img": [
 			{
-				"src": "home_00_scaled.jpg"
+				"src": "img/home_00_scaled.jpg"
 			},
 			{
-				"src": "home_01_scaled.jpg"
+				"src": "img/home_01_scaled.jpg"
 			},
 			{
-				"src": "home_02_scaled.jpg"
+				"src": "img/home_02_scaled.jpg"
 			},
 			{
-				"src": "home_03_scaled.jpg"
+				"src": "img/home_03_scaled.jpg"
 			},
 			{
-				"src": "home_04_scaled.jpg"
+				"src": "img/home_04_scaled.jpg"
 			},
 			{
-				"src": "home_05_scaled.jpg"
+				"src": "img/home_05_scaled.jpg"
 			}
 		]
 	},
-	"cells": [
-		{
-			"img": "img/construction11.png",
-      		"header_txt": "Local",
-      		"body_txt": "Jones Contracting, Inc. is a family owned and operated excavation company offering services in excavation and site work, septic system, utilities, asphalt paving, landscape construction, and snow plowing and removal. Located in Walpole, MA, we take on residential, commercial and public projects across Eastern Massachusetts.",
-      		"btn_dest": "#",
-      		"btn_txt": "View details"
-		},
-		{
-			"img": "img/bulldozer2.png",
-      		"header_txt": "Quality",
-      		"body_txt": "Our team is made up of seasoned professionals, including our experienced crew and degreed engineers. Jones Contracting, Inc. is licensed, insured, and bonded for any of your excavation service needs. We are committed to superior quality work, customer service, and attention to detail. We believe in serving our clients without cutting corners.",
-      		"btn_dest": "#",
-      		"btn_txt": "View details"
-    	},
-    	{
-      		"img": "img/truck29.png",
-      		"header_txt": "Service",
-      		"body_txt": "Please browse our site for information about our work and photographs of our past projects. We are glad to provide free estimates and quotes for any of your excavation needs - big or small.</p><p>We look forward to working with you.",
-      		"btn_dest": "#",
-      		"btn_txt": "View details"
-		}
-	],
-	"featurette": [
-		{
-			"img": "",
-			"header_txt": "News & ",
-    		"mute_txt": "Information",
-    		"body_txt": ""
-		}
-	]
+	"panel": {
+		"heading": "Learn More About Jones Contracting Inc.",
+		"body": [
+			{
+				"content": "Jones Contracting, Inc. is a family owned and operated excavation company offering services in excavation and site work, septic system, utilities, asphalt paving, landscape construction, and snow plowing and removal. Located in Walpole, MA, we take on residential, commercial and public projects across Eastern Massachusetts."
+			},
+			{
+				"content": "Our team is made up of seasoned professionals, including our experienced crew and degreed engineers. Jones Contracting, Inc. is licensed, insured, and bonded for any of your excavation service needs. We are committed to superior quality work, customer service, and attention to detail. We believe in serving our clients without cutting corners."
+			},
+			{
+				"content": "Please browse our site for information about our work and photographs of our past projects. We are glad to provide free estimates and quotes for any of your excavation needs - big or small."
+			},
+			{
+				"content": "We look forward to working with you."
+			}
+		]
+	}
 }
