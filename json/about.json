@@ -1,12 +1,26 @@
 {
 	"carousel": {
 		"interval": "4000",
-		"img": {
-			"prefix": "home",
-			"array": [ "00", "01", "02", "03", "04", "05" ],
-			"suffix": "scaled",
-			"ext": "jpg"
-		}
+		"img": [
+			{
+				"src": "home_00_scaled.jpg"
+			},
+			{
+				"src": "home_01_scaled.jpg"
+			},
+			{
+				"src": "home_02_scaled.jpg"
+			},
+			{
+				"src": "home_03_scaled.jpg"
+			},
+			{
+				"src": "home_04_scaled.jpg"
+			},
+			{
+				"src": "home_05_scaled.jpg"
+			}
+		]
 	},
 	"cells": [
 		{
