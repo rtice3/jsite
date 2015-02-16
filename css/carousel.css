@@ -27,7 +27,7 @@ body {
 
 #logo_img {
   position: absolute;
-  top: 30px;
+  top: 25px;
   left:680px;
   display: block;
   background: url(../img/logo_img.png) no-repeat;
@@ -39,7 +39,7 @@ body {
 
 #logo_img_left {
   position: absolute;
-  top: 25px;
+  top: 20px;
   left:400px;
   display: block;
   background: url(../img/logo_img_left.png) no-repeat;
@@ -193,7 +193,7 @@ footer div {
   height: 347px;
 }
 
-.panel .panel-primary {
+#content_panel {
   width: 580px;
   margin-left: auto;
   margin-right: auto;
