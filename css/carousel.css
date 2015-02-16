@@ -100,6 +100,12 @@ h2 {
   width: 837px;
 }
 
+.footer {
+  width: 975px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 footer {
   margin-top: 10px;
   height: auto;

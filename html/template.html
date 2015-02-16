@@ -8,12 +8,6 @@
 	</slide>
 </carousel>
 
-<div id="content_panel" class="panel panel-primary">
-  <div class="panel-heading">
-    <h3 class="panel-title">{{ ctrl.data.panel.heading }}</h3>
-  </div>
-  <div class="panel-body">
-  	<div ng-repeat="f in ctrl.data.panel.body">
-  		<p>{{ f.content }}</p>    
-  </div>
+<div class="well" ng-repeat="f in ctrl.data.panel.body">
+  <p>{{ f.content }}</p>  
 </div>
