@@ -14,7 +14,7 @@ body {
 #logo img {
   border:0px solid black;
   position:relative;
-  top: 0px;
+  top: 5px;
   right: 0px;
 }
 
@@ -22,12 +22,12 @@ body {
   border:0px solid black;
   height:130px;
   width:980px;
-  margin-top: 70px;
+  margin-top: 50px;
 }
 
 #logo_img {
   position: absolute;
-  top: 25px;
+  top: 20px;
   left:680px;
   display: block;
   background: url(../img/logo_img.png) no-repeat;
@@ -39,7 +39,7 @@ body {
 
 #logo_img_left {
   position: absolute;
-  top: 20px;
+  top: 15px;
   left:400px;
   display: block;
   background: url(../img/logo_img_left.png) no-repeat;
@@ -101,6 +101,7 @@ h2 {
 }
 
 footer {
+  margin-top: 10px;
   height: auto;
   position: absolute;
   width: 100%;
@@ -194,7 +195,7 @@ footer div {
 }
 
 #content_panel {
-  width: 580px;
+  width: 700px;
   margin-left: auto;
   margin-right: auto;
 }
