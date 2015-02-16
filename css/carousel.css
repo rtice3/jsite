@@ -168,8 +168,9 @@ footer div {
 
 /* Carousel base class */
 .carousel {
-  height: 500px;
+  height: 347px;
   margin-bottom: 60px;
+  width: 580px;
 }
 /* Since positioning the image, we need to help out the caption */
 .carousel-caption {
