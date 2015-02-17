@@ -27,15 +27,16 @@
 		
 	</head>
 	<body ng-app="angular_app">
-		<div id="wrapper">
+		<div id="logo_header">
 			<div id="logo"><h1><img src="img/joneslogoclean.png" height="119" width="1000" /></h1></div>
 			<div id="logo_img_left"></div>
 			<div id="logo_img"></div>
-			<top-nav></top-nav>
-	    	<div id="content" ng-view></div> <!-- content -->
-			<!-- FOOTER -->
-      		<bottom-footer class="footer"></bottom-footer>
 		</div>
+		<top-nav></top-nav>
+	    <div id="content" ng-view></div> <!-- content -->
+		<!-- FOOTER -->
+      	<bottom-footer class="footer"></bottom-footer>
+		
 	    <!-- Placed at the end of the document so the pages load faster -->
 	    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
 	    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAfNROTIdy5rxuFT2LatUzDh0nj2v59QZM"></script>

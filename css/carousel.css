@@ -9,6 +9,14 @@ body {
   font-family: segoe ui,Arial,sans-serif;
 }
 
+#logo_header {
+  position: relative;
+  top: 2px;
+  right:0px;
+  margin-right: 0px auto;
+  margin-left: 0px auto;
+}
+
 #logo img {
   border:0px solid black;
   position:relative;
