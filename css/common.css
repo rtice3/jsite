@@ -4,15 +4,15 @@ body {
 }
 
 #logo_header {
+  display: block;
+  position: relative;
+  top: 0;
+  left: 0;
   width: 100%;
   padding-top: 20px;
 }
 
 #logo_header img {
-  display: block;
-  position: relative;
-  top: 0;
-  left: 0;
   margin-left: auto;
   margin-right: auto;
 }
@@ -48,4 +48,9 @@ body {
   margin-left: auto;
   margin-right: auto;
   width: 975px;
+}
+
+.yellow {
+  width: 100%;
+  background-color: #FFEC1F;
 }

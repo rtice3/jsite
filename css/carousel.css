@@ -1,6 +1,9 @@
 /* CUSTOMIZE THE CAROUSEL
 -------------------------------------------------- */
 
+#carousel_panel {
+
+}
 /* Carousel base class */
 .carousel {
   height: 347px;

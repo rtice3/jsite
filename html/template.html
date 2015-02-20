@@ -1,8 +1,10 @@
-<carousel interval="4000" ng-show="ctrl.data.carousel.img.length">
-	<slide ng-repeat="slide in ctrl.data.carousel.img" active="slide.active">
-	    <img ng-src="{{ slide.src }}" style="margin:auto;">
-	</slide>
-</carousel>
+<div id="carousel_panel" class="yellow">
+	<carousel interval="4000" ng-show="ctrl.data.carousel.img.length">
+		<slide ng-repeat="slide in ctrl.data.carousel.img" active="slide.active">
+		    <img ng-src="{{ slide.src }}" style="margin:auto;">
+		</slide>
+	</carousel>
+</div>
 
 <div id="content_panel" class="panel panel-default">
   	<div class="panel-body" ng-repeat="f in ctrl.data.panel.body">
