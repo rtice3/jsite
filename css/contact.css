@@ -1,20 +1,14 @@
 #contact_container {
-  position: relative;
-  margin-left: auto;
-  margin-right: auto;
-  display: inline-block;
+  width: 100%;
   padding-top: 30px;
   text-align: center;
 }
 
-#map-canvas {
-    width: 260px;
-    height: 260px;
-    background-color: #B2B2B2;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 20px;
-    padding: 0px
+#contact_container_inner {
+  position: relative;
+  display: inline-block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 #contact_form {
@@ -28,4 +22,20 @@
   float: left;
   width: 375px;
   height: 500px;
+}
+
+#map-canvas {
+    width: 260px;
+    height: 260px;
+    background-color: #B2B2B2;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+    padding: 0px
+}
+
+#contact_info {
+  text-align: left;
+  margin-left: auto;
+  margin-right: auto;
 }
