@@ -6,6 +6,10 @@ footer {
   color: white;
 }
 
+footer p {
+  margin-bottom: 2px;
+}
+
 footer a {
   padding-left: 0px;
   padding-right: 0px;
