@@ -23,37 +23,29 @@
       });
   }]);
 
-  app.config(['$httpProvider', function ($httpProvider) {
-    var $http,
-        interceptor = ['$q', '$injector', function ($q, $injector) {
-            var error;
 
-            function success(response) {
-                // get $http via $injector because of circular dependency problem
-                $http = $http || $injector.get('$http');
-                if($http.pendingRequests.length < 1) {
-                    $('#loading').hide();
-                }
-                return response;
-            }
+  app.config(function($httpProvider) {
+    $httpProvider.responseInterceptors.push('http_int');
 
-            function error(response) {
-                // get $http via $injector because of circular dependency problem
-                $http = $http || $injector.get('$http');
-                if($http.pendingRequests.length < 1) {
-                    $('#loading').hide();
-                }
-                return $q.reject(response);
-            }
+    var spinnerFunction = function spinnerFunction(data, headersGetter) {
+      $("#loading").show();
+      return data;
+    };
 
-            return function (promise) {
-                $('#loading').show();
-                return promise.then(success, error);
-            }
-        }];
+    $httpProvider.defaults.transformRequest.push(spinnerFunction);
+  });
 
-    $httpProvider.responseInterceptors.push(interceptor);
-  }]);
+  app.factory('http_int', function ($q, $window) {
+    return function (promise) {
+      return promise.then(function (response) {
+        $("#loading").hide();
+        return response;
+      }, function (response) {
+        $("#loading").hide();
+        return $q.reject(response);
+      });
+    };
+  });
 
 
   app.directive('topNav', function() {
