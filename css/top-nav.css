@@ -7,6 +7,9 @@
   right: 0;
   left: 0;
   z-index: 20;
+  -webkit-border-radius: 0 !important;
+     -moz-border-radius: 0 !important;
+          border-radius: 0 !important;
 }
 
 /* Flip around the padding for proper display in narrow viewports */
@@ -42,6 +45,7 @@
   .navbar-wrapper .container {
     padding-right: 0px;
     padding-left: 0px;
+    width: 100%;
   }
   .navbar-wrapper .navbar {
     padding-right: 0;
