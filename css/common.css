@@ -4,15 +4,12 @@ body {
 }
 
 #logo_header {
-  display: block;
-  position: relative;
-  top: 0;
-  left: 0;
   width: 100%;
   padding-top: 20px;
 }
 
-#logo_header img {
+#logo {
+  position: relative;
   margin-left: auto;
   margin-right: auto;
 }
