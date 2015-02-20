@@ -1,5 +1,5 @@
 (function() {
-  var app = angular.module('angular_app', ['ui.bootstrap', 'ngRoute', 'ngResource']);
+  var app = angular.module('angular_app', ['ui.bootstrap', 'ngRoute']);
 
   app.config(['$routeProvider', function($routeProvider) {
     $routeProvider.
@@ -23,30 +23,22 @@
       });
   }]);
 
-
-  app.config(function($httpProvider) {
-    $httpProvider.responseInterceptors.push('http_int');
-
-    var spinnerFunction = function spinnerFunction(data, headersGetter) {
-      $("#loading").show();
-      return data;
-    };
-
-    $httpProvider.defaults.transformRequest.push(spinnerFunction);
+  $httpProvider.interceptors.push(function($q, $rootScope) {
+    return {
+       'request': function(config) {
+          $("#loading").show();
+          return config;
+       },
+       'response': function(response) {
+         $("#loading").hide();
+         return response;
+       },
+       'responseError': function(response) {
+         $("#loading").hide();
+         return response;
+       }
+    }
   });
-
-  app.factory('http_int', function ($q, $window) {
-    return function (promise) {
-      return promise.then(function (response) {
-        $("#loading").hide();
-        return response;
-      }, function (response) {
-        $("#loading").hide();
-        return $q.reject(response);
-      });
-    };
-  });
-
 
   app.directive('topNav', function() {
     return {
