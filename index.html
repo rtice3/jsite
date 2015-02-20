@@ -24,6 +24,7 @@
 
 		<link href="css/bootstrap.min.css" rel="stylesheet">
 		<link href="css/common.css" rel="stylesheet">
+		<link href="css/spinner.css" rel="stylesheet">
 		<link href="css/carousel.css" rel="stylesheet">
 		
 	</head>
@@ -36,6 +37,15 @@
 			</div>
 		</div>
 		<top-nav></top-nav>
+		<div id="loading">
+			<div id="loading_inner">
+	        	<div class="spinner">
+	        		<div class="bounce1"></div>
+	        		<div class="bounce2"></div>
+	        		<div class="bounce3"></div>
+	        	</div>
+	        </div>
+    	</div>
 	    <div id="content" ng-view></div> <!-- content -->
 		<!-- FOOTER -->
       	<bottom-footer class="footer"></bottom-footer>
