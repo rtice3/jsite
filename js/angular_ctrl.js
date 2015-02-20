@@ -23,22 +23,22 @@
       });
   }]);
 
-  $httpProvider.interceptors.push(function($q, $rootScope) {
-    return {
-       'request': function(config) {
-          $("#loading").show();
-          return config;
-       },
-       'response': function(response) {
-         $("#loading").hide();
-         return response;
-       },
-       'responseError': function(response) {
-         $("#loading").hide();
-         return response;
-       }
-    }
-  });
+  app.factory('loading', [function() {  
+    var loader = {
+        request: function(config) {
+            $("#loading").show();
+            return config;
+        },
+        response: function(response) {
+            $("#loading").hide();
+            return response;
+        }
+    };
+    return loader;
+  }]);
+  app.config(['$httpProvider', function($httpProvider) {  
+    $httpProvider.interceptors.push('loading');
+  }]);
 
   app.directive('topNav', function() {
     return {
