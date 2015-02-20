@@ -1,3 +1,12 @@
+#contact_container {
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  display: inline-block;
+  padding-top: 30px;
+  text-align: center;
+}
+
 #map-canvas {
     width: 260px;
     height: 260px;
@@ -6,13 +15,6 @@
     margin-right: auto;
     margin-bottom: 20px;
     padding: 0px
-}
-
-#contact_container {
-  margin-top: 75px;
-  margin-left: auto;
-  margin-right: auto;
-  width: 100%;
 }
 
 #contact_form {
