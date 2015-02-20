@@ -7,7 +7,11 @@
 </div>
 
 <div id="content_panel" class="panel panel-default">
-  	<div class="panel-body" ng-repeat="f in ctrl.data.panel.body">
-    	<p>{{ f.content }}</p>    
+  	<div class="panel-body">
+  		<div class="row" ng-repeat="f in ctrl.data.panel.body">
+  			<div class="col-md-4">
+    			<p>{{ f.content }}</p>
+    		</div>
+    	</div>    
   	</div>
 </div>
