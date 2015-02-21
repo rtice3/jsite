@@ -12,6 +12,10 @@ footer div {
   bottom: 0;
 }
 
+footer p {
+  margin: 0;
+}
+
 #copy {
   float: left;
   margin-left: 180px;
