@@ -66,6 +66,7 @@
     store.data = [];
     $http.get("json/about.json").success(function(response) {
       store.data = response;
+      store.signature = true;
     });
   }]);
 
