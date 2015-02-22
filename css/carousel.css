@@ -43,9 +43,12 @@
   margin-bottom: 18px;
 }
 
+#signature {
+  float: right;
+}
+
 #signature p {
   margin: 0;
-  float: right;
 }
 
 /* RESPONSIVE CSS
