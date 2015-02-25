@@ -25,9 +25,3 @@ footer p {
   float: right;
   margin-right: 180px;
 }
-
-@media (max-width: 900px) {
-  footer {
-    width: 900px;
-  }
-}

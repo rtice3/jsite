@@ -43,6 +43,9 @@
 
 @media (min-width: 900px) {
   /* Navbar positioning foo */
+  #nav_logo {
+      display: none;
+  }
   .navbar-wrapper {
     margin-top: 20px;
   }
@@ -64,6 +67,7 @@
 
 @media (max-width: 900px) {
     #nav_logo {
+      display: inline-block;
       background-image: url("../img/joneslogonoaddr.png");
       background-repeat: no-repeat;
       width: auto; /*or your image's width*/

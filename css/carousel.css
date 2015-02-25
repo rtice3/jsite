@@ -69,6 +69,15 @@
     }
 }
 
+@media (max-width: 580px) {
+    #logo_header {
+      display: none;
+    }
+    #carousel_panel {
+      display: none;
+    }
+}
+
 
 /* Bootstrap Angular fixup */
 .carousel, .panel-title a { cursor: pointer; }
