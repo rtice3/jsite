@@ -22,14 +22,14 @@
 					},
 					{
 						"item": "Bioswales"
-					},
-					{
-						"item": "On-site Groundwater Recharge Systems"
 					}
 				]
 			},
 			{
 				"list": [
+					{
+						"item": "On-site Groundwater Recharge Systems"
+					},
 					{
 						"item": "Bioswales"
 					},
