@@ -1,0 +1,52 @@
+{
+	"carousel": {
+		"interval": "4000",
+		"img": [
+			{
+				"src": "img/utilities/utilities_00_scaled.jpg"
+			},
+			{
+				"src": "img/utilities/utilities_01_scaled.jpg"
+			},
+			{
+				"src": "img/utilities/utilities_02_scaled.jpg"
+			},
+			{
+				"src": "img/utilities/utilities_03_scaled.jpg"
+			},
+			{
+				"src": "img/utilities/utilities_04_scaled.jpg"
+			},
+			{
+				"src": "img/utilities/utilities_05_scaled.jpg"
+			}
+		]
+	},
+	"panel": {
+		"heading": "Utilities, Water & Sewer",
+		"body": [
+			{
+				"content": "No matter what type of pipe or how long a run, we have the know-how and experience to get it done right and on time. Our utility services include:"
+			},
+			{
+				"list": [
+					{
+						"item": "Water Mains and Water Services"
+					},
+					{
+						"item": "Gravity and Pressurized Sewer Mains and Sewer Services"
+					},
+					{
+						"item": "Drainage Systems and Roof Drain Collection Systems"
+					},
+					{
+						"item": "Electric, Telephone, and Cable/Data Conduits"
+					},
+					{
+						"item": "Gas Main and Gas Service Excavation and Backfill"
+					}
+				]
+			}
+		]
+	}
+}

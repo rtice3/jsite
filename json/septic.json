@@ -1,0 +1,30 @@
+{
+	"carousel": {
+		"interval": "4000",
+		"img": [
+			{
+				"src": "img/septic/septic_00_scaled.jpg"
+			},
+			{
+				"src": "img/septic/septic_01_scaled.jpg"
+			},
+			{
+				"src": "img/septic/septic_02_scaled.jpg"
+			},
+			{
+				"src": "img/septic/septic_03_scaled.jpg"
+			},
+			{
+				"src": "img/septic/septic_04_scaled.jpg"
+			}
+		]
+	},
+	"panel": {
+		"heading": "Septic Systems & Title V",
+		"body": [
+			{
+				"content": "From a single family home system to a 20,000 gallon community system, we take pride in our top quality septic system installations that consistently pass inspections the first time. We specialize in a wide rang of systems and guarantee that you will be pleased with our timely service and finished product."
+			}
+		]
+	}
+}

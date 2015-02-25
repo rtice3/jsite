@@ -1,0 +1,33 @@
+{
+	"carousel": {
+		"interval": "4000",
+		"img": []
+	},
+	"panel": {
+		"heading": "Stormwater Management",
+		"body": [
+			{
+				"content": "We also specialize in Stormwater Best Management Practices, including:"
+			},
+			{
+				"list": [
+					{
+						"item": "Retention and Detention Ponds"
+					},
+					{
+						"item": "Bio-retention Ponds"
+					},
+					{
+						"item": "Rain Gardens"
+					},
+					{
+						"item": "Bioswales"
+					},
+					{
+						"item": "On-site Groundwater Recharge Systems"
+					}
+				]
+			}
+		]
+	}
+}

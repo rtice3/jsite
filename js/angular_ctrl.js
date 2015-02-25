@@ -13,6 +13,21 @@
         controller: 'excavation_ctrl',
         controllerAs: 'ctrl'
       }).
+      when('/septic', {
+        templateUrl: 'html/template.html',
+        controller: 'septic_ctrl',
+        controllerAs: 'ctrl'
+      }).
+      when('/utilities', {
+        templateUrl: 'html/template.html',
+        controller: 'utilities_ctrl',
+        controllerAs: 'ctrl'
+      }).
+      when('/stormwater', {
+        templateUrl: 'html/template.html',
+        controller: 'stormwater_ctrl',
+        controllerAs: 'ctrl'
+      }).
       when('/contact', {
         templateUrl: 'html/contact.html',
         controller: 'contact_ctrl',
@@ -69,11 +84,34 @@
       store.signature = true;
     });
   }]);
-
   app.controller('excavation_ctrl', [ '$http', function($http) {
     var store = this;
     store.data = [];
     $http.get("json/excavation.json").success(function(response) {
+      store.data = response;
+      store.signature = false;
+    });
+  }]);
+  app.controller('septic_ctrl', [ '$http', function($http) {
+    var store = this;
+    store.data = [];
+    $http.get("json/septic.json").success(function(response) {
+      store.data = response;
+      store.signature = false;
+    });
+  }]);
+  app.controller('utilities_ctrl', [ '$http', function($http) {
+    var store = this;
+    store.data = [];
+    $http.get("json/utilities.json").success(function(response) {
+      store.data = response;
+      store.signature = false;
+    });
+  }]);
+  app.controller('stormwater_ctrl', [ '$http', function($http) {
+    var store = this;
+    store.data = [];
+    $http.get("json/stormwater.json").success(function(response) {
       store.data = response;
       store.signature = false;
     });
