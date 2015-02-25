@@ -70,12 +70,14 @@
     });
   }]);
 
-  app.controller('excavation_ctrl', function() {
-    this.carousel_data = excavation_carousel;
-    this.header_txt = "Heavy Civil & ";
-    this.mute_txt = "Sitework";
-    this.body_txt = "From cut and fill to curb and sidewalk, Jones Contracting, Inc. has extensive experience providing site work for housing developments and buildings. Our main goal is to offer comprehensive site work services with as little subcontracting as possible to maximize efficiency and minimize your cost.";
-  });
+  app.controller('excavation_ctrl', [ '$http', function($http) {
+    var store = this;
+    store.data = [];
+    $http.get("json/excavation.json").success(function(response) {
+      store.data = response;
+      store.signature = false;
+    });
+  }]);
 
   app.controller('contact_ctrl', function() {
 

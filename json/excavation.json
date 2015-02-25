@@ -1,0 +1,70 @@
+{
+	"carousel": {
+		"interval": "4000",
+		"img": [
+			{
+				"src": "img/excavating/excavating_00_scaled.jpg"
+			},
+			{
+				"src": "img/excavating/excavating_01_scaled.jpg"
+			},
+			{
+				"src": "img/excavating/excavating_02_scaled.jpg"
+			},
+			{
+				"src": "img/excavating/excavating_03_scaled.jpg"
+			},
+			{
+				"src": "img/excavating/excavating_04_scaled.jpg"
+			},
+			{
+				"src": "img/excavating/excavating_05_scaled.jpg"
+			}
+		]
+	},
+	"panel": {
+		"heading": "Heavy Civil & Sitework",
+		"body": [
+			{
+				"content": "From cut and fill to curb and sidewalk, Jones Contracting, Inc. has extensive experience providing site work for housing developments and buildings. Our main goal is to offer comprehensive site work services with as little subcontracting as possible to maximize efficiency and minimize your cost. Our site-work services include:"
+			},
+			{
+				"list": [
+					{
+						"item": "Land Clearing"
+					},
+					{
+						"item": "Cut and Fill"
+					},
+					{
+						"item": "Blasting"
+					},
+					{
+						"item": "Utility Installation"
+					},
+					{
+						"item": "Road Construction"
+					},
+					{
+						"item": "Standard or Sloped Concrete, Asphalt, and Granite Curbing"
+					},
+					{
+						"item": "Asphalt Roadway Paving"
+					}
+					{
+						"item": "Asphalt and Concrete Sidewalks with ADA Handicap Ramps"
+					},
+					{
+						"item": "Foundation Excavation and Backfill"
+					},
+					{
+						"item": "Temporary Bridge Construction"
+					},
+					{
+						"item": "Concrete Bridge and Culvert Construction"
+					}
+				]
+			}
+		]
+	}
+}

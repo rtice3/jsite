@@ -2,6 +2,9 @@
 	<carousel interval="4000" ng-show="ctrl.data.carousel.img.length">
 		<slide ng-repeat="slide in ctrl.data.carousel.img" active="slide.active">
 		    <img ng-src="{{ slide.src }}" style="margin:auto;">
+		    <div class="carousel-caption">
+          		<p>{{ slide.caption }}</p>
+        	</div>
 		</slide>
 	</carousel>
 </div>
@@ -14,6 +17,14 @@
 		<div ng-repeat="f in ctrl.data.panel.body">
 			<div class="col-md-4">
 				<p>{{ f.content }}</p>
+			</div>
+			<div class="col-md-4">
+				<ul>
+					<div ng-repeat="f in ctrl.data.panel.list">
+						<li>{{ f.item }}</li>
+					</div>
+				</ul>
+				<p>{{ f.list }}</p>
 			</div>
 		</div>
 	</div>
