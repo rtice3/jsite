@@ -1,0 +1,50 @@
+{
+	"carousel": {
+		"interval": "4000",
+		"img": [
+			{
+				"src": "img/landscape/landscape_00_scaled.jpg"
+			},
+			{
+				"src": "img/landscape/landscape_01_scaled.jpg"
+			},
+			{
+				"src": "img/landscape/landscape_02_scaled.jpg"
+			},
+			{
+				"src": "img/landscape/landscape_03_scaled.jpg"
+			}
+		]
+	},
+	"panel": {
+		"heading": "Landscape Construction",
+		"body": [
+			{
+				"content": "We provide landscape services including:"
+			},
+			{
+				"list": [
+					{
+						"item": "Field Stone Masonry Walls"
+					},
+					{
+						"item": "Segmented Block Retaining Walls (SRW)"
+					},
+					{
+						"item": "Geosynthetic Reinforced Retaining Walls"
+					}
+				]
+			},
+			{
+				"list": [
+					{
+						"item": "Reinforced Earth Walls"
+					},
+					{
+						"item": "Athletic Fields"
+					}
+				]
+			}
+		]
+	}
+}

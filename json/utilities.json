@@ -46,6 +46,16 @@
 						"item": "Gas Main and Gas Service Excavation and Backfill"
 					}
 				]
+			},
+			{
+				"list": [
+					{
+						"item": "Electric, Telephone, and Cable/Data Conduits"
+					},
+					{
+						"item": "Gas Main and Gas Service Excavation and Backfill"
+					}
+				]
 			}
 		]
 	}

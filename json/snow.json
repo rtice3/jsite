@@ -1,0 +1,24 @@
+{
+	"carousel": {
+		"interval": "4000",
+		"img": [
+			{
+				"src": "img/snow/snow_00_scaled.jpg"
+			},
+			{
+				"src": "img/snow/snow_01_scaled.jpg"
+			},
+			{
+				"src": "img/snow/snow_02_scaled.jpg"
+			}
+		]
+	},
+	"panel": {
+		"heading": "Snow Services",
+		"body": [
+			{
+				"content": "We offer a range of snow services to commercial entities and state and local authorities, including plowing, removal, and spreading of sand, salt, and calcium."
+			}
+		]
+	}
+}

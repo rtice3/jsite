@@ -1,0 +1,50 @@
+{
+	"carousel": {
+		"interval": "4000",
+		"img": [
+			{
+				"src": "img/paving/paving_00_scaled.jpg"
+			},
+			{
+				"src": "img/paving/paving_01_scaled.jpg"
+			},
+			{
+				"src": "img/paving/paving_02_scaled.jpg"
+			}
+		]
+	},
+	"panel": {
+		"heading": "Aphalt Paving",
+		"body": [
+			{
+				"content": "We provide asphalt paving services for:"
+			},
+			{
+				"list": [
+					{
+						"item": "Roadways"
+					},
+					{
+						"item": "Driveways"
+					},
+					{
+						"item": "Sidewalks"
+					},
+					{
+						"item": "Pedestrian and Bike Paths"
+					}
+				]
+			},
+			{
+				"list": [
+					{
+						"item": "Golf Course Cart Paths"
+					},
+					{
+						"item": "Basketball and Tennis Courts"
+					}
+				]
+			}
+		]
+	}
+}

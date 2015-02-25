@@ -1,0 +1,53 @@
+{
+	"carousel": {
+		"interval": "4000",
+		"img": [
+			{
+				"src": "img/specialty/specialty_00_scaled.jpg"
+			},
+			{
+				"src": "img/specialty/specialty_01_scaled.jpg"
+			},
+			{
+				"src": "img/specialty/specialty_02_scaled.jpg"
+			},
+			{
+				"src": "img/specialty/specialty_03_scaled.jpg"
+			},
+			{
+				"src": "img/specialty/specialty_04_scaled.jpg"
+			}
+		]
+	},
+	"panel": {
+		"heading": "Technical Services",
+		"body": [
+			{
+				"content": "We offer technical services including:"
+			},
+			{
+				"list": [
+					{
+						"item": "Title V Inspections"
+					},
+					{
+						"item": "Construction Geometric and Grade Layout"
+					},
+					{
+						"item": "Topographic Survey and Electronic Blasting Layout"
+					}
+				]
+			},
+			{
+				"list": [
+					{
+						"item": "Laser Aligned Pipe Layout"
+					},
+					{
+						"item": "Pressure and Vacuum Testing"
+					}
+				]
+			}
+		]
+	}
+}

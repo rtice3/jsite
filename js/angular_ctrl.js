@@ -28,6 +28,26 @@
         controller: 'stormwater_ctrl',
         controllerAs: 'ctrl'
       }).
+      when('/asphalt', {
+        templateUrl: 'html/template.html',
+        controller: 'asphalt_ctrl',
+        controllerAs: 'ctrl'
+      }).
+      when('/landscape', {
+        templateUrl: 'html/template.html',
+        controller: 'landscape_ctrl',
+        controllerAs: 'ctrl'
+      }).
+      when('/snow', {
+        templateUrl: 'html/template.html',
+        controller: 'snow_ctrl',
+        controllerAs: 'ctrl'
+      }).
+      when('/technical', {
+        templateUrl: 'html/template.html',
+        controller: 'technical_ctrl',
+        controllerAs: 'ctrl'
+      }).
       when('/contact', {
         templateUrl: 'html/contact.html',
         controller: 'contact_ctrl',
@@ -112,6 +132,38 @@
     var store = this;
     store.data = [];
     $http.get("json/stormwater.json").success(function(response) {
+      store.data = response;
+      store.signature = false;
+    });
+  }]);
+  app.controller('asphalt_ctrl', [ '$http', function($http) {
+    var store = this;
+    store.data = [];
+    $http.get("json/asphalt.json").success(function(response) {
+      store.data = response;
+      store.signature = false;
+    });
+  }]);
+  app.controller('landscape_ctrl', [ '$http', function($http) {
+    var store = this;
+    store.data = [];
+    $http.get("json/landscape.json").success(function(response) {
+      store.data = response;
+      store.signature = false;
+    });
+  }]);
+  app.controller('snow_ctrl', [ '$http', function($http) {
+    var store = this;
+    store.data = [];
+    $http.get("json/snow.json").success(function(response) {
+      store.data = response;
+      store.signature = false;
+    });
+  }]);
+  app.controller('technical_ctrl', [ '$http', function($http) {
+    var store = this;
+    store.data = [];
+    $http.get("json/technical.json").success(function(response) {
       store.data = response;
       store.signature = false;
     });
