@@ -50,7 +50,11 @@
 					},
 					{
 						"item": "Asphalt Roadway Paving"
-					},
+					}
+				]
+			},
+			{
+				"list": [
 					{
 						"item": "Asphalt and Concrete Sidewalks with ADA Handicap Ramps"
 					},
