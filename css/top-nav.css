@@ -42,6 +42,10 @@
   display: none;
 }
 
+.navbar-brand {
+  height: 100%;
+}
+
 /* RESPONSIVE CSS
 -------------------------------------------------- */
 
