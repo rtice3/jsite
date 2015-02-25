@@ -18,7 +18,7 @@
 			<div class="col-md-4">
 				<p>{{ f.content }}</p>
 			</div>
-			<div class="col-md-4">
+			<div class="col-md-4" ng-show="f.list.length">
 				<ul>
 					<div ng-repeat="g in f.list">
 						<li>{{ g.item }}</li>
