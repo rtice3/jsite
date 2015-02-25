@@ -11,14 +11,16 @@
 
 <div id="content_panel">
 	<div class="row">
-		<h3>{{ ctrl.data.panel.heading }}</h3>
+		<div class="col-xs-12">
+			<h3>{{ ctrl.data.panel.heading }}</h3>
+		</div>
 	</div>
 	<div class="row">
 		<div ng-repeat="f in ctrl.data.panel.body">
-			<div class="col-md-4" ng-show="f.content.length">
+			<div class="col-xs-12 col-sm-6 col-md-4" ng-show="f.content.length">
 				<p>{{ f.content }}</p>
 			</div>
-			<div class="col-md-4" ng-show="f.list.length">
+			<div class="col-xs-12 col-sm-6 col-md-4" ng-show="f.list.length">
 				<ul>
 					<div ng-repeat="g in f.list">
 						<li>{{ g.item }}</li>
@@ -28,8 +30,10 @@
 		</div>
 	</div>
 	<div id="signature" class="row" ng-show="ctrl.signature">
-		<p><em>Sincerely,</em></p>
-		<p><em>{{ ctrl.data.panel.signature }}</em></p>
+		<div class="col-xs-12">
+			<p><em>Sincerely,</em></p>
+			<p><em>{{ ctrl.data.panel.signature }}</em></p>
+		</div>
 	</div>
 </div>    
   	
