@@ -38,14 +38,6 @@
   margin-bottom: 0px;
 }
 
-#nav_logo {
-  display: none;
-}
-
-.navbar-brand {
-  height: 100%;
-}
-
 /* RESPONSIVE CSS
 -------------------------------------------------- */
 
@@ -71,15 +63,6 @@
 }
 
 @media (max-width: 900px) {
-    #nav_logo {
-      display: inline-block;
-      background-image: url("../img/joneslogonoaddr.png");
-      background-repeat: no-repeat;
-      width: auto; /*or your image's width*/
-      height: auto; /*or your image's height*/
-      margin: 0;
-      padding: 0;
-    }
     .navbar-header {
         float: none;
     }

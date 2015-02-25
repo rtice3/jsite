@@ -63,11 +63,6 @@
   }
 }
 
-@media (max-width: 900px) {
-    #logo_header {
-      display: none;
-    }
-}
 
 @media (max-width: 580px) {
     #logo_header {

@@ -56,3 +56,28 @@ body {
 .slate {
   background-color: #3e3f3a;
 }
+
+#nav_logo {
+  display: none;
+  background-image: url(../img/joneslogonoaddr.png) no-repeat;
+  width: auto; /*or your image's width*/
+  height: auto; /*or your image's height*/
+  margin: 0;
+  padding: 0;
+}
+
+.navbar-brand {
+  height: 0px;
+}
+
+@media (max-width: 1021px) {
+    #logo_header {
+      display: none;
+    }
+    #nav_logo {
+      display: inline-block;
+    }
+    .navbar-brand {
+      height: 50px;
+    }
+}
