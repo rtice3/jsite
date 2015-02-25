@@ -59,7 +59,7 @@ body {
 
 #nav_logo {
   display: none;
-  background-image: url(../img/joneslogonoaddr.png) no-repeat;
+  background: url(../img/joneslogonoaddr.png) no-repeat;
   width: auto; /*or your image's width*/
   height: auto; /*or your image's height*/
   margin: 0;

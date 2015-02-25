@@ -34,4 +34,15 @@ footer p {
   #links a {
     display: inline-block;
   }
+  #copy {
+    display: block;
+    float: left;
+    margin-left: 0px;
+  }
+
+  #links {
+    display: block;
+    float: right;
+    margin-right: 0px;
+  }
 }
