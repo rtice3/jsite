@@ -26,8 +26,12 @@ footer p {
   margin-right: 20%;
 }
 
+#links a {
+  display: block;
+}
+
 @media (max-width: 387px) {
-  #links {
+  #links a {
     display: inline-block;
   }
 }

@@ -38,14 +38,15 @@
   margin-bottom: 0px;
 }
 
+#nav_logo {
+  display: none;
+}
+
 /* RESPONSIVE CSS
 -------------------------------------------------- */
 
 @media (min-width: 900px) {
   /* Navbar positioning foo */
-  #nav_logo {
-      display: none;
-  }
   .navbar-wrapper {
     margin-top: 20px;
   }
