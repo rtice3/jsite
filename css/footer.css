@@ -18,10 +18,16 @@ footer p {
 
 #copy {
   float: left;
-  margin-left: 180px;
+  margin-left: 20%;
 }
 
 #links {
   float: right;
-  margin-right: 180px;
+  margin-right: 20%;
+}
+
+@media (max-width: 387px) {
+  #links {
+    display: inline-block;
+  }
 }
