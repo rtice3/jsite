@@ -68,6 +68,7 @@ body {
 
 .navbar-brand {
   height: 0px;
+  padding: 0px;
 }
 
 @media (max-width: 1021px) {
