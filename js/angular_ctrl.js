@@ -9,7 +9,7 @@
         controllerAs: 'ctrl'
       }).
       when('/excavation', {
-        templateUrl: 'html/service-template.html',
+        templateUrl: 'html/template.html',
         controller: 'excavation_ctrl',
         controllerAs: 'ctrl'
       }).
