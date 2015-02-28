@@ -50,7 +50,7 @@ body {
 }
 
 .yellow {
-  background-color: #FFEC1F;
+  background-color: #FDD01B;
 }
 
 .slate {
@@ -71,6 +71,36 @@ body {
   padding: 0px;
 }
 
+/* Featurettes
+------------------------- */
+
+.featurette-divider {
+  margin: 80px 0; /* Space out the Bootstrap <hr> more */
+}
+
+/* Thin out the marketing headings */
+.featurette-heading {
+  font-weight: 300;
+  line-height: 1;
+  letter-spacing: -1px;
+}
+
+#feature_panel {
+  width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 80px;
+}
+
+@media (max-width: 1021px) {
+  #feature_panel {
+    width: 100%;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
+
+
 @media (max-width: 1021px) {
     #logo_header {
       display: none;
@@ -81,4 +111,16 @@ body {
     .navbar-brand {
       height: 50px;
     }
+}
+
+@media (min-width: 768px) {
+  .featurette-heading {
+      font-size: 50px;
+    }
+}
+
+@media (max-width: 660px) {
+  .feature-img {
+    display: none;
+  }
 }

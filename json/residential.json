@@ -1,0 +1,36 @@
+{
+	"feature": [
+		{
+			"img": "img/excavating/residential_excavating.jpg",
+			"heading": "Residential",
+			"muted": "Excavation Services",
+			"body": "Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.",
+			"btn_txt": "Excavation Services",
+			"btn_href": "#excavation"
+		},
+		{
+			"img": "img/septic/residential_septic.jpg",
+			"heading": "Residential",
+			"muted": "Septic Services",
+			"body": "Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.",
+			"btn_txt": "Septic Services",
+			"btn_href": "#septic"
+		},
+		{
+			"img": "img/asphalt/residential_asphalt.jpg",
+			"heading": "Residential",
+			"muted": "Paving Services",
+			"body": "Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.",
+			"btn_txt": "Asphalt Services",
+			"btn_href": "#asphalt"
+		},
+		{
+			"img": "img/landscape/residential_landscape.jpg",
+			"heading": "Residential",
+			"muted": "Lanscape Services",
+			"body": "Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.",
+			"btn_txt": "Landscape Services",
+			"btn_href": "#landscape"
+		}
+	]
+}

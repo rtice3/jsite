@@ -4,47 +4,52 @@
   app.config(['$routeProvider', function($routeProvider) {
     $routeProvider.
       when('/', {
-        templateUrl: 'html/template.html',
+        templateUrl: 'html/service-template.html',
         controller: 'about_ctrl',
         controllerAs: 'ctrl'
       }).
+      when('/residential', {
+        templateUrl: 'html/feature-template.html',
+        controller: 'residential_ctrl',
+        controllerAs: 'ctrl'
+      }).
       when('/excavation', {
-        templateUrl: 'html/template.html',
+        templateUrl: 'html/service-template.html',
         controller: 'excavation_ctrl',
         controllerAs: 'ctrl'
       }).
       when('/septic', {
-        templateUrl: 'html/template.html',
+        templateUrl: 'html/service-template.html',
         controller: 'septic_ctrl',
         controllerAs: 'ctrl'
       }).
       when('/utilities', {
-        templateUrl: 'html/template.html',
+        templateUrl: 'html/service-template.html',
         controller: 'utilities_ctrl',
         controllerAs: 'ctrl'
       }).
       when('/stormwater', {
-        templateUrl: 'html/template.html',
+        templateUrl: 'html/service-template.html',
         controller: 'stormwater_ctrl',
         controllerAs: 'ctrl'
       }).
       when('/asphalt', {
-        templateUrl: 'html/template.html',
+        templateUrl: 'html/service-template.html',
         controller: 'asphalt_ctrl',
         controllerAs: 'ctrl'
       }).
       when('/landscape', {
-        templateUrl: 'html/template.html',
+        templateUrl: 'html/service-template.html',
         controller: 'landscape_ctrl',
         controllerAs: 'ctrl'
       }).
       when('/snow', {
-        templateUrl: 'html/template.html',
+        templateUrl: 'html/service-template.html',
         controller: 'snow_ctrl',
         controllerAs: 'ctrl'
       }).
       when('/technical', {
-        templateUrl: 'html/template.html',
+        templateUrl: 'html/service-template.html',
         controller: 'technical_ctrl',
         controllerAs: 'ctrl'
       }).
@@ -102,6 +107,13 @@
     $http.get("json/about.json").success(function(response) {
       store.data = response;
       store.signature = true;
+    });
+  }]);
+  app.controller('residential_ctrl', [ '$http', function($http) {
+    var store = this;
+    store.data = [];
+    $http.get("json/residential.json").success(function(response) {
+      store.data = response;
     });
   }]);
   app.controller('excavation_ctrl', [ '$http', function($http) {

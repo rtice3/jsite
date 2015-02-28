@@ -1,0 +1,30 @@
+<div id="feature_panel" ng-repeat="f in ctrl.data.feature">
+	<div ng-if="$odd">
+		<div class="row featurette">
+			<div class="col-md-7">
+				<h2 class="featurette-heading">{{ f.heading }}<span class="text-muted"> {{ f.muted }}</span></h2>
+			  	<p class="lead">{{ f.body }}</p>
+			  	<p><a ng-href="{{ f.btn_href }}" class="btn btn-default">{{ f.btn_txt }}</a></p>
+			</div>
+			<div class="col-md-5">
+				<img class="feature-img img-circle" ng-src="{{ f.img }}">
+			</div>
+		</div>
+	</div>
+	<div ng-if="$even">
+		<div class="row featurette">			
+			<div class="col-md-5">
+				<img class="feature-img img-circle" ng-src="{{ f.img }}">
+			</div>
+			<div class="col-md-7">
+			  	<h2 class="featurette-heading">{{ f.heading }}<span class="text-muted"> {{ f.muted }}</span></h2>
+			  	<p class="lead">{{ f.body }}</p>
+			  	<p><a ng-href="{{ f.btn_href }}" class="btn btn-default">{{ f.btn_txt }}</a></p>
+			</div>
+		</div>
+	</div>
+	<div ng-if="!$last">
+		<hr class="featurette-divider">
+	</div>
+</div>
+
