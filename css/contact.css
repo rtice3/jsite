@@ -30,10 +30,23 @@
   margin-right: 0px;
 }
 
+#facebook_container {
+  width:100%;
+  margin: 0 auto;
+  padding-top: 0px;
+}
+
+.fb-like-box, .fb-like-box span, .fb-like-box span iframe[style] { width: 100% !important; }
+
 @media (max-width: 1021px) {
   #contact_container {
     width: 100%;
     padding-left: 10px;
     padding-right: 10px;
+  }
+
+  .row {
+    margin-left: 0px;
+    margin-right: 0px;
   }
 }
