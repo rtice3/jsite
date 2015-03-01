@@ -1,23 +1,35 @@
-<form class="form-horizontal" novalidate>
+<form id="contact_form" class="form-horizontal" novalidate>
   <fieldset>
     <legend>Contact Us</legend>
-    <div class="form-group">
-      <label for="name" class="control-label">Name</label>
-      <input type="text" class="form-control" id="name" placeholder="Name" required>
-    </div>
-    <div class="form-group">
-      <label for="phone" class="control-label">Phone</label>
-      <input type="text" class="form-control" id="phone" placeholder="Phone" required>
-    </div>
-    <div class="form-group">
-      <label for="email" class="control-label">Email</label>
-      <input type="email" class="form-control" id="email" placeholder="Email">  
-    </div>
-    <div class="form-group">
-      <label for="message" class="control-label">Message</label>
-      <textarea class="form-control" rows="3" id="message"></textarea>
+    <div class="row">
+      <div class="form-group col-md-6">
+        <label for="name" class="control-label">Name</label>
+        <input type="text" class="form-control" id="name" placeholder="Name" required>
+      </div>
+      <div class="form-group col-md-6">
+        <label for="company" class="control-label">Company</label>
+        <input type="text" class="form-control" id="company" placeholder="Company">
       </div>
     </div>
-    <button type="submit" class="btn btn-primary">Submit</button>
+    <div class="row">
+      <div class="form-group col-md-6">
+        <label for="phone" class="control-label">Phone</label>
+        <input type="text" class="form-control" id="phone" placeholder="Phone" required>
+      </div>
+      <div class="form-group col-md-6">
+        <label for="email" class="control-label">Email</label>
+        <input type="email" class="form-control" id="email" placeholder="Email">  
+      </div>
+    </div>
+    <div class="form-group row">
+      <label for="message" class="control-label">Message</label>
+      <textarea class="form-control" rows="3" id="message"></textarea>
+    </div>
+    <div class="row">
+      <button type="submit" class="btn btn-primary">Submit</button>
+    </div>
+    <div class="row">
+      <div class="fb-like-box" data-href="https://www.facebook.com/pages/Jones-Contracting-Inc/159086087447871" data-width="500" data-height="500" data-colorscheme="light" data-show-faces="false" data-header="true" data-stream="true" data-show-border="true"></div>
+    </div>
   </fieldset>
 </form>

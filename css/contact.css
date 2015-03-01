@@ -1,27 +1,9 @@
 #contact_container {
-  width: 100%;
   padding-top: 30px;
-  text-align: center;
-}
-
-#contact_container_inner {
-  position: relative;
-  display: inline-block;
+/*  text-align: center;  */
+  width: 1000px;
   margin-left: auto;
   margin-right: auto;
-}
-
-#contact_form {
-  float: left;
-  width: 375px;
-  height: 500px;
-  margin-right: 37px;
-}
-
-#map_container {
-  float: left;
-  width: 375px;
-  height: 500px;
 }
 
 #map-canvas {
@@ -37,4 +19,21 @@
 #contact_info {
   text-align: left;
   margin-left: 40px;
+}
+
+#contact_info p {
+  margin: 0;
+}
+
+.form-horizontal .form-group {
+  margin-left: 0px;
+  margin-right: 0px;
+}
+
+@media (max-width: 1021px) {
+  #contact_container {
+    width: 100%;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
 }
