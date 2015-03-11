@@ -50,3 +50,10 @@
     margin-right: 0px;
   }
 }
+
+@media (min-width: 400px) {
+  .form-group {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+}
