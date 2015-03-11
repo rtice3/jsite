@@ -186,6 +186,6 @@
   });
 })();
 
-$('.navbar-collapse a').click(function(){
-    $(".navbar-collapse").collapse('hide');
+$('.nav a').click(function(){
+    $(".navbar-toggle").click();
 });
