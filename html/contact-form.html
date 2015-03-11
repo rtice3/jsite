@@ -1,31 +1,31 @@
-<form id="contact_form" class="form-horizontal" novalidate>
+<form name="cform" id="contact_form" class="form-horizontal" ng-controller="contact_ctrl" novalidate>
   <fieldset>
     <div class="row">
-      <div class="form-group col-sm-6">
+      <div class="form-group col-sm-6" ng-class="{has-error: cform.name.$dirty && cform.name.$invalid}">
         <label for="name" class="control-label">Name</label>
-        <input type="text" class="form-control" id="name" placeholder="Name" required>
+        <input type="text" class="form-control" id="name" name="name" placeholder="Name" ng-model="user.name" required />
       </div>
       <div class="form-group col-sm-6">
         <label for="company" class="control-label">Company</label>
-        <input type="text" class="form-control" id="company" placeholder="Company">
+        <input type="text" class="form-control" id="company" placeholder="Company" ng-model="user.company" />
       </div>
     </div>
     <div class="row">
-      <div class="form-group col-sm-6">
+      <div class="form-group col-sm-6" ng-class="{has-error: cform.phone.$dirty && cform.phone.$invalid}">
         <label for="phone" class="control-label">Phone</label>
-        <input type="text" class="form-control" id="phone" placeholder="Phone" required>
+        <input type="text" class="form-control" id="phone" name="phone" placeholder="Phone" ng-model="user.phone" required />
       </div>
-      <div class="form-group col-sm-6">
+      <div class="form-group col-sm-6" ng-class="{has-error: cform.email.$dirty && cform.email.$invalid}">
         <label for="email" class="control-label">Email</label>
-        <input type="email" class="form-control" id="email" placeholder="Email">  
+        <input type="email" class="form-control" id="email" name="email" placeholder="Email" ng-model="user.email" \>  
       </div>
     </div>
     <div class="form-group row">
       <label for="message" class="control-label">Message</label>
-      <textarea class="form-control" rows="3" id="message"></textarea>
+      <textarea class="form-control" rows="3" id="message"  ng-model="user.message"></textarea>
     </div>
     <div class="row">
-      <button type="submit" class="btn btn-primary">Submit</button>
+      <button type="submit" class="btn btn-primary" ng-click="submit(user)">Submit</button>
     </div>
   </fieldset>
 </form>

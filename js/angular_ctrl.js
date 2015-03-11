@@ -182,7 +182,9 @@
   }]);
 
   app.controller('contact_ctrl', function() {
+    submit = function(user) {
 
+    };
   });
 
   $(document).on('click','.navbar-collapse.in',function(e) {
