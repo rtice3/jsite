@@ -60,8 +60,17 @@
   }
 }
 
-@media (max-width: 990px) {
+@media (max-width: 770px) {
   #map-canvas {
-    margin-top: 25px;
+    display: none;
+  }
+  #contact_info {
+    display: none;
+  }
+  #news_tag {
+    display: none;
+  }
+  #facebook_container {
+    display: none;
   }
 }
