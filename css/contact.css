@@ -40,7 +40,7 @@
 
 .fb-like-box, .fb-like-box span, .fb-like-box span iframe[style] { width: 100% !important; }
 
-@media (max-width: 1021px) {
+@media (max-width: 1051px) {
   #contact_container {
     width: 100%;
     padding-left: 10px;
