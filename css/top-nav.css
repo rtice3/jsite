@@ -26,8 +26,8 @@
 }
 
 .navbar .nav li {
-    display: inline-block;
-    float: none;
+  display: inline-block;
+  float: none;
 }
 .navbar .nav {
     float: none;
@@ -96,6 +96,9 @@
     }
     .collapse.in{
       display:block !important;
+  }
+  .navbar .nav li {
+    display: block;
   }
 }
 
