@@ -48,8 +48,8 @@ else {
     $errors['file'] = 'Failed to write file.';
 }
 
-//    $sm = mail($to_Email, $email_subject, $email_message, $headers);
-$sm = true;
+$sm = mail($to_Email, $email_subject, $email_message, $headers);
+//$sm = true;
 
 if($sm === true) {
     $data['success'] = true;
