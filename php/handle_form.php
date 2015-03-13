@@ -75,11 +75,11 @@ if($_POST) {
 
 	$to_Email = "russelljr@jonescontractinginc.com";
 
-	$name = filter_var($_POST["name"], FILTER_SANITIZE_STRING);
-    $company = filter_var($_POST["company"], FILTER_SANITIZE_STRING);
-	$phone = filter_var($_POST["phone"], FILTER_SANITIZE_STRING);
-	$email = filter_var($_POST["email"], FILTER_SANITIZE_EMAIL);
-	$message = filter_var($_POST["message"], FILTER_SANITIZE_STRING);
+	$name = $_POST["name"];
+    $company = $_POST["company"];
+	$phone = $_POST["phone"];
+	$email = $_POST["email"];
+	$message = $_POST["message"];
     $date = date("Y-m-d H:i:s");
 
     $filename = "../contacts/Request from " . $name . " " . $date . ".txt";
@@ -90,7 +90,7 @@ if($_POST) {
 	$headers .= "Content-Type: text/html; charset=ISO-8859-1\r\n";
     
 
-    $email_subject = "Form submission from ".$name.": ".$subject;
+    $email_subject = "Form submission from ".$name." on ".$date;
     $email_message = wordwrap($date."\r\n".
     					$name."\r\n".
                         $company."\r\n".
