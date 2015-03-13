@@ -203,7 +203,7 @@
       $scope.submitForm = function() {
         $http({
           method : 'POST',
-          url : 'handle_form.php',
+          url : '../php/handle_form.php',
           data : param($scope.user), // pass in data as strings
           headers : { 'Content-Type': 'application/x-www-form-urlencoded' } // set the headers so angular passing info as form data (not request payload)
         }).success(function(data) {
