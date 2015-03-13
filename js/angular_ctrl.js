@@ -194,17 +194,18 @@
              returnString += d + '=' + data[d] + '&';
       }
       // Remove last ampersand and return
+      console.log(returnString);
       return returnString.slice( 0, returnString.length - 1 );
     };
 
     $scope.submitForm = function(user) {
-      $("#contact_form").hide();
+      $("#contact_container").hide();
       $("#loading").show();
       $scope.submitForm = function() {
-        $http({
+        var request = $http({
           method : 'POST',
           url : '../php/handle_form.php',
-          data : param($scope.user), // pass in data as strings
+          data : param(user), // pass in data as strings
           headers : { 'Content-Type': 'application/x-www-form-urlencoded' } // set the headers so angular passing info as form data (not request payload)
         }).success(function(data) {
           $("#loading").hide();
@@ -216,7 +217,7 @@
             success_response = true;
             error_response = false;
           }
-          $("#contact_form").show();
+          $("#contact_container").show();
         });
       };
     };
