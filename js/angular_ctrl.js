@@ -185,19 +185,6 @@
     var success_response = false;
     var error_response = false;
 
-    $scope.user = {};
-
-    var param = function(data) {
-      var returnString = '';
-      for (d in data){
-          if (data.hasOwnProperty(d))
-             returnString += d + '=' + data[d] + '&';
-      }
-      // Remove last ampersand and return
-      console.log(returnString);
-      return returnString.slice( 0, returnString.length - 1 );
-    };
-
     $scope.submitForm = function(user) {
       $("#contact_container").hide();
       $("#loading").show();
@@ -205,7 +192,13 @@
       var request = $http({
         method : 'POST',
         url : '../php/handle_form.php',
-        data : param(user), // pass in data as strings
+        data : {
+          name: $scope.name,
+          company: $scope.company,
+          phone: $scope.phone,
+          email: $scope.email,
+          message: $scope.message
+        }, 
         headers : { 'Content-Type': 'application/x-www-form-urlencoded' } // set the headers so angular passing info as form data (not request payload)
       }).success(function(data) {
         $("#loading").hide();
