@@ -1,10 +1,10 @@
-<form name="cform" id="contact_form" class="form-horizontal" ng-controller="contact_ctrl" ng-submit="submitForm()" novalidate>
+<form name="cform" id="contact_form" class="form-horizontal well" ng-controller="contact_ctrl" ng-submit="submitForm()" novalidate>
   <fieldset>
     <div class="row" ng-show="success_response">
-      <p><small>Thank you for contacting Jones Contracting. A Jones Contracting representative will be in contact with you shortly. If you need immediate assistance please call (508) 668-7888.</small></p>
+      <p class="text-success"><small>Thank you for contacting Jones Contracting. A Jones Contracting representative will be in contact with you shortly. If you need immediate assistance please call (508) 668-7888.</small></p>
     </div>
     <div class="row" ng-show="error_response">
-      <p><small>An unexpected error has occurred. Please call (508) 668-7888 for immediate assistance. Thank you.</small></p>
+      <p class="text-danger"><small>An unexpected error has occurred. Please call (508) 668-7888 for immediate assistance. Thank you.</small></p>
     </div>
     <div class="row">
       <div class="form-group col-sm-6" ng-class="{ 'has-error' : cform.name.$invalid && !cform.name.$pristine }">

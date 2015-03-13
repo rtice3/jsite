@@ -185,7 +185,7 @@
     $scope.success_response = false;
     $scope.error_response = false;
 
-    $scope.submitForm = function(user) {
+    $scope.submitForm = function() {
       $("#contact_container").hide();
       $("#loading").show();
       
