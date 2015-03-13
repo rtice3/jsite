@@ -184,7 +184,7 @@
   app.controller('contact_ctrl', function($scope, $http) {
     var success_response = false;
     var error_response = false;
-    
+
     $scope.user = {};
 
     var param = function(data) {
@@ -201,23 +201,24 @@
       $("#contact_form").hide();
       $("#loading").show();
       $scope.submitForm = function() {
-      $http({
-        method : 'POST',
-        url : 'handle_form.php',
-        data : param($scope.user), // pass in data as strings
-        headers : { 'Content-Type': 'application/x-www-form-urlencoded' } // set the headers so angular passing info as form data (not request payload)
-      }).success(function(data) {
-        $("#loading").hide();
-        if(!data.success) {
-          success_response = false;
-          error_response = true;
-        }
-        else {
-          success_response = true;
-          error_response = false;
-        }
-        $("#contact_form").show();
-      });
+        $http({
+          method : 'POST',
+          url : 'handle_form.php',
+          data : param($scope.user), // pass in data as strings
+          headers : { 'Content-Type': 'application/x-www-form-urlencoded' } // set the headers so angular passing info as form data (not request payload)
+        }).success(function(data) {
+          $("#loading").hide();
+          if(!data.success) {
+            success_response = false;
+            error_response = true;
+          }
+          else {
+            success_response = true;
+            error_response = false;
+          }
+          $("#contact_form").show();
+        });
+      };
     };
   });
 
