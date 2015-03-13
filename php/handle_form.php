@@ -76,9 +76,9 @@ if($_POST) {
 	$to_Email = "russelljr@jonescontractinginc.com";
 
 	$name = filter_var($_POST["name"], FILTER_SANITIZE_STRING);
+    $company = filter_var($_POST["company"], FILTER_SANITIZE_STRING);
 	$phone = filter_var($_POST["phone"], FILTER_SANITIZE_STRING);
 	$email = filter_var($_POST["email"], FILTER_SANITIZE_EMAIL);
-	$subject = filter_var($_POST["subject"], FILTER_SANITIZE_STRING);
 	$message = filter_var($_POST["message"], FILTER_SANITIZE_STRING);
     $date = date("Y-m-d H:i:s");
 
@@ -93,26 +93,25 @@ if($_POST) {
     $email_subject = "Form submission from ".$name.": ".$subject;
     $email_message = wordwrap($date."\r\n".
     					$name."\r\n".
+                        $company."\r\n".
     					$phone."\r\n".
-    					$email."\r\n".
-    					$subject."\r\n\r\n".
+    					$email."\r\n".    					
     					$message, 70, "\r\n");
     
     $fn = file_put_contents($filename, $email_message);
 
-    if($fn === false) {
-        echo "Failed to write backup file. Please contact (508) 668-7888 for immediate assistance.";
-        header_status(500);
-    }
-    $sm = mail($to_Email, $email_subject, $email_message);
+//    $sm = mail($to_Email, $email_subject, $email_message);
+    $sm = true;
+
+    $data = array();
 
     if($sm === true) {
-    	echo "Thank you for contacting Jones Contracting Inc. We will be in touch with you shortly regarding your request. Please contact (508) 668-7888 for immediate assistance.";
+    	$data['success'] = true;
     }
     else {
-    	echo "Internal server error. Please contact (508) 668-7888 for immediate assistance.";
-        header_status(500);
+    	$data['success'] = false;
     }
+    echo json_encode($data);
 }
 
 ?>

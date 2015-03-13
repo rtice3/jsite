@@ -1,9 +1,16 @@
-<form name="cform" id="contact_form" class="form-horizontal" ng-controller="contact_ctrl" novalidate>
+<form name="cform" id="contact_form" class="form-horizontal" ng-controller="contact_ctrl" ng-submit="submitForm(cform.user)" novalidate>
   <fieldset>
+    <div class="row" ng-show="success_response">
+      <p><small>Thank you for contacting Jones Contracting. A Jones Contracting representative will be in contact with you shortly. If you need immediate assistance please call (508) 668-7888.</small></p>
+    </div>
+    <div class="row" ng-show="error_response">
+      <p><small>An unexpected error has occurred. Please call (508) 668-7888 for immediate assistance. Thank you.</small></p>
+    </div>
     <div class="row">
-      <div class="form-group col-sm-6" ng-class="{has-error: cform.name.$dirty && cform.name.$invalid}">
+      <div class="form-group col-sm-6" ng-class="{ 'has-error' : cform.user.name.$invalid && !cform.user.name.$pristine }">
         <label for="name" class="control-label">Name</label>
         <input type="text" class="form-control" id="name" name="name" placeholder="Name" ng-model="user.name" required />
+        <p ng-show="cform.user.name.$invalid && !cform.user.name.$pristine" class="help-block">Please enter your name</p>
       </div>
       <div class="form-group col-sm-6">
         <label for="company" class="control-label">Company</label>
@@ -11,13 +18,15 @@
       </div>
     </div>
     <div class="row">
-      <div class="form-group col-sm-6" ng-class="{has-error: cform.phone.$dirty && cform.phone.$invalid}">
+      <div class="form-group col-sm-6" ng-class="{ 'has-error' : cform.user.phone.$invalid && !cform.user.phone.$pristine }">
         <label for="phone" class="control-label">Phone</label>
         <input type="text" class="form-control" id="phone" name="phone" placeholder="Phone" ng-model="user.phone" required />
+        <p ng-show="cform.user.phone.$invalid && !cform.user.phone.$pristine" class="help-block">Please enter your phone number</p>
       </div>
-      <div class="form-group col-sm-6" ng-class="{has-error: cform.email.$dirty && cform.email.$invalid}">
+      <div class="form-group col-sm-6" ng-class="{ 'has-error' : cform.user.email.$invalid && !cform.user.email.$pristine }">
         <label for="email" class="control-label">Email</label>
-        <input type="email" class="form-control" id="email" name="email" placeholder="Email" ng-model="user.email" \>  
+        <input type="email" class="form-control" id="email" name="email" placeholder="Email" ng-model="user.email" \> 
+        <p ng-show="cform.user.email.$invalid && !cform.user.email.$pristine" class="help-block">Please enter a valid email address</p>
       </div>
     </div>
     <div class="form-group row">
@@ -25,7 +34,7 @@
       <textarea class="form-control" rows="3" id="message"  ng-model="user.message"></textarea>
     </div>
     <div class="row">
-      <button type="submit" class="btn btn-primary" ng-click="submit(user)">Submit</button>
+      <button type="submit" class="btn btn-primary" ng-disabled="cform.$invalid">Submit</button>
     </div>
   </fieldset>
 </form>
