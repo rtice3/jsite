@@ -201,25 +201,24 @@
     $scope.submitForm = function(user) {
       $("#contact_container").hide();
       $("#loading").show();
-      $scope.submitForm = function() {
-        var request = $http({
-          method : 'POST',
-          url : '../php/handle_form.php',
-          data : param(user), // pass in data as strings
-          headers : { 'Content-Type': 'application/x-www-form-urlencoded' } // set the headers so angular passing info as form data (not request payload)
-        }).success(function(data) {
-          $("#loading").hide();
-          if(!data.success) {
-            success_response = false;
-            error_response = true;
-          }
-          else {
-            success_response = true;
-            error_response = false;
-          }
-          $("#contact_container").show();
-        });
-      };
+      
+      var request = $http({
+        method : 'POST',
+        url : '../php/handle_form.php',
+        data : param(user), // pass in data as strings
+        headers : { 'Content-Type': 'application/x-www-form-urlencoded' } // set the headers so angular passing info as form data (not request payload)
+      }).success(function(data) {
+        $("#loading").hide();
+        if(!data.success) {
+          success_response = false;
+          error_response = true;
+        }
+        else {
+          success_response = true;
+          error_response = false;
+        }
+        $("#contact_container").show();
+      });
     };
   });
 
