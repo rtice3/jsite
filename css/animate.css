@@ -17,12 +17,12 @@
 }
 
 .view-animate.ng-enter {
-  -webkit-animation: fade_in 0.7s linear; /* Safari/Chrome */
-  animation: fade_in 0.7s linear; /* IE10+ and Future Browsers */
+  -webkit-animation: fade_in 1.0s linear; /* Safari/Chrome */
+  animation: fade_in 1.0s linear; /* IE10+ and Future Browsers */
 }
 
 .view-animate.ng-leave {
-  -webkit-animation: fade_out 0.7s linear; /* Safari/Chrome */
-  animation: fade_out 0.7s linear; /* IE10+ and Future Browsers */
+  -webkit-animation: fade_out 0.4s linear; /* Safari/Chrome */
+  animation: fade_out 0.4s linear; /* IE10+ and Future Browsers */
 }
 
