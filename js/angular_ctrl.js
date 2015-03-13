@@ -182,8 +182,8 @@
   }]);
 
   app.controller('contact_ctrl', function($scope, $http) {
-    var success_response = false;
-    var error_response = false;
+    $scope.success_response = false;
+    $scope.error_response = false;
 
     $scope.submitForm = function(user) {
       $("#contact_container").hide();
@@ -203,12 +203,12 @@
       }).success(function(data) {
         $("#loading").hide();
         if(!data.success) {
-          success_response = false;
-          error_response = true;
+          $scope.success_response = false;
+          $scope.error_response = true;
         }
         else {
-          success_response = true;
-          error_response = false;
+          $scope.success_response = true;
+          $scope.error_response = false;
         }
         $("#contact_container").show();
       });
