@@ -191,7 +191,7 @@
       
       var request = $http({
         method : 'POST',
-        url : '../php/handle_form.php',
+        url : 'php/handle_form.php',
         data : {
           name: $scope.name,
           company: $scope.company,
