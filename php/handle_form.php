@@ -10,9 +10,9 @@ date_default_timezone_set('America/New_York');
 $errors = array();
 $data = array();
 
-if(empty($_POST['name']))
+if(empty($_POST["name"]))
     $errors['name'] = 'Name is required.';
-if(empty($_POST['phone']))
+if(empty($_POST["phone"]))
     $errors['phone'] = 'Phone number is required.';
 
 if(!empty($errors)) {
@@ -20,11 +20,11 @@ if(!empty($errors)) {
 } else {
     $to_Email = "russelljr@jonescontractinginc.com";
 
-    $name = $_POST['name'];
-    $company = $_POST['company'];
-    $phone = $_POST['phone'];
-    $email = $_POST['email'];
-    $message = $_POST['message'];
+    $name = $_POST["name"];
+    $company = $_POST["company"];
+    $phone = $_POST["phone"];
+    $email = $_POST["email"];
+    $message = $_POST["message"];
     $date = date("Y-m-d H:i:s");
 
     $filename = "../contacts/Request from " . $name . " " . $date . ".txt";
