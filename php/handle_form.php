@@ -50,7 +50,7 @@ if(!empty($errors)) {
     }
     else {
         $data['success'] = false;
-        $errors['file'] = 'Failed to write file.'
+        $errors['file'] = 'Failed to write file.';
     }
 
 //    $sm = mail($to_Email, $email_subject, $email_message, $headers);
@@ -61,7 +61,7 @@ if(!empty($errors)) {
     }
     else {
         $data['success'] = false;
-        $errors['mailer'] = 'Failed to send email.'
+        $errors['mailer'] = 'Failed to send email.';
     }
 }
 $data['errors'] = $errors;
