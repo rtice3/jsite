@@ -1,17 +1,16 @@
 <div id="feature_panel">
   <div class="row featurette">
     <div class="col-md-7">
-      <h2 class="featurette-heading">{{ ctrl.data.heading }}<span class="text-muted"> {{ ctrl.data.muted }}</span></h2>
+      <h3 class="featurette-heading">{{ ctrl.data.heading }}<span class="text-muted"> {{ ctrl.data.muted }}</span></h3>
       <div ng-repeat="l in ctrl.data.list">
-        <p class="lead">{{ l.item }}</p>
+        <p>{{ l.item }}</p>
       </div>
-      
       <div class="btn-group">
-        <a href="#" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+        <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
           Services
           <span class="caret"></span>
-        </a>
-        <ul class="dropdown-menu">
+        </button>
+        <ul class="dropdown-menu" role="menu">
           <div ng-repeat="b in ctrl.data.btn">
             <li><a ng-href="{{ b.href }}">{{ b.txt }}</a></li>
           </div>
