@@ -21,17 +21,21 @@
 				<p>{{ f.content }}</p>
 			</div>
 			<div class="col-xs-12 col-sm-6 col-md-4" ng-show="f.list.length">
-				<ul>
-					<div ng-repeat="g in f.list">
+				<div ng-repeat="g in f.list">
+					<ul>
 						<li>{{ g.item }}</li>
-					</div>
-				</ul>
+						<div ng-repeat="s in g.sub-item" ng-show="g.sub-item.length">
+							<ul>
+								<li>{{ s.item }}</li>
+							</ul>
+						</div>
+					</ul>
+				</div>	
 			</div>
 		</div>
 	</div>
 	<div id="signature" class="row" ng-show="ctrl.signature">
 		<div class="col-xs-12">
-			<p><em>Sincerely,</em></p>
 			<p><em>{{ ctrl.data.panel.signature }}</em></p>
 		</div>
 	</div>

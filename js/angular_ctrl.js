@@ -13,6 +13,21 @@
         controller: 'residential_ctrl',
         controllerAs: 'ctrl'
       }).
+      when('/commercial', {
+        templateUrl: 'html/feature-template.html',
+        controller: 'commercial_ctrl',
+        controllerAs: 'ctrl'
+      }).
+      when('/municipal', {
+        templateUrl: 'html/feature-template.html',
+        controller: 'municipal_ctrl',
+        controllerAs: 'ctrl'
+      }).
+      when('/service', {
+        templateUrl: 'html/feature-template.html',
+        controller: 'service_ctrl',
+        controllerAs: 'ctrl'
+      }).
       when('/excavation', {
         templateUrl: 'html/service-template.html',
         controller: 'excavation_ctrl',
@@ -113,6 +128,20 @@
     var store = this;
     store.data = [];
     $http.get("json/residential.json").success(function(response) {
+      store.data = response;
+    });
+  }]);
+  app.controller('commercial_ctrl', [ '$http', function($http) {
+    var store = this;
+    store.data = [];
+    $http.get("json/commercial.json").success(function(response) {
+      store.data = response;
+    });
+  }]);
+  app.controller('municipal_ctrl', [ '$http', function($http) {
+    var store = this;
+    store.data = [];
+    $http.get("json/municipal.json").success(function(response) {
       store.data = response;
     });
   }]);

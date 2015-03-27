@@ -26,31 +26,50 @@
 		"heading": "Utilities, Water & Sewer",
 		"body": [
 			{
-				"content": "No matter what type of pipe or how long a run, we have the know-how and experience to get it done right and on time. Our utility services include:"
+				"content": "No matter what type of pipe or how long a run, we have the know-how and experience to get it done right and on time.  Our utility services include:"
 			},
 			{
 				"list": [
 					{
-						"item": "Water Mains and Water Services"
+						"item": "Water Mains and Water Services",
+						"sub-item": [
+							{
+								"item": "Both CLDI & PVC Water Mains"
+							},
+							{
+								"item": "Copper and PVC Water Services"
+							},
+							{
+								"item": "Water Main Tapping"
+							}
+						]
 					},
 					{
-						"item": "Gravity and Pressurized Sewer Mains and Sewer Services"
+						"item": "Gravity and Pressurized “Force” Sewer Mains and Sewer Services"
 					},
 					{
-						"item": "Drainage Systems and Roof Drain Collection Systems"
+						"item": "Grinder Pump Sewer Services"
 					}
 				]
 			},
 			{
 				"list": [
 					{
-						"item": "Electric, Telephone, and Cable/Data Conduits"
+						"item": "Drainage Systems and Roof Drain Collection Systems"
 					},
 					{
-						"item": "Gas Main and Gas Service Excavation and Backfill"
-					},
-					{
-						"item": "Electric, Telephone, and Cable/Data Conduits"
+						"item": "Electric, Telephone, and Cable/Data Conduits",
+						"sub-item": [
+							{
+								"item": "National Grid Spec"
+							},
+							{
+								"item": "Eversource, formally NSTAR, Spec"
+							},
+							{
+								"item": "Verizon and Comcast Spec"
+							}
+						]
 					},
 					{
 						"item": "Gas Main and Gas Service Excavation and Backfill"

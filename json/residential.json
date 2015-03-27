@@ -3,16 +3,16 @@
 		{
 			"img": "img/excavating/residential_excavating.jpg",
 			"heading": "Residential",
-			"muted": "Excavation Services",
-			"body": "Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.",
+			"muted": "Excavation, Water, and Sewer Services",
+			"body": "Our roots are in residential work.  We understand residential customer concerns, questions, and needs. We’ve dug many additions, foundations, and installed many water and sewer services.  We’ve replaced over 100 water services in the town of Norwood alone.  Clink on our services pages for more info.",
 			"btn_txt": "Excavation Services",
 			"btn_href": "#excavation"
 		},
 		{
 			"img": "img/septic/residential_septic.jpg",
 			"heading": "Residential",
-			"muted": "Septic Services",
-			"body": "Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.",
+			"muted": "Title V Septic Services and Stormwater Management",
+			"body": "From Title V inspections, to repairs, to new systems, Jones Contracting staffs some talented individuals who have been installing septic systems since the early 1970’s.  We also install drywells and roof drain collection systems.  Our pricing is competitive and our service is superior",
 			"btn_txt": "Septic Services",
 			"btn_href": "#septic"
 		},
@@ -20,15 +20,15 @@
 			"img": "img/paving/residential_asphalt.jpg",
 			"heading": "Residential",
 			"muted": "Paving Services",
-			"body": "Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.",
-			"btn_txt": "Asphalt Services",
+			"body": "Believe it or not, paving roadways and parking lots is pretty easy.  The true challenge often lies in paving quality driveways and basketball & tennis courts.  We enjoy it, and besides appearance, proper drainage is key.  Also being excavators, we understand how important a driveway’s gravel base is, leading to long lasting final products.",
+			"btn_txt": "Paving Services",
 			"btn_href": "#asphalt"
 		},
 		{
 			"img": "img/landscape/residential_landscape.jpg",
 			"heading": "Residential",
 			"muted": "Lanscape Services",
-			"body": "Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.",
+			"body": "To bring our residential service full circle, we provide landscape services including, loam and hydroseed application, tree plantings, hardscape walls, walkways, curbing and more.",
 			"btn_txt": "Landscape Services",
 			"btn_href": "#landscape"
 		}

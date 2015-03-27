@@ -26,7 +26,7 @@
 		"heading": "Heavy Civil & Sitework",
 		"body": [
 			{
-				"content": "From cut and fill to curb and sidewalk, Jones Contracting, Inc. has extensive experience providing site work for housing developments and buildings. Our main goal is to offer comprehensive site work services with as little subcontracting as possible to maximize efficiency and minimize your cost. Our site-work services include:"
+				"content": "From cut and fill to curb and sidewalk, Jones Contracting, Inc. has extensive experience providing heavy civil & site work for housing developments and commercial buildings. Our main goal is to offer comprehensive site work services to maximize efficiency and minimize your cost.  We have a team of subcontractors who share our emphasis on communication and work quality.  Our site work services include:"
 			},
 			{
 				"list": [
@@ -37,24 +37,30 @@
 						"item": "Cut and Fill"
 					},
 					{
-						"item": "Blasting"
+						"item": "Rock Blasting"
 					},
 					{
-						"item": "Utility Installation"
+						"item": "Retention/Detention Ponds, Bio-swales & Rain Gardens"
 					},
 					{
-						"item": "Road Construction"
+						"item": "Water, Sewer, and Drain Mains and Laterals"
 					},
 					{
-						"item": "Standard or Sloped Concrete, Asphalt, and Granite Curbing"
+						"item": "Electric Telephone and Cable Conduit and Appurtenances"
 					},
 					{
-						"item": "Asphalt Roadway Paving"
+						"item": "Road Gravel Installation and Fine Grading"
 					}
 				]
 			},
 			{
 				"list": [
+					{
+						"item": "Asphalt Binder, Top Course and Berm Paving"
+					},
+					{
+						"item": "Standard or Sloped Concrete, Asphalt, and Granite Curbing"
+					},
 					{
 						"item": "Asphalt and Concrete Sidewalks with ADA Handicap Ramps"
 					},
@@ -65,7 +71,10 @@
 						"item": "Temporary Bridge Construction"
 					},
 					{
-						"item": "Concrete Bridge and Culvert Construction"
+						"item": "Bridge and Culvert Construction"
+					},
+					{
+						"item": "Road Striping and Signage"
 					}
 				]
 			}

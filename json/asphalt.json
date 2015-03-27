@@ -17,7 +17,7 @@
 		"heading": "Aphalt Paving",
 		"body": [
 			{
-				"content": "We provide asphalt paving services for:"
+				"content": "With the asphalt paving services listed we provide subgrade compaction, dense graded gravel installation and fine grading and all other necessary preparatory services."
 			},
 			{
 				"list": [
@@ -29,14 +29,14 @@
 					},
 					{
 						"item": "Sidewalks"
-					},
-					{
-						"item": "Pedestrian and Bike Paths"
 					}
 				]
 			},
 			{
 				"list": [
+					{
+						"item": "Pedestrian and Bike Paths"
+					},
 					{
 						"item": "Golf Course Cart Paths"
 					},

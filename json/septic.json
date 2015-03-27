@@ -23,7 +23,67 @@
 		"heading": "Septic Systems & Title V",
 		"body": [
 			{
-				"content": "From a single family home system to a 20,000 gallon community system, we take pride in our top quality septic system installations that consistently pass inspections the first time. We specialize in a wide rang of systems and guarantee that you will be pleased with our timely service and finished product."
+				"content": "From a single family residential system to a 20,000 gallon community system, we take pride in our top quality septic system installations that consistently pass inspections the first time. We specialize in a wide range of systems and guarantee that you will be pleased with our timely service and finished product."
+			},
+			{
+				"list": [
+					{
+						"item": "Percolation Test Pits"
+					},
+					{
+						"item": "Title V Inspections"
+					},
+					{
+						"item": "Title V Repairs"
+					},
+					{
+						"item": "Septic Tank Replacements"
+					},
+					{
+						"item": "Leaching Field Expansions & Replacements"
+					}
+				]
+			},
+			{
+				"list": [
+					{
+						"item": "New Residential System Installations",
+						"sub-item": [
+							{
+								"item": "Standard Gravity Leaching Fields"
+							},
+							{
+								"item": "Infiltrator"
+							},
+							{
+								"item": "Cultec"
+							},
+							{
+								"item": "Presby"
+							},
+							{
+								"item": "Pressure Dosed"
+							}
+						]
+					},
+					{
+						"item": "New Commerical & Shared System Installations",
+						"sub-item": [
+							{
+								"item": "Standard and Tunnel Tanks"
+							},
+							{
+								"item": "Standard Gravity Leaching Fields"
+							},
+							{
+								"item": "Pump Chambers with Pump Systems"
+							},
+							{
+								"item": "Pressure Dosed Leaching Fields"
+							}
+						]
+					}
+				]
 			}
 		]
 	}

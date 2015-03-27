@@ -34,17 +34,26 @@
 						"item": "Construction Geometric and Grade Layout"
 					},
 					{
-						"item": "Topographic Survey and Electronic Blasting Layout"
+						"item": "Topographic Survey"
 					}
 				]
 			},
 			{
 				"list": [
 					{
+						"item": "Blasting Management and Layout"
+					},
+					{
 						"item": "Laser Aligned Pipe Layout"
 					},
 					{
-						"item": "Pressure and Vacuum Testing"
+						"item": "Water and Force Sewer Pressure Testing"
+					},
+					{
+						"item": "Sewer Manhole Vacuum Testing"
+					},
+					{
+						"item": "Civil Engineering Design coming soon!"
 					}
 				]
 			}

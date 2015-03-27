@@ -17,7 +17,33 @@
 		"heading": "Snow Services",
 		"body": [
 			{
-				"content": "We offer a range of snow services to commercial entities and state and local authorities, including plowing, removal, and spreading of sand, salt, and calcium."
+				"content": "We only provide snow services for commercial and public entities.  Services include:"
+			},
+			{
+				"list": [
+					{
+						"item": "Curb to Curb Snow Plowing"
+					},
+					{
+						"item": "Front End Loader Services post Heavy Snow Events"
+					},
+					{
+						"item": "Snow Removal and Disposal"
+					}
+				]
+			},
+			{
+				"list": [
+					{
+						"item": "Shoveling and Hand Salt Application"
+					},
+					{
+						"item": "Sand and Salt Application by Truck Mounted Spreaders"
+					},
+					{
+						"item": "Liquid Calcium Application"
+					}
+				]
 			}
 		]
 	}
