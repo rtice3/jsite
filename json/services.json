@@ -1,0 +1,51 @@
+{
+	"feature": [
+		{
+			"img": "img/excavating/residential_excavating.jpg",
+			"heading": "service",
+			"muted": "Areas",
+			"list": [
+				{
+					"item": "We provide services in Walpole, Norwood, Norfolk, Medfield, Foxborough, Sharon, Westwood, Dover, Franklin, Easton, Norton, Canton, Sherborn, Natick, Holliston, Millis, Quincy, Brookline, Milton, Medway, Bellingham, Falmouth, Sandwich, Mashpee, Plymouth, Carver, Middleborough, Taunton, Stoughton, Ashland, Wayland, Framingham, Weston, Newton, Concord, Lincoln, Stow, Lexington, Needham, Dedham, Cohasset, Norwell, Hingham, Scituate, Marshfield, Duxbury and throughout eastern Massachusetts."
+				},
+				{
+					"item": "If we haven’t worked in your town yet, our experience helps us procure local drain layer, septic installer, and other necessarily licenses quickly."
+				}
+			],
+			"btn": [
+				{
+					"txt": "Heavy Civil & Site Work",
+					"href": "#excavation"
+				},
+				{
+					"txt": "Septic Systems & Title V",
+					"href": "#septic"
+				},
+				{
+					"txt": "Utilities, Water, & Sewer",
+					"href": "#utilities"
+				},
+				{
+					"txt": "Stormwater Management",
+					"href": "#stormwater"
+				},
+				{
+					"txt": "Asphalt Paving",
+					"href": "#asphalt"
+				},
+				{
+					"txt": "Landscape Construction",
+					"href": "#landscape"
+				},
+				{
+					"txt": "Snow Services",
+					"href": "#snow"
+				},
+				{
+					"txt": "Technical Services",
+					"href": "#technical"
+				}
+			]
+		}
+	]
+}

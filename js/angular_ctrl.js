@@ -23,9 +23,9 @@
         controller: 'municipal_ctrl',
         controllerAs: 'ctrl'
       }).
-      when('/service', {
-        templateUrl: 'html/feature-template.html',
-        controller: 'service_ctrl',
+      when('/services', {
+        templateUrl: 'html/services.html',
+        controller: 'services_ctrl',
         controllerAs: 'ctrl'
       }).
       when('/excavation', {
@@ -142,6 +142,13 @@
     var store = this;
     store.data = [];
     $http.get("json/municipal.json").success(function(response) {
+      store.data = response;
+    });
+  }]);
+  app.controller('services_ctrl', [ '$http', function($http) {
+    var store = this;
+    store.data = [];
+    $http.get("json/services.json").success(function(response) {
       store.data = response;
     });
   }]);
