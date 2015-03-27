@@ -1,8 +1,8 @@
 <div id="feature_panel">
   <div class="row featurette">
     <div class="col-md-7">
-      <h2 class="featurette-heading">{{ ctrl.data.feature.heading }}<span class="text-muted"> {{ ctrl.data.feature.muted }}</span></h2>
-      <div ng-repeat="l in ctrl.data.feature.list">
+      <h2 class="featurette-heading">{{ ctrl.data.heading }}<span class="text-muted"> {{ ctrl.data.muted }}</span></h2>
+      <div ng-repeat="l in ctrl.data.list">
         <p class="lead">{{ l.item }}</p>
       </div>
       
@@ -12,7 +12,7 @@
           <span class="caret"></span>
         </a>
         <ul class="dropdown-menu">
-          <div ng-repeat="b in ctrl.data.feature.btn">
+          <div ng-repeat="b in ctrl.data.btn">
             <li><a ng-href="{{ b.href }}">{{ b.txt }}</a></li>
           </div>
         </ul>
