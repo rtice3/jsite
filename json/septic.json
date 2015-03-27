@@ -48,7 +48,7 @@
 				"list": [
 					{
 						"item": "New Residential System Installations",
-						"sub-item": [
+						"subitem": [
 							{
 								"item": "Standard Gravity Leaching Fields"
 							},
@@ -68,7 +68,7 @@
 					},
 					{
 						"item": "New Commerical & Shared System Installations",
-						"sub-item": [
+						"subitem": [
 							{
 								"item": "Standard and Tunnel Tanks"
 							},

@@ -32,7 +32,7 @@
 				"list": [
 					{
 						"item": "Water Mains and Water Services",
-						"sub-item": [
+						"subitem": [
 							{
 								"item": "Both CLDI & PVC Water Mains"
 							},
@@ -59,7 +59,7 @@
 					},
 					{
 						"item": "Electric, Telephone, and Cable/Data Conduits",
-						"sub-item": [
+						"subitem": [
 							{
 								"item": "National Grid Spec"
 							},
