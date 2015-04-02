@@ -69,6 +69,8 @@ body {
 .navbar-brand {
   height: 0px;
   padding: 0px;
+  padding-left: 8px;
+  padding-top: 5px;
 }
 
 /* Featurettes
@@ -111,6 +113,12 @@ body {
     .navbar-brand {
       height: 50px;
     }
+}
+
+@media (min-width: 994px) {
+  .navbar-brand {
+    display: none;
+  }
 }
 
 @media (min-width: 768px) {
