@@ -25,10 +25,13 @@ footer p {
   float: right;
   margin-right: 10%;
   border-left: 1px solid #98978b;
+  padding-left: 10px;
+  margin-top: 8px;
 }
 
 #links a {
   display: block;
+  color: #98978b;
 }
 
 @media (max-width: 387px) {
