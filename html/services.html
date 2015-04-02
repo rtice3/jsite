@@ -6,12 +6,11 @@
         <p>{{ l.item }}</p>
       </div>
       <div class="btn-group">
-        <a href="" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-expanded="false">Services<span class="caret"></span></a>
-        <ul class="dropdown-menu" ng-repeat="b in ctrl.data.btn">
-          <li><a ng-href="{{ b.href }}">{{ b.txt }}</a></li>
+        <a href="" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-expanded="false">Services <span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li ng-repeat="b in ctrl.data.btn"><a ng-href="{{ b.href }}">{{ b.txt }}</a></li>
         </ul>
       </div>
     </div>
   </div>
 </div>
-
