@@ -55,6 +55,9 @@
     padding-right: 0;
     padding-left: 0;
   }
+  .navbar-brand {
+    display: none;
+  }
 
   /* The navbar becomes detached from the top, so we round the corners */
   .navbar-wrapper .navbar {
