@@ -34,6 +34,10 @@ footer p {
   color: #98978b;
 }
 
+#links img {
+  padding-right: 10px;
+}
+
 @media (max-width: 387px) {
   #links a {
     display: inline-block;
