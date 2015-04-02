@@ -3,7 +3,7 @@ footer {
   height: auto;
   position: absolute;
   width: 100%;
-  color: white;
+  color: #98978b;
 }
 
 footer div {
@@ -24,6 +24,7 @@ footer p {
 #links {
   float: right;
   margin-right: 10%;
+  border-left: 1px solid #98978b;
 }
 
 #links a {
