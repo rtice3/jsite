@@ -21,6 +21,10 @@ footer p {
   margin-left: 10%;
 }
 
+#copy a {
+  color: #98978b;
+}
+
 #links {
   float: right;
   margin-right: 10%;

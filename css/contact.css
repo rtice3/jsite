@@ -75,6 +75,9 @@
   #contact_info {
     display: none;
   }
+}
+
+@media (max-width: 950px) {
   #news_tag {
     display: none;
   }
