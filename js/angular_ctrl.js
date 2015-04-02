@@ -122,7 +122,6 @@
     $http.get("json/about.json").success(function(response) {
       store.data = response;
       store.signature = true;
-      store.tagline = true;
     });
   }]);
   app.controller('residential_ctrl', [ '$http', function($http) {
