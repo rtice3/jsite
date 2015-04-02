@@ -19,14 +19,14 @@
 					},
 					{
 						"item": "Bio-Swales"
+					},
+					{
+						"item": "On-site Groundwater Recharge Systems"
 					}
 				]
 			},
 			{
 				"list": [
-					{
-						"item": "On-site Groundwater Recharge Systems"
-					},
 					{
 						"item": "Roof Drain Collection Systems",
 						"subitem": [

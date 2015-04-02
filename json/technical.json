@@ -35,14 +35,14 @@
 					},
 					{
 						"item": "Topographic Survey"
+					},
+					{
+						"item": "Blasting Management and Layout"
 					}
 				]
 			},
 			{
 				"list": [
-					{
-						"item": "Blasting Management and Layout"
-					},
 					{
 						"item": "Laser Aligned Pipe Layout"
 					},

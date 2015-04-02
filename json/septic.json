@@ -37,15 +37,32 @@
 						"item": "Title V Repairs"
 					},
 					{
-						"item": "Septic Tank Replacements"
-					},
-					{
-						"item": "Leaching Field Expansions & Replacements"
+						"item": "New Commerical & Shared System Installations",
+						"subitem": [
+							{
+								"item": "Standard and Tunnel Tanks"
+							},
+							{
+								"item": "Standard Gravity Leaching Fields"
+							},
+							{
+								"item": "Pump Chambers with Pump Systems"
+							},
+							{
+								"item": "Pressure Dosed Leaching Fields"
+							}
+						]
 					}
 				]
 			},
 			{
 				"list": [
+					{
+						"item": "Septic Tank Replacements"
+					},
+					{
+						"item": "Leaching Field Expansions & Replacements"
+					},
 					{
 						"item": "New Residential System Installations",
 						"subitem": [
@@ -63,23 +80,6 @@
 							},
 							{
 								"item": "Pressure Dosed"
-							}
-						]
-					},
-					{
-						"item": "New Commerical & Shared System Installations",
-						"subitem": [
-							{
-								"item": "Standard and Tunnel Tanks"
-							},
-							{
-								"item": "Standard Gravity Leaching Fields"
-							},
-							{
-								"item": "Pump Chambers with Pump Systems"
-							},
-							{
-								"item": "Pressure Dosed Leaching Fields"
 							}
 						]
 					}
