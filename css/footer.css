@@ -25,12 +25,27 @@ footer p {
   color: #98978b;
 }
 
+footer span {
+  display: inline-block;
+  margin-top: 8px;
+  margin-bottom: 8px;
+  float: left;
+}
+
+.rjust {
+  text-align: right;
+}
+
+.vert-div {
+  height: 100%;
+  border-left: 1px solid #98978b;
+  margin-left: 10px;
+  padding-left: 10px;
+}
+
 #links {
   float: right;
   margin-right: 10%;
-  border-left: 1px solid #98978b;
-  padding-left: 10px;
-  margin-top: 8px;
 }
 
 #links a {

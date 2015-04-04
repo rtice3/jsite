@@ -1,7 +1,7 @@
 {
 	"feature": [
 		{
-			"img": "img/excavating/residential_excavating.jpg",
+			"img": "img/excavating/commercial_excavating.jpg",
 			"heading": "Commercial",
 			"muted": "Heavy Civil & Site Work",
 			"body": "From land development to new multi-story commercial structures, Jones Contracting, Inc can package all aspects of a commercial builder’s site work needs from land clearing to asphalt top coat.  Over the years this has become our focus.  Click on the link for more.",
@@ -9,7 +9,7 @@
 			"btn_href": "#excavation"
 		},
 		{
-			"img": "img/septic/residential_septic.jpg",
+			"img": "img/septic/commercial_septic.jpg",
 			"heading": "Commercial",
 			"muted": "Title V Septic Services and Stormwater Management",
 			"body": "Large commerical systems tend to be much more involved than residential systems.  We have the engineering knowledge, equipment, and most importantly experience to install high quality systems. We’ve installed pressure dosed 12,000 gallon per day systems and 20,000 gallon per day systems.",
@@ -17,7 +17,7 @@
 			"btn_href": "#septic"
 		},
 		{
-			"img": "img/paving/residential_asphalt.jpg",
+			"img": "img/paving/commercial_asphalt.jpg",
 			"heading": "Commercial",
 			"muted": "Paving Services",
 			"body": "Having installed new and replaced old parking lots for commercial and municipal clients, we’ve become very successful with large paving projects.  Our pricing is competitive and the final product will leave you more than pleased.",
@@ -25,7 +25,7 @@
 			"btn_href": "#asphalt"
 		},
 		{
-			"img": "img/landscape/residential_landscape.jpg",
+			"img": "img/snow/commercial_snow.jpg",
 			"heading": "Commercial",
 			"muted": "Snow Removal",
 			"body": "Equipped with many loaders, backhoes, skidsteers with pushers, JCI is experienced in parking lot plowing, snow removal, and salt application.  Snow and Ice can be a huge liability for commercial properties.  Our curb to curb snow plowing, and salt application leave parking lots free of ice.",

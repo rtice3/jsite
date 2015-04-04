@@ -1,7 +1,11 @@
 {
 	"carousel": {
 		"interval": "4000",
-		"img": []
+		"img": [
+			{
+				"src": "img/stormwater/stormwater_00_scaled.jpg"
+			}
+		]
 	},
 	"panel": {
 		"heading": "Stormwater Management",

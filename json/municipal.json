@@ -1,7 +1,7 @@
 {
 	"feature": [
 		{
-			"img": "img/excavating/residential_excavating.jpg",
+			"img": "img/paving/public_asphalt.jpg",
 			"heading": "Public",
 			"muted": "Road Improvements and Asphalt Paving",
 			"body": "Jones Contracting, Inc has years of experience in road and parking improvements including asphalt paving, asphalt and concrete sidewalks, curbing and more.   We’ve worked for municipalities as far from Walpole as Newburyport and have become well versed in scenic pedestrian and bicycle paths.",
@@ -9,7 +9,7 @@
 			"btn_href": "#asphalt"
 		},
 		{
-			"img": "img/septic/residential_septic.jpg",
+			"img": "img/septic/public_sewer.jpg",
 			"heading": "Public",
 			"muted": "Water & Sewer",
 			"body": "Most publicly bid projects we work focus on underground piping.  We’ve laid thousands and thousands of feet of water main, sewer main, and drain lines of all types.",
@@ -17,7 +17,7 @@
 			"btn_href": "#septic"
 		},
 		{
-			"img": "img/paving/residential_asphalt.jpg",
+			"img": "img/stormwater/public_stormwater.jpg",
 			"heading": "Public",
 			"muted": "Drainage & Stormwater Management",
 			"body": "Over the years we’ve gained experience in newer stormwater management practices including bio-retention ponds, bio-swales and rain gardens.  Not to mention traditional concrete pipe drainage systems.",
@@ -25,7 +25,7 @@
 			"btn_href": "#stormwater"
 		},
 		{
-			"img": "img/landscape/residential_landscape.jpg",
+			"img": "img/snow/public_snow.jpg",
 			"heading": "Public",
 			"muted": "Snow Removal",
 			"body": "We provide plowing and salting services for municipal and local authorities.",
