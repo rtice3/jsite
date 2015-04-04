@@ -120,6 +120,11 @@ function init_map() {
         controller: 'contact_ctrl',
         controllerAs: 'ctrl'
       }).
+      when('/sitemap', {
+        templateUrl: 'html/sitemap.html',
+        controller: 'sitemap_ctrl',
+        controllerAs: 'ctrl'
+      }).
       otherwise({
         redirectTo: '/'
       });
@@ -263,6 +268,8 @@ function init_map() {
       store.signature = false;
     });
   }]);
+
+  app.controller('contact_ctrl', function($scope, $http) { });
 
   app.controller('contact_ctrl', function($scope, $http) {
     init_map();
