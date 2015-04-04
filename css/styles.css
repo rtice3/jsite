@@ -492,3 +492,17 @@ footer span {
     margin-right: 2px;
   }
 }
+@media (max-width: 570px) {
+	.rjust {
+		text-align: left;
+		margin-left: 10px;
+		
+	}
+	.vert-div {
+		padding-left: 0px;
+		border-left: 0px;
+	}
+	#links {
+		float: left;
+	}
+}
