@@ -3,19 +3,19 @@
 		"interval": "4000",
 		"img": [
 			{
-				"src": "img/septic/septic_00_scaled.jpg"
+				"src": "img/septic/septic_00.jpg"
 			},
 			{
-				"src": "img/septic/septic_01_scaled.jpg"
+				"src": "img/septic/septic_01.jpg"
 			},
 			{
-				"src": "img/septic/septic_02_scaled.jpg"
+				"src": "img/septic/septic_02.jpg"
 			},
 			{
-				"src": "img/septic/septic_03_scaled.jpg"
+				"src": "img/septic/septic_03.jpg"
 			},
 			{
-				"src": "img/septic/septic_04_scaled.jpg"
+				"src": "img/septic/septic_04.jpg"
 			}
 		]
 	},

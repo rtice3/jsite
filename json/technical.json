@@ -3,19 +3,19 @@
 		"interval": "4000",
 		"img": [
 			{
-				"src": "img/specialty/specialty_00_scaled.jpg"
+				"src": "img/specialty/specialty_00.jpg"
 			},
 			{
-				"src": "img/specialty/specialty_01_scaled.jpg"
+				"src": "img/specialty/specialty_01.jpg"
 			},
 			{
-				"src": "img/specialty/specialty_02_scaled.jpg"
+				"src": "img/specialty/specialty_02.jpg"
 			},
 			{
-				"src": "img/specialty/specialty_03_scaled.jpg"
+				"src": "img/specialty/specialty_03.jpg"
 			},
 			{
-				"src": "img/specialty/specialty_04_scaled.jpg"
+				"src": "img/specialty/specialty_04.jpg"
 			}
 		]
 	},

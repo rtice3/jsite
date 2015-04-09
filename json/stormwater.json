@@ -3,7 +3,10 @@
 		"interval": "4000",
 		"img": [
 			{
-				"src": "img/stormwater/stormwater_00_scaled.jpg"
+				"src": "img/stormwater/stormwater_00.jpg"
+			},
+			{
+				"src": "img/stormwater/stormwater_01.jpg"
 			}
 		]
 	},

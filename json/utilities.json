@@ -3,22 +3,19 @@
 		"interval": "4000",
 		"img": [
 			{
-				"src": "img/utilities/utilities_00_scaled.jpg"
+				"src": "img/utilities/utilities_00.jpg"
 			},
 			{
-				"src": "img/utilities/utilities_01_scaled.jpg"
+				"src": "img/utilities/utilities_01.jpg"
 			},
 			{
-				"src": "img/utilities/utilities_02_scaled.jpg"
+				"src": "img/utilities/utilities_02.jpg"
 			},
 			{
-				"src": "img/utilities/utilities_03_scaled.jpg"
+				"src": "img/utilities/utilities_03.jpg"
 			},
 			{
-				"src": "img/utilities/utilities_04_scaled.jpg"
-			},
-			{
-				"src": "img/utilities/utilities_05_scaled.jpg"
+				"src": "img/utilities/utilities_04.jpg"
 			}
 		]
 	},

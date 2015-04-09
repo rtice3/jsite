@@ -1,7 +1,7 @@
 {
 	"feature": [
 		{
-			"img": "img/excavating/residential_excavating.jpg",
+			"img": "img/residential/residential_excavating.jpg",
 			"heading": "Residential",
 			"muted": "Excavation, Water, and Sewer Services",
 			"body": "Our roots are in residential work.  We understand residential customer concerns, questions, and needs. We’ve dug many additions, foundations, and installed many water and sewer services.  We’ve replaced over 100 water services in the town of Norwood alone.  Click on our services pages for more info.",
@@ -9,7 +9,7 @@
 			"btn_href": "#excavation"
 		},
 		{
-			"img": "img/septic/residential_septic.jpg",
+			"img": "img/residential/residential_septic.jpg",
 			"heading": "Residential",
 			"muted": "Title V Septic Services and Stormwater Management",
 			"body": "From Title V inspections, to repairs, to new systems, Jones Contracting staffs some talented individuals who have been installing septic systems since the early 1970’s.  We also install drywells and roof drain collection systems.  Our pricing is competitive and our service is superior",
@@ -17,7 +17,7 @@
 			"btn_href": "#septic"
 		},
 		{
-			"img": "img/paving/residential_asphalt.jpg",
+			"img": "img/residential/residential_paving.jpg",
 			"heading": "Residential",
 			"muted": "Paving Services",
 			"body": "Believe it or not, paving roadways and parking lots is pretty easy.  The true challenge often lies in paving quality driveways and basketball & tennis courts.  We enjoy it, and besides appearance, proper drainage is key.  Also being excavators, we understand how important a driveway’s gravel base is, leading to long lasting final products.",
@@ -25,7 +25,7 @@
 			"btn_href": "#asphalt"
 		},
 		{
-			"img": "img/landscape/residential_landscape.jpg",
+			"img": "img/residential/residential_landscape.jpg",
 			"heading": "Residential",
 			"muted": "Lanscape Services",
 			"body": "To bring our residential service full circle, we provide landscape services including, loam and hydroseed application, tree plantings, hardscape walls, walkways, curbing and more.",

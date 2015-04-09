@@ -3,22 +3,19 @@
 		"interval": "4000",
 		"img": [
 			{
-				"src": "img/excavating/excavating_00_scaled.jpg"
+				"src": "img/excavating/excavating_00.jpg"
 			},
 			{
-				"src": "img/excavating/excavating_01_scaled.jpg"
+				"src": "img/excavating/excavating_01.jpg"
 			},
 			{
-				"src": "img/excavating/excavating_02_scaled.jpg"
+				"src": "img/excavating/excavating_02.jpg"
 			},
 			{
-				"src": "img/excavating/excavating_03_scaled.jpg"
+				"src": "img/excavating/excavating_03.jpg"
 			},
 			{
-				"src": "img/excavating/excavating_04_scaled.jpg"
-			},
-			{
-				"src": "img/excavating/excavating_05_scaled.jpg"
+				"src": "img/excavating/excavating_04.jpg"
 			}
 		]
 	},

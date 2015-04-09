@@ -3,13 +3,19 @@
 		"interval": "4000",
 		"img": [
 			{
-				"src": "img/paving/paving_00_scaled.jpg"
+				"src": "img/paving/paving_00.jpg"
 			},
 			{
-				"src": "img/paving/paving_01_scaled.jpg"
+				"src": "img/paving/paving_01.jpg"
 			},
 			{
-				"src": "img/paving/paving_02_scaled.jpg"
+				"src": "img/paving/paving_02.jpg"
+			},
+			{
+				"src": "img/paving/paving_03.jpg"
+			},
+			{
+				"src": "img/paving/paving_04.jpg"
 			}
 		]
 	},

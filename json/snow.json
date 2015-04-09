@@ -3,13 +3,22 @@
 		"interval": "4000",
 		"img": [
 			{
-				"src": "img/snow/snow_00_scaled.jpg"
+				"src": "img/snow/snow_00.jpg"
 			},
 			{
-				"src": "img/snow/snow_01_scaled.jpg"
+				"src": "img/snow/snow_01.jpg"
 			},
 			{
-				"src": "img/snow/snow_02_scaled.jpg"
+				"src": "img/snow/snow_02.jpg"
+			},
+			{
+				"src": "img/snow/snow_03.jpg"
+			},
+			{
+				"src": "img/snow/snow_04.jpg"
+			},
+			{
+				"src": "img/snow/snow_05.jpg"
 			}
 		]
 	},

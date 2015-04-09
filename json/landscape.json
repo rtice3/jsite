@@ -3,16 +3,16 @@
 		"interval": "4000",
 		"img": [
 			{
-				"src": "img/landscape/landscape_00_scaled.jpg"
+				"src": "img/landscape/landscape_00.jpg"
 			},
 			{
-				"src": "img/landscape/landscape_01_scaled.jpg"
+				"src": "img/landscape/landscape_01.jpg"
 			},
 			{
-				"src": "img/landscape/landscape_02_scaled.jpg"
+				"src": "img/landscape/landscape_02.jpg"
 			},
 			{
-				"src": "img/landscape/landscape_03_scaled.jpg"
+				"src": "img/landscape/landscape_03.jpg"
 			}
 		]
 	},

@@ -269,7 +269,7 @@ function init_map() {
     });
   }]);
 
-  app.controller('contact_ctrl', function($scope, $http) { });
+  app.controller('sitemap_ctrl', function($scope, $http) { });
 
   app.controller('contact_ctrl', function($scope, $http) {
     init_map();
