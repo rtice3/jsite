@@ -46,7 +46,7 @@ function init_map() {
 }
 
 (function() {
-  var app = angular.module('angular_app', ['ui.bootstrap', 'ngRoute', 'ngAnimate']);
+  var app = angular.module('angular_app', ['ui.bootstrap', 'ngRoute']);
 
   app.config(['$routeProvider', function($routeProvider) {
     $routeProvider.
