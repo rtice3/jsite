@@ -125,6 +125,11 @@ function init_map() {
         controller: 'sitemap_ctrl',
         controllerAs: 'ctrl'
       }).
+      when('/internal', {
+        templateUrl: 'html/internal.html',
+        controller: 'internal_ctrl',
+        controllerAs: 'ctrl'
+      }).
       otherwise({
         redirectTo: '/'
       });
@@ -307,6 +312,10 @@ function init_map() {
         $("#contact_container").show();
       });
     };
+  });
+
+  app.controller('internal_ctrl', function($scope, $http) {
+    
   });
 
   $(document).on('click','.navbar-collapse.in',function(e) {
