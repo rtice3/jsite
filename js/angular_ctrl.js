@@ -115,6 +115,11 @@ function init_map() {
         controller: 'technical_ctrl',
         controllerAs: 'ctrl'
       }).
+      when('/news', {
+        templateUrl: 'html/news.html',
+        controller: 'news_ctrl',
+        controllerAs: 'ctrl'
+      }).
       when('/contact', {
         templateUrl: 'html/contact.html',
         controller: 'contact_ctrl',
@@ -275,11 +280,13 @@ function init_map() {
   }]);
 
   app.controller('sitemap_ctrl', function($scope, $http) { });
+  app.controller('news_ctrl', function($scope, $http) { 
+    init_gp();
+    init_fb(document, 'script', 'facebook-jssdk');
+  });
 
   app.controller('contact_ctrl', function($scope, $http) {
     init_map();
-    init_gp();
-    init_fb(document, 'script', 'facebook-jssdk');
 
     $scope.success_response = false;
     $scope.error_response = false;
