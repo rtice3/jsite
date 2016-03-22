@@ -4,7 +4,7 @@ function init_fb(d, s, id) {
         return;
     js = d.createElement(s); 
     js.id = id;
-    js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&appId=1588258464750206&version=v2.3";
+    js.src = "http://connect.facebook.net/en_US/sdk.js#xfbml=1&appId=1588258464750206&version=v2.3";
     fjs.parentNode.insertBefore(js, fjs);
 }
 
