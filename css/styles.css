@@ -421,9 +421,6 @@ body {
   }
 }
 @media (max-width: 950px) {
-  #news_tag {
-    display: none;
-  }
   #facebook_container {
     display: none;
   }
