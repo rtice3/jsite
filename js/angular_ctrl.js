@@ -5,6 +5,7 @@ function init_gp() {
 }
 
 function init_fb(d, s, id) {
+  console.log("init_fb");
   var js, fjs = d.getElementsByTagName(s)[0];
   if (d.getElementById(id)) return;
   js = d.createElement(s); js.id = id;
