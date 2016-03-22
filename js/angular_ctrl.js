@@ -12,10 +12,6 @@ function init_fb(d, s, id) {
   fjs.parentNode.insertBefore(js, fjs);
 }
 
-$('a[href="#news"]').click(function(){
-  init_fb(document, 'script', 'facebook-jssdk');
-}); 
-
 function init_map() {
     var myLatlng = new google.maps.LatLng(42.144991, -71.232199);
     var mapOptions = {
@@ -285,6 +281,7 @@ function init_map() {
 
   app.controller('news_ctrl', function($scope, $http) { 
     init_gp();
+    init_fb(document, 'script', 'facebook-jssdk');
   });
 
   app.controller('contact_ctrl', function($scope, $http) {
