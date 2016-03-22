@@ -357,7 +357,7 @@ body {
   	}
 }
 /********** contact **********/
-#contact_container {
+.contact_container {
   padding-top: 30px;
   width: 1000px;
   margin-left: auto;
