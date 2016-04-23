@@ -31,6 +31,7 @@
 body {
   font-family: segoe ui,Arial,sans-serif;
   margin: 0;
+  background-image: url("../img/cbg.png");
 }
 #logo_header {
   width: 100%;
@@ -94,6 +95,7 @@ body {
   padding-top: 5px;
 }
 .featurette-divider {
+  border-color: #B3B3B3;
   margin: 80px 0; 
 }
 .featurette-heading {
@@ -150,6 +152,9 @@ body {
   .featurette-divider {
     margin: 10px 0;
   }
+}
+a {
+  color: #000000;
 }
 /********** carousel **********/
 .carousel {
