@@ -7,16 +7,6 @@ function init_gp() {
     s.parentNode.insertBefore(po, s);
 }
 
-function init_fb(d, s, id) {
-    var js, fjs = d.getElementsByTagName(s)[0];
-    if (d.getElementById(id)) 
-        return;
-    js = d.createElement(s); 
-    js.id = id;
-    js.src = "http://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.5&appId=1588258464750206";
-    fjs.parentNode.insertBefore(js, fjs);
-}
-
 function init_map() {
     var myLatlng = new google.maps.LatLng(42.144991, -71.232199);
     var mapOptions = {

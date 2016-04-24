@@ -20,7 +20,7 @@
 		]
 	},
 	"panel": {
-		"heading": "Technical Services",
+		"heading": "Construction & Technical Services",
 		"body": [
 			{
 				"content": "We offer technical services including:"
@@ -34,10 +34,16 @@
 						"item": "Construction Geometric and Grade Layout"
 					},
 					{
+						"item": "Construction Management"
+					},
+					{
 						"item": "Topographic Survey"
 					},
 					{
 						"item": "Blasting Management and Layout"
+					},
+					{
+						"item": "Soil Evaluation"
 					}
 				]
 			},
@@ -51,6 +57,12 @@
 					},
 					{
 						"item": "Sewer Manhole Vacuum Testing"
+					},
+					{
+						"item": "SWPPP Preparation"
+					},
+					{
+						"item": "SWPPP Inspections"
 					},
 					{
 						"item": "Civil Engineering Design coming soon!"
