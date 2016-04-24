@@ -377,6 +377,12 @@ a {
     margin-bottom: 20px;
     padding: 0px
 }
+#angietag {
+  padding-top: 25px;
+  margin: 0 auto;
+  display: block;
+  text-align: center;
+}
 #contact_info {
   text-align: left;
   margin-left: 28px;
@@ -387,6 +393,7 @@ a {
 .form-horizontal .form-group {
   margin-left: 0px;
   margin-right: 0px;
+  padding-bottom: 20px;
 }
 #facebook_container {
   width:100%;

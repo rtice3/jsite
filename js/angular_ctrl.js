@@ -116,11 +116,6 @@ function init_map() {
             controller: 'technical_ctrl',
             controllerAs: 'ctrl'
         }).
-        when('/news', {
-            templateUrl: 'html/news.html',
-            controller: 'news_ctrl',
-            controllerAs: 'ctrl'
-        }).
         when('/contact', {
             templateUrl: 'html/contact.html',
             controller: 'contact_ctrl',
