@@ -31,19 +31,19 @@
 						"item": "Title V Inspections"
 					},
 					{
-						"item": "Construction Geometric and Grade Layout"
-					},
-					{
 						"item": "Construction Management"
 					},
 					{
-						"item": "Topographic Survey"
+						"item": "Soil Evaluation"
+					},
+					{
+						"item": "Topographic Verification Survey"
 					},
 					{
 						"item": "Blasting Management and Layout"
 					},
 					{
-						"item": "Soil Evaluation"
+						"item": "Construction Geometric and Grade Layout"
 					}
 				]
 			},
@@ -63,9 +63,6 @@
 					},
 					{
 						"item": "SWPPP Inspections"
-					},
-					{
-						"item": "Civil Engineering Design coming soon!"
 					}
 				]
 			}
